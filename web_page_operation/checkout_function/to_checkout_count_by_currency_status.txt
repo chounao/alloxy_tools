@@ -1,0 +1,144 @@
+=== 待结算订单统计（按货币和状态） ===
+日期: 202511
+{
+  "USDT": {
+    "进行中": {
+      "withdraw": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "pay": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    },
+    "已完成": {
+      "withdraw": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "pay": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    },
+    "待审核": {
+      "withdraw": {
+        "data": -0.26200233,
+        "amount": 0.00200233,
+        "fee": 0.26
+      },
+      "pay": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    },
+    "已拒绝": {
+      "withdraw": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "pay": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    }
+  },
+  "USDC": {
+    "进行中": {
+      "withdraw": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "pay": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    },
+    "已完成": {
+      "withdraw": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "pay": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    },
+    "待审核": {
+      "withdraw": {
+        "data": -3.21103196,
+        "amount": 0.00103196,
+        "fee": 3.21
+      },
+      "pay": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": -0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    },
+    "已拒绝": {
+      "withdraw": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "pay": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      },
+      "refund": {
+        "data": 0.0,
+        "amount": 0.0,
+        "fee": 0.0
+      }
+    }
+  }
+}

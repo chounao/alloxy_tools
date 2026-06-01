@@ -1,0 +1,13 @@
+{
+  "webhooks": [
+    {
+      "webhook_event": "",
+      "webhook_url": "http://localhost:8888/webhook",
+      "status": "active",
+      "created_at": "2026-05-27T16:32:37.457543",
+      "updated_at": "2026-05-27T16:32:37.457545"
+    }
+  ],
+  "created_at": "2026-05-27T16:32:37.457491",
+  "updated_at": "2026-05-27T16:32:37.457550"
+}
