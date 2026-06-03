@@ -7,14 +7,11 @@ from common import read_and_save_tool
 
 """
 class CardOperation():
-    def __init__(self,http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self,user_http=None):
+        self.user_http = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
         self.url = self.config.get_url_data()
-        self.card_wallet_balance = card_wallet_fee.Balance_Calculate(self.http_request)
+        self.card_wallet_balance = card_wallet_fee.Balance_Calculate(self.user_http)
         self.before_data  = self.card_wallet_balance.get_card_balance()
 
 
@@ -26,7 +23,7 @@ class CardOperation():
         获取所有虚拟卡通道
         """
         # url = self.authority + '/web/virtual-card/all-channels'
-        data = self.http_request.send_request(api_name='获取所有虚拟卡通道', nested_keys=['data'])
+        data = self.user_http.send_request(api_name='获取所有虚拟卡通道', nested_keys=['data'])
         peron_bin_id = data[0]['id']
         firm_bin_id = data[1]['id']
         peron_bin_name = data[0]['bin']
@@ -40,7 +37,7 @@ class CardOperation():
         根据用户获取所有虚拟卡持有人
         """
         # url = self.authority + '/web/virtual-card/get-all-holders'
-        create_card_people_id = self.http_request.send_request(api_name='根据用户获取所有虚拟卡持有人',
+        create_card_people_id = self.user_http.send_request(api_name='根据用户获取所有虚拟卡持有人',
                                                                # jsonpath_expr=f'$.data.list[?(@.rbac_department_name=="测试部门")].id')
                                                                nested_keys=['data', 0, 'id'])
         # print(create_card_people_id)
@@ -73,8 +70,8 @@ class CardOperation():
             }
 
         # 提取卡片ID
-        # card_id = self.http_request.post(url, data, ['data', 'id'])
-        data = self.http_request.send_request(api_name='创建虚拟卡', data=body, nested_keys=['data'])
+        # card_id = self.user_http.post(url, data, ['data', 'id'])
+        data = self.user_http.send_request(api_name='创建虚拟卡', data=body, nested_keys=['data'])
         self.card_id = data['id']
         self.bank_card_id = data['bank_card_id']
         print(f"Created card ID: {self.card_id}")
@@ -100,7 +97,7 @@ class CardOperation():
 
         body = {"card_id":card_id,"amount":send_amount,"check_method":"email","access_code":"123456"}
 
-        response = self.http_request.send_request(api_name='卡账户充值到卡')
+        response = self.user_http.send_request(api_name='卡账户充值到卡')
         if response.status_code == 201:
             print('充值成功')
             # 获取手续费
@@ -123,7 +120,7 @@ class CardOperation():
         """
         print(f'操作前：卡账户余额{self.before_data[0]}，卡内余额{self.before_data[1]}')
         body = {"card_id":card_id,"amount":send_amount,"memo":"1"}
-        response = self.http_request.send_request(api_name='卡到卡账户', data=body)
+        response = self.user_http.send_request(api_name='卡到卡账户', data=body)
         if response.status_code == 201:
             print('转出成功')
             # 获取手续费
@@ -140,7 +137,7 @@ class CardOperation():
         获取虚拟卡详情
         """
 
-        response = self.http_request.send_request(api_name='获取虚拟卡详情', replace_data={'id': card_id})
+        response = self.user_http.send_request(api_name='获取虚拟卡详情', replace_data={'id': card_id})
         if response:
             print('获取卡详情成功')
             print(response.json())
@@ -155,7 +152,7 @@ class CardOperation():
         冻结虚拟卡
         """
 
-        response = self.http_request.send_request(api_name='冻结卡', replace_data={'id':bank_card_id})
+        response = self.user_http.send_request(api_name='冻结卡', replace_data={'id':bank_card_id})
         if response:
             print('冻结卡成功')
         else:
@@ -169,7 +166,7 @@ class CardOperation():
         """
 
 
-        response = self.http_request.send_request(api_name='解冻卡', replace_data={'id': bank_card_id})
+        response = self.user_http.send_request(api_name='解冻卡', replace_data={'id': bank_card_id})
         if response:
             print('解冻卡成功')
         else:
@@ -182,7 +179,7 @@ class CardOperation():
         删除虚拟卡
         """
 
-        response = self.http_request.send_request(api_name='删除卡', replace_data={'id': card_id})
+        response = self.user_http.send_request(api_name='删除卡', replace_data={'id': card_id})
         if response:
             print('删除卡成功')
         else:
@@ -202,7 +199,7 @@ class CardOperation():
             "virtual_card_id": card_id,
             "transaction_sub_type": "card",
         }
-        response = self.http_request.send_request(api_name='获取交易列表', dict_data=data)
+        response = self.user_http.send_request(api_name='获取交易列表', dict_data=data)
         if response:
             print('获取卡交易明细成功')
             print(response.json())

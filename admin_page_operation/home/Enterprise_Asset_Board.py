@@ -5,11 +5,8 @@ from common import read_and_save_tool
 from common import Sql
 
 class EnterpriseAssetBoard:
-    def __init__(self,http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self,admin_http=None):
+        self.http_request = admin_http or HttpRequest(user_type='admin')
         self.config = read_and_save_tool.ConfigTools()
         self.config_url = self.config.get_url_data()
         self.sql = Sql.DatabaseConnection()

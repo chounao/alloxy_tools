@@ -1,0 +1,145 @@
+[2026-06-02 14:06:49,363][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-02 14:06:49,363][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-02 14:06:50,294][simple_request.py 245][INFO]: method:POST,url:http://192.168.0.45:5555/web/user/login
+[2026-06-02 14:06:50,294][simple_request.py 247][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryanzhou@teml.net",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-02 14:06:59,505][simple_request.py 265][INFO]: Response status code: 201
+[2026-06-02 14:06:59,506][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-02 14:07:22,491][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-02 14:07:22,491][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-02 14:07:22,908][simple_request.py 245][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-02 14:07:22,908][simple_request.py 247][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryanzhou@teml.net",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-02 14:07:24,431][simple_request.py 265][INFO]: Response status code: 201
+[2026-06-02 14:07:24,432][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-02 14:09:00,049][simple_request.py 245][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-02 14:09:04,131][simple_request.py 265][INFO]: Response status code: 200
+[2026-06-02 14:09:10,141][simple_request.py 245][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056555792174268416
+[2026-06-02 14:09:11,251][simple_request.py 265][INFO]: Response status code: 200
+[2026-06-02 14:09:11,251][simple_request.py 245][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2056555792174268416
+[2026-06-02 14:09:12,643][simple_request.py 265][INFO]: Response status code: 400
+[2026-06-02 14:09:12,643][simple_request.py 296][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2056555792174268416
+[2026-06-02 14:10:26,740][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-02 14:10:26,740][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-02 14:10:27,202][simple_request.py 245][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-02 14:10:27,202][simple_request.py 247][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-02 14:10:29,435][simple_request.py 265][INFO]: Response status code: 201
+[2026-06-02 14:10:29,436][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-02 14:10:32,389][simple_request.py 245][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-02 14:10:34,625][simple_request.py 265][INFO]: Response status code: 200
+[2026-06-02 14:10:40,634][simple_request.py 245][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056555792174268416
+[2026-06-02 14:10:41,621][simple_request.py 265][INFO]: Response status code: 200
+[2026-06-02 14:10:41,622][simple_request.py 245][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2056555792174268416
+[2026-06-02 14:10:44,369][simple_request.py 265][INFO]: Response status code: 200
+[2026-06-02 14:10:44,369][simple_request.py 245][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-02 14:10:44,369][simple_request.py 247][INFO]: Request data: {
+  "requestId": "20260602141041",
+  "cardID": "XR2056555792174268416",
+  "cvv": "794",
+  "expirationDate": "06/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 100,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-02 14:10:46,066][simple_request.py 265][INFO]: Response status code: 201
+[2026-06-02 14:10:52,070][simple_request.py 245][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056555792174268416
+[2026-06-02 14:10:52,910][simple_request.py 265][INFO]: Response status code: 200
+[2026-06-02 17:16:58,892][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-02 17:16:58,893][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-02 17:17:02,376][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-02 17:17:02,377][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-02 17:17:02,383][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-02 17:17:02,383][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-02 17:17:04,333][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-02 17:17:04,334][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-02 17:21:04,742][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-02 17:21:04,742][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-02 17:21:05,484][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-02 17:21:05,484][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-02 17:21:07,906][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-02 17:21:07,907][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-02 17:21:07,914][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-02 17:21:07,914][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-02 17:21:09,097][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-02 17:21:09,098][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-02 17:43:19,037][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-02 17:43:21,440][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-02 17:43:21,444][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-02 17:43:21,997][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-02 17:57:01,817][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-02 17:57:05,658][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-02 17:57:11,666][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056555792174268416
+[2026-06-02 17:57:14,534][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-02 17:57:14,534][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2056555792174268416
+[2026-06-02 17:57:15,588][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-02 17:57:15,588][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-02 17:57:15,588][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260602175714",
+  "cardID": "XR2056555792174268416",
+  "cvv": "794",
+  "expirationDate": "06/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 100,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-02 17:57:18,204][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-02 17:57:18,204][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-02 17:57:18,536][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-02 17:57:18,536][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-02 17:57:18,858][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-02 17:57:24,863][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056555792174268416
+[2026-06-02 17:57:25,690][simple_request.py 273][INFO]: Response status code: 200

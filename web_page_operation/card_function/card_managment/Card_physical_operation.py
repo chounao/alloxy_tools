@@ -11,14 +11,11 @@ import time
 
 """
 class CardPhysicalOperation():
-    def __init__(self,card_id = None,http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self,card_id = None,user_http=None):
+        self.user_http = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
         self.url = self.config.get_url_data()
-        self.card_wallet_balance = card_wallet_fee.Balance_Calculate(self.http_request)
+        self.card_wallet_balance = card_wallet_fee.Balance_Calculate(self.user_http)
         self.card_id = card_id
 
     def get_cardBin(self):
@@ -26,7 +23,7 @@ class CardPhysicalOperation():
         获取所有虚拟卡通道
         """
         # url = self.authority + '/web/virtual-card/all-channels'
-        data = self.http_request.send_request(api_name='获取所有虚拟卡通道', nested_keys=['data'])
+        data = self.user_http.send_request(api_name='获取所有虚拟卡通道', nested_keys=['data'])
         peron_bin_id = data[0]['id']
         firm_bin_id = data[1]['id']
         peron_bin_name = data[0]['bin']
@@ -40,7 +37,7 @@ class CardPhysicalOperation():
         根据用户获取所有虚拟卡持有人
         """
         # url = self.authority + '/web/virtual-card/get-all-holders'
-        create_card_people_id = self.http_request.send_request(api_name='根据用户获取所有虚拟卡持有人',
+        create_card_people_id = self.user_http.send_request(api_name='根据用户获取所有虚拟卡持有人',
               #                                                 jsonpath_expr=f'$.data.list[?(@.rbac_department_name=="测试部门")].id')
                                                                nested_keys=['data',0,'id'])
         print(create_card_people_id)
@@ -52,7 +49,7 @@ class CardPhysicalOperation():
         获取默认地址
         """
         url = self.url + f'/web/virtual-card/card-shipping-address?address_source=default'
-        data = self.http_request.gets(url=url, nested_keys=['data'])
+        data = self.user_http.gets(url=url, nested_keys=['data'])
         print(data)
         return data
 
@@ -66,7 +63,7 @@ class CardPhysicalOperation():
             'business_type': 'reap_physical_cards_shipment',
             'physical_card': True
         }
-        data = self.http_request.send_request(api_name='获取国家信息', dict_data=data, nested_keys=['data'])
+        data = self.user_http.send_request(api_name='获取国家信息', dict_data=data, nested_keys=['data'])
         print(data)
         return data
 
@@ -109,7 +106,7 @@ class CardPhysicalOperation():
             },
             "isDefaultAddress": True
         }
-        data = self.http_request.send_request(api_name='创建虚拟卡', data=body, nested_keys=['data'])
+        data = self.user_http.send_request(api_name='创建虚拟卡', data=body, nested_keys=['data'])
         self.card_id = data['id']
         self.bank_card_id = data['bank_card_id']
         print(f"Created card ID: {self.card_id}")
@@ -127,7 +124,7 @@ class CardPhysicalOperation():
         获取实体卡激活码
         """
         url = self.url + f'/web/virtual-card/get-activate-code/{bank_card_id}'
-        code = self.http_request.gets(url=url, nested_keys=['data', 'activationCode'])
+        code = self.user_http.gets(url=url, nested_keys=['data', 'activationCode'])
         print(code)
         return code
 
@@ -141,7 +138,7 @@ class CardPhysicalOperation():
             "code": activation_code,
             "bank_card_id": bank_card_id
         }
-        response = self.http_request.posts(url=url, data=body)
+        response = self.user_http.posts(url=url, data=body)
         print(response)
         # return response.status_code
 
@@ -155,7 +152,7 @@ class CardPhysicalOperation():
             "cardId": bank_card_id,
             "pin": pin
         }
-        response = self.http_request.posts(url=url, data=body)
+        response = self.user_http.posts(url=url, data=body)
         print( response)
 
 

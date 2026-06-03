@@ -9,12 +9,9 @@ import os
 
 
 class AdminRYTPage:
-    def __init__(self, http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
-            self.config = read_and_save_tool.ConfigTools()
+    def __init__(self, admin_http=None):
+        self.http_request = admin_http or HttpRequest(user_type='admin')
+        self.config = read_and_save_tool.ConfigTools()
         self.rytoperation = RYT_operation.RYT_Operation()
         self.config_url = self.config.get_url_data()
         self.time = GetTime()

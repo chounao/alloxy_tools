@@ -8,14 +8,13 @@ class Login():
     """
 
     def __init__(self):
-        self.http_request = HttpRequest()
         self.access_token = None
         self.is_authenticated = False
         """可变的参数"""
         self.config = read_and_save_tool.ConfigTools()
         self.path = get_config_section()
-        self.url = 'http://192.168.0.45:5555'
-        # self.url = self.config.get_url_data()
+        self.url = self.config.get_url_data()
+
     #配置是登陆admin还是中台
     def set_user_data(self, EMAIL, PASSWORD):
         self.email = self.config.get_login_data(EMAIL)
@@ -25,7 +24,7 @@ class Login():
     def get_md5(self, PASSWORD):
         md5 = hashlib.md5()
         md5.update(PASSWORD.encode('utf-8'))
-        self.password = md5.hexdigest()  # 保存MD5值到实例变量
+        self.password = md5.hexdigest()
         return self.password
 
     def login(self,EMAIL, PASSWORD):
@@ -38,12 +37,13 @@ class Login():
         else:
             api_name = '用户-登录'
         self.login_url = self.url + '/web/user/login'
-        access_token = self.http_request.requests('POST', self.login_url, params, nested_keys=['data', 'accessToken'])
+        http_request = HttpRequest()
+        access_token = http_request.requests('POST', self.login_url, params, nested_keys=['data', 'accessToken'])
         return access_token
 
 
     def authenticate(self,EMAIL, PASSWORD):
-        """from
+        """
         执行登录并更新请求头中的认证信息（仅在未认证或认证过期时执行）
         """
 
@@ -60,13 +60,15 @@ class Login():
             print("Authentication successful")
             token = 'Bearer ' + access_token
             self.config.save_value(self.path,'access_token',token)
-        self.http_request.update_headers({'authorization': token})
-        return self.http_request
+
+        return HttpRequest(user_type='admin' if 'ADMIN' in EMAIL else 'user')
 
     #执行中台登陆和admin登陆的操作
     def login_tools(self):
-        # self.authenticate('ADMIN_EMAIL', 'ADMIN_PASSWORD')
-        self.authenticate('EMAIL', 'PASSWORD')
+        """同时登录普通用户和管理员，返回 (user_http, admin_http) 两个HttpRequest实例"""
+        user_http = self.authenticate('EMAIL', 'PASSWORD')
+        admin_http = self.authenticate('ADMIN_EMAIL', 'ADMIN_PASSWORD')
+        return user_http, admin_http
 
 
 
@@ -74,8 +76,5 @@ class Login():
 
 
 if __name__ == '__main__':
-    a = Login()
-
-    # 第一次调用会执行认证
-    a.login_tools()
-
+    login = Login()
+    user_req, admin_req = login.login_tools()

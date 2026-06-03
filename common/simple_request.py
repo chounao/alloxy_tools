@@ -10,15 +10,23 @@ from jsonpath_ng.ext import parse  # 添加导入
 from common import logger
 logger = logger.logger
 class HttpRequest:
-    def __init__(self):
-
+    def __init__(self, user_type: str = 'user'):
+        """
+        :param user_type: 'user' 使用普通用户token, 'admin' 使用管理员token
+        """
+        self.user_type = user_type
         self.config_section = get_config_section()
         self.exceptions = None
         self.logger = logger
         self.session = requests.Session()
 
         self.config = read_and_save_tool.ConfigTools()
-        self.access_token = self.config.get_access_token()
+
+        if user_type == 'admin':
+            self.access_token = self.config.get_admin_access_token()
+        else:
+            self.access_token = self.config.get_access_token()
+
         self.headers = {
             'Content-Type': 'application/json',
             'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6',

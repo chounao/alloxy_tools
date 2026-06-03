@@ -6,13 +6,9 @@ from admin_page_operation.card_page.card_detail import AdminCardDetailPage
 import os
 import json
 class CardPageData:
-    def __init__(self, http_request=None):
-        self.date = [ '20251204']
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
-
+    def __init__(self, admin_http=None):
+        self.http_request = admin_http or HttpRequest(user_type='admin')
+        self.date = ['20251204']
         self.config = read_and_save_tool.ConfigTools()
         self.config_url = self.config.get_url_data()
         self.card_detail = AdminCardDetailPage()

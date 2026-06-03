@@ -15,11 +15,9 @@ UAT_ENTERPRISE_ID = '9738483283'
 merchantCountry = 'US'
 class PhotonPayTools:
 
-    def __init__(self, http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self, user_http=None, admin_http=None):
+        self.user_http = user_http or HttpRequest(user_type='user')
+        self.admin_http = admin_http or HttpRequest(user_type='admin')
 
         self.config = read_and_save_tool.ConfigTools()
         self.config_url = self.config.get_url_data()
@@ -90,7 +88,7 @@ class PhotonPayTools:
         data_url = f'{self.url}/admin/virtual-card/get-all-cards?page=1&take=100'
 
         try:
-            response = self.http_request.requests('get', data_url)
+            response = self.admin_http.requests('get', data_url)
             if response is None:
                 raise Exception("请求失败，未获取到响应")
             response.raise_for_status()
@@ -143,7 +141,7 @@ class PhotonPayTools:
     def get_card_info(self, card_id):
         self.card_url = f'{self.url}/web/virtual-card/card-cvv/{card_id}'
         try:
-            response = self.http_request.requests('get', self.card_url)
+            response = self.user_http.requests('get', self.card_url)
             if response is None:
                 raise Exception("请求失败，未获取到响应")
 
@@ -240,8 +238,7 @@ class PhotonPayTools:
 
         time.sleep(6)
         URL = f'{self.config_url}/web/virtual-card/photon-card-detail/{card_id}'
-        response = self.http_request.requests('get', URL)
-
+        response = self.user_http.requests('get', URL)
         if response is None:
             raise requests.exceptions.HTTPError("请求失败，未获取到响应")
 
@@ -277,7 +274,8 @@ class PhotonPayTools:
         open_card_fee_url = f'{self.url}/admin/virtual-card/open-card-fee-list?page=1&take=10&identifier_id={self.enterprise_id}'
 
         try:
-            response = self.http_request.requests('get', open_card_fee_url)
+            response = self.admin_http.requests('get', open_card_fee_url)
+
 
             if response is None:
                 raise Exception("请求失败，未获取到响应")
@@ -311,7 +309,7 @@ class PhotonPayTools:
         transaction_fee_url = f'{self.url}/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id={self.enterprise_id}'
 
         try:
-            response = self.http_request.requests('get', transaction_fee_url)
+            response = self.admin_http.requests('get', transaction_fee_url)
 
             if response is None:
                 raise Exception("请求失败，未获取到响应")
@@ -354,7 +352,7 @@ class PhotonPayTools:
         product_code = self.get_card_type_for_code(last4)
         authorization_url = f'{self.url}/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id={self.enterprise_id}'
         try:
-            response = self.http_request.requests('get', authorization_url)
+            response = self.admin_http.requests('get', authorization_url)
             if response is None:
                 raise Exception("请求失败，未获取到响应")
             response.raise_for_status()
@@ -389,7 +387,7 @@ class PhotonPayTools:
         time.sleep(3)
         self.transaction_url = f'{self.url}/admin/virtual-card/get-all-transactions?page=1&take=10&transaction_sub_type=card'
         try:
-            response = self.http_request.requests('get', self.transaction_url)
+            response = self.admin_http.requests('get', self.transaction_url)
             if response is None:
                 raise Exception("请求失败，未获取到响应")
             response.raise_for_status()
@@ -416,7 +414,7 @@ class PhotonPayTools:
     def card_operation(self,last4, txnType,bank_card_id ,amount,originTransactionId=None):
 
         body = self.get_request_data(last4,txnType, amount, bank_card_id,originTransactionId)
-        response = self.http_request.requests('post', self.card_base_url, data=body)
+        response = self.user_http.requests('post', self.card_base_url, data=body)
         if response is None:
             raise requests.exceptions.HTTPError("请求失败，未获取到响应")
 
@@ -428,18 +426,18 @@ class PhotonPayTools:
     # 消费
     def card_consume(self,amount, last4):
         bank_card_id, card_id, category ,product_code= self.get_card_data(last4)
-        # num1 = self.get_card_balance(bank_card_id)
-        # print('消费前的金额', num1)
+        num1 = self.get_card_balance(bank_card_id)
+        print('消费前的金额', num1)
         # 消费
         self.card_operation(last4,'auth',bank_card_id,amount)
         # 共享手续费
-        # fee_per_count, fee_prorate = self.calculate_transaction_fee(last4)
-        # print('手续费：',fee_per_count,'费率：',fee_prorate)
-        # num2 = amount + fee_per_count + fee_prorate* amount
-        # num3 = self.get_authorization_fee( last4,amount)
-        # print('手续费：',num2,'授权费：',num3)
-        # num = num1 - num2 - num3
-        # print('剩下额度',num)
+        fee_per_count, fee_prorate = self.calculate_transaction_fee(last4)
+        print('手续费：',fee_per_count,'费率：',fee_prorate)
+        num2 = amount + fee_per_count + fee_prorate* amount
+        num3 = self.get_authorization_fee( last4,amount)
+        print('手续费：',num2,'授权费：',num3)
+        num = num1 - num2 - num3
+        print('剩下额度',num)
         later_num = self.get_card_balance(bank_card_id)
         print('三方返回的值',later_num)
 
@@ -470,7 +468,7 @@ if __name__ == '__main__':
 
 
 
-    amount = 2
+    amount = 100
 
 
     # 创建PhotonPayTools对象
@@ -479,9 +477,10 @@ if __name__ == '__main__':
     """
     消费
     """
-    last4 = '3545'
+    last4 = '8508'
     photon_pay_tools.card_consume(amount,last4)
-    # photon_pay_tools.get_card_balance_data(last4)
+
+
 
 
     """

@@ -95,6 +95,7 @@ if __name__ == '__main__':
     from common import login
 
     login_instance = login.Login()
-    #login_instance.authenticate('ADMIN_EMAIL', 'ADMIN_PASSWORD')
-    login_instance.authenticate('EMAIL', 'PASSWORD')
+    # login_instance.authenticate('ADMIN_EMAIL', 'ADMIN_PASSWORD')
+    # login_instance.authenticate('EMAIL', 'PASSWORD')
+    user_req, admin_req = login_instance.login_tools()
 

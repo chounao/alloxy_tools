@@ -2,11 +2,8 @@ import math
 from common.simple_request import HttpRequest
 from common import read_and_save_tool
 class PayInFee:
-    def __init__(self,http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self,user_http=None):
+        self.http_request = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
         self.authority = self.config.get_url_data()
         self.list = []

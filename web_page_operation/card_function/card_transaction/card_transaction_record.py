@@ -6,11 +6,8 @@ from common import read_and_save_tool
 
 
 class CardTransactionRecord:
-    def __init__(self, http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self, user_http=None):
+        self.user_http = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
         self.config_url = self.config.get_url_data()
         self.time = GetTime()
@@ -33,7 +30,7 @@ class CardTransactionRecord:
         :param date: 时间范围
         :return: 商务卡账户余额和商务卡卡内余额
         """
-        balance = self.http_request.send_request(api_name='获取虚拟卡总余额和卡账户总余额', nested_keys=['data'])
+        balance = self.user_http.send_request(api_name='获取虚拟卡总余额和卡账户总余额', nested_keys=['data'])
         card_AccountBalance = balance['cardAccountBalance']  # 账户余额
         card_Balance = balance['cardBalance']  # 卡内余额
         print(f'商务卡账户余额为：', card_AccountBalance)
@@ -83,12 +80,12 @@ class CardTransactionRecord:
             if status:
                 params_data['status'] = status
 
-            reconciliation_data = self.http_request.send_request(api_name='获取交易列表', dict_data=params_data,
+            reconciliation_data = self.user_http.send_request(api_name='获取交易列表', dict_data=params_data,
                                                                  nested_keys=['data', 'list'])
             if not reconciliation_data or len(reconciliation_data) == 0:
                 return
             all_transaction_data.extend(reconciliation_data)
-            total_count = self.http_request.send_request(api_name='获取交易列表', dict_data=params_data,
+            total_count = self.user_http.send_request(api_name='获取交易列表', dict_data=params_data,
                                                          nested_keys=['data', 'total'])
             if total_count and len(all_transaction_data) >= total_count:
                 break

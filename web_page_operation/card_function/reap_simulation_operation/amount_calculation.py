@@ -10,11 +10,9 @@ class AmountCalculation:
     模拟操作消耗
     """
 
-    def __init__(self,http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self, user_http=None, admin_http=None):
+        self.user_http = user_http or HttpRequest(user_type='user')
+        self.admin_http = admin_http or HttpRequest(user_type='admin')
         # 环境配置
         self.config = read_and_save_tool.ConfigTools()
         self.config_url = self.config.get_url_data()

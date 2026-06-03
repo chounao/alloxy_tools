@@ -163,10 +163,10 @@ if __name__ == '__main__':
     #撤销
     # try:
     #
-    #     # transaction_id = simulation_operation.authorisation()
+    #     # transaction_id = reap_simulation_operation.authorisation()
     #     transaction_id = 'tid_PHHgqW0CxS'
     #     if transaction_id:
-    #         simulation_operation.reversal(transaction_id)
+    #         reap_simulation_operation.reversal(transaction_id)
     # except Exception as e:
     #     print(f"程序执行出错: {e}")
 
@@ -174,11 +174,11 @@ if __name__ == '__main__':
 
     # #退款
     # try:
-    #     # transaction_id = simulation_operation.authorisation()
+    #     # transaction_id = reap_simulation_operation.authorisation()
     #     transaction_id = 'tid_PHHgqW0CxS'
     #     if transaction_id:
-    #         # simulation_operation.settlement(transaction_id)
-    #         simulation_operation.refund(transaction_id)
+    #         # reap_simulation_operation.settlement(transaction_id)
+    #         reap_simulation_operation.refund(transaction_id)
     # except Exception as e:
     #     print(f"程序执行出错: {e}")
     #

@@ -1,10 +1,10 @@
 import RYT_transaction_record
 import json
-
+from common.simple_request import HttpRequest
 class RYT_transaction_count:
-
-    def __init__(self):
-        self.ryt_transaction_record = RYT_transaction_record.TransactionProcessor()
+    def __init__(self, user_http=None):
+        self.http_request = user_http or HttpRequest(user_type='user')
+        self.ryt_transaction_record = RYT_transaction_record.TransactionProcessor(user_http)
     def ryt_count(self,date):
         dict_status = {
             '进行中': 'pending_approval',

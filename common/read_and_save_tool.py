@@ -249,6 +249,7 @@ class ConfigTools:
             tuple: URL数据元组，包含URL和请求方法
         """
         return self.get_value(section = self.config_section,key = 'URL')
+
     def get_access_token(self):
         """
         获取access_token
@@ -256,8 +257,16 @@ class ConfigTools:
         Returns:
             str: access_token
         """
-        return self.get_value(section = self.config_section,key = 'access_token')
+        return self.get_value(section=self.config_section, key='access_token')
 
+    def get_admin_access_token(self):
+        """
+        获取管理员access_token
+
+        Returns:
+            str: admin_access_token
+        """
+        return self.get_value(section=self.config_section, key='admin_access_token')
 
     def get_pay_in_county(self):
         """

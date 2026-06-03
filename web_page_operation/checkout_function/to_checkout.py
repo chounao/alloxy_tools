@@ -7,11 +7,8 @@ class ToCheckout:
     """
     对账操作
     """
-    def __init__(self, http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self, user_http=None):
+        self.http_request = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
 
 

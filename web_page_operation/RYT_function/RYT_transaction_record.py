@@ -2,11 +2,8 @@ from common.simple_request import HttpRequest
 from common import  read_and_save_tool
 from common.get_time import GetTime
 class TransactionProcessor:
-    def __init__(self, http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self, user_http=None):
+        self.http_request = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
         self.config_url = self.config.get_url_data()
         self.time = GetTime()

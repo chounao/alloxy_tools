@@ -10,14 +10,11 @@ from common import read_and_save_tool
 
 
 class CardAccountOperation():
-    def __init__(self,card_id = None,http_request=None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self,card_id = None,user_http=None):
+        self.user_http = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
         self.url = self.config.get_url_data()
-        self.card_wallet_balance = card_wallet_fee.Balance_Calculate(self.http_request)
+        self.card_wallet_balance = card_wallet_fee.Balance_Calculate(self.user_http)
         self.before_data  = self.card_wallet_balance.get_card_balance()
         self.card_id = card_id
 
@@ -39,7 +36,7 @@ class CardAccountOperation():
         body = {"wallet_id": wallet_id, "from_currency": currency, "amount": send_amount, "memo": "123",
                 "to_currency": "USD"}
         # wallet_to_card_url = self.authority + "/web/virtual-card/wallet-to-card-account"
-        response = self.http_request.send_request(api_name='钱包转到卡账户', data=body)
+        response = self.user_http.send_request(api_name='钱包转到卡账户', data=body)
 
         #验证钱包，卡账户余额，卡余额
         if response.status_code == 201:
@@ -76,7 +73,7 @@ class CardAccountOperation():
                 "memo": "123",
                 "to_currency": currency}
 
-        response = self.http_request.send_request(api_name='卡账户转出到钱包', data=body)
+        response = self.user_http.send_request(api_name='卡账户转出到钱包', data=body)
         if response.status_code == 201:
             print('转出成功')
             # 获取手续费

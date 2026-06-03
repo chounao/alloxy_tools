@@ -7,11 +7,8 @@ from decimal import Decimal
 from common.simple_request import HttpRequest
 from common import read_and_save_tool
 class Balance_Calculate():
-    def __init__(self,http_request= None):
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
+    def __init__(self,user_http=None):
+        self.user_http = user_http or HttpRequest(user_type='user')
         self.config = read_and_save_tool.ConfigTools()
         self.url = self.config.get_url_data()
     def get_wallet_data(self, currency):
@@ -22,7 +19,7 @@ class Balance_Calculate():
         :return:
         """
         # wallet_url = self.authority + "/web/crypto/wallets"
-        wallet_data = self.http_request.send_request(api_name='钱包-获取钱包列表', jsonpath_expr=f'$.data.list[?(@.currency=="{currency}")]')
+        wallet_data = self.user_http.send_request(api_name='钱包-获取钱包列表', jsonpath_expr=f'$.data.list[?(@.currency=="{currency}")]')
         wallet_price = float(wallet_data['price'])
         wallet_id = wallet_data['id']
         wallet_amount = float(wallet_data['amount'])
@@ -57,7 +54,7 @@ class Balance_Calculate():
         :return:
         """
         # URL = self.authority + "/web/virtual-card/card-balance"
-        balance = self.http_request.send_request(api_name='获取虚拟卡总余额和卡账户总余额', nested_keys=['data'])
+        balance = self.user_http.send_request(api_name='获取虚拟卡总余额和卡账户总余额', nested_keys=['data'])
         card_AccountBalance = balance['cardAccountBalance']  # 账户余额
         card_Balance = balance['cardBalance']  # 卡内余额
         befer_data = [card_AccountBalance, card_Balance]
@@ -71,7 +68,7 @@ class Balance_Calculate():
     #         'feeType': 'card_account_recharge_fee'
     #     }
     #     # fee_url = self.authority + "/web/account/fees-v1?feeType=card_account_recharge_fee"
-    #     fee = self.http_request.send_request(api_name='获取手续费列表', dict_data=url_data, nested_keys=['data'])
+    #     fee = self.user_http.send_request(api_name='获取手续费列表', dict_data=url_data, nested_keys=['data'])
     #     per_count = fee['per_count']  # 固定
     #     prorate = fee['prorate']  # 百分比
     #     return per_count, prorate
@@ -235,8 +232,8 @@ class Balance_Calculate():
             'feeType': 'card_account_recharge_fee'
         }
         fee_url = self.url + "/web/account/fees-v1?feeType=card_account_recharge_fee"
-        #fee = self.http_request.send_request(api_name='获取手续费列表', dict_data=url_data, nested_keys=['data'])
-        fee = self.http_request.gets(fee_url, nested_keys=['data'])
+        #fee = self.user_http.send_request(api_name='获取手续费列表', dict_data=url_data, nested_keys=['data'])
+        fee = self.user_http.gets(fee_url, nested_keys=['data'])
         per_count = fee['per_count']  # 固定
         prorate = fee['prorate']  # 百分比
         #计算手续费
@@ -256,7 +253,7 @@ class Balance_Calculate():
         url_body = {
             'feeType': 'card_recharge_fee'
         }
-        data = self.http_request.send_request(api_name='获取手续费列表', dict_data=url_body,
+        data = self.user_http.send_request(api_name='获取手续费列表', dict_data=url_body,
                                               nested_keys=['data'])
         per_count = data['per_count']  # 固定
         prorate = data['prorate']  # 百分比
@@ -269,7 +266,7 @@ class Balance_Calculate():
     #     }
     #     #path = '/web/account/fees-v1?feeType=card_create_fee'
     #     # url = self.authority + path
-    #     data = self.http_request.send_request(api_name='获取手续费列表',dict_data=url_data, nested_keys=['data'])
+    #     data = self.user_http.send_request(api_name='获取手续费列表',dict_data=url_data, nested_keys=['data'])
     #     per_count = data['per_count']# 固定
     #     prorate = data['prorate']#百分比
     #     return per_count, prorate
@@ -292,7 +289,7 @@ class Balance_Calculate():
             'feeType': 'card_create_fee'
         }
         # url = self.authority + "/web/account/fees-v1?feeType=card_create_fee"
-        open_card_fee = self.http_request.send_request(api_name='获取手续费列表', dict_data=url_body,
+        open_card_fee = self.user_http.send_request(api_name='获取手续费列表', dict_data=url_body,
                                                        nested_keys=['data', 'per_count'])
         return open_card_fee
     #计算开卡手续费
@@ -306,7 +303,7 @@ class Balance_Calculate():
             'feeType': 'card_create_fee'
         }
         # url = self.authority + "/web/account/fees-v1?feeType=card_create_fee"
-        open_card_fee = self.http_request.send_request(api_name='获取手续费列表', dict_data=url_body,
+        open_card_fee = self.user_http.send_request(api_name='获取手续费列表', dict_data=url_body,
                                                        nested_keys=['data', 'per_count'])
         per_count, prorate = self.card_recharge_fee()
         open_card_fee_amount = open_card_fee + send_amount * prorate + per_count
@@ -319,7 +316,7 @@ class Balance_Calculate():
         url_body = {
             'feeType': 'card_physical_create_fee'
         }
-        open_card_fee_amount = self.http_request.send_request(api_name='获取手续费列表', dict_data=url_body,
+        open_card_fee_amount = self.user_http.send_request(api_name='获取手续费列表', dict_data=url_body,
                                                        nested_keys=['data', 'per_count'])
         return open_card_fee_amount
 
@@ -329,7 +326,7 @@ class Balance_Calculate():
         获取国家对应的快递费
         """
         url = self.url + f'/web/account/get-virtual-card-logistics-fee?country={country}'
-        express_fee = float(self.http_request.gets(url=url, nested_keys=['data', 'fee']))
+        express_fee = float(self.user_http.gets(url=url, nested_keys=['data', 'fee']))
         print(express_fee)
         return express_fee
     #计算开实体卡的开卡费

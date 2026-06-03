@@ -26,12 +26,9 @@ class PageInterfaceData:
     """
     页面接口数据
     """
-    def __init__(self, http_request=None):
+    def __init__(self, admin_http=None):
+        self.http_request = admin_http or HttpRequest(user_type='admin')
         self.date = ['20251204']
-        if http_request:
-            self.http_request = http_request
-        else:
-            self.http_request = HttpRequest()
         self.config = read_and_save_tool.ConfigTools()
         self.admin_url = self.config.get_url_data()
         self.currency = [ 'USDC','USDT']
