@@ -50,8 +50,11 @@ class Login():
         access_token = self.login(EMAIL, PASSWORD)
 
         if access_token is None:
-            raise RuntimeError(f"Login failed: could not retrieve access token, please check the login URL configuration")
-
+            raise RuntimeError(
+                f"Login failed for {EMAIL}: could not retrieve access token. "
+                f"Server returned an error (check logs above for details). "
+                f"Please verify the credentials in config.ini section [{self.path}] are correct."
+            )
         if 'ADMIN' in EMAIL:
             print("Admin Authentication successful")
             token = 'Bearer ' + access_token

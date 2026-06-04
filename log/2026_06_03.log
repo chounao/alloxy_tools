@@ -50,3 +50,358 @@
 [2026-06-03 10:26:22,921][simple_request.py 273][INFO]: Response status code: 200
 [2026-06-03 10:26:28,923][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056555792174268416
 [2026-06-03 10:26:29,739][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 14:59:51,580][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 14:59:51,580][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 14:59:52,704][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 14:59:52,705][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 14:59:54,221][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 14:59:54,223][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 14:59:54,228][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 14:59:54,228][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 14:59:55,716][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 14:59:55,717][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:39:01,011][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-03 16:39:03,887][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 16:40:53,680][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-03 16:40:56,579][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 16:41:24,287][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:41:24,288][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:41:24,848][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 16:41:24,848][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:41:27,702][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:41:27,705][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:41:27,709][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 16:41:27,710][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:41:29,928][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:41:29,929][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:47:47,176][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:47:47,176][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:47:47,800][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:47:47,800][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryanzhou@teml.net",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:47:49,922][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-03 16:47:49,922][simple_request.py 304][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:49:51,931][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:49:51,932][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:49:52,525][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:49:52,525][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryanzhou@teml.net",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:49:54,879][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-03 16:49:54,879][simple_request.py 304][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:53:16,083][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 16:53:16,084][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:53:19,227][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:53:19,229][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:53:19,234][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 16:53:19,234][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:53:21,665][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:53:21,666][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:53:25,318][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:53:25,318][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:53:25,745][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:53:25,745][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryanzhou@teml.net",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:53:26,745][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-03 16:53:26,745][simple_request.py 304][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:55:03,097][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:55:03,098][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:55:03,739][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:55:03,739][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryanzhou@teml.net",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:55:06,292][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-03 16:55:06,292][simple_request.py 277][INFO]: Response status code: 400
+[2026-06-03 16:55:06,293][simple_request.py 279][ERROR]: Response content: {
+  "code": 100007,
+  "message": "登录账户和密码不匹配",
+  "originalUrl": "/web/user/login",
+  "timestamp": 1780476906146
+}
+[2026-06-03 16:55:06,293][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:55:37,544][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:55:37,545][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:55:38,193][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:55:38,193][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:55:39,524][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-03 16:55:39,525][simple_request.py 277][INFO]: Response status code: 400
+[2026-06-03 16:55:39,525][simple_request.py 279][ERROR]: Response content: {
+  "code": 100007,
+  "message": "登录账户和密码不匹配",
+  "originalUrl": "/web/user/login",
+  "timestamp": 1780476938991
+}
+[2026-06-03 16:55:39,525][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:57:03,856][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-03 16:57:03,856][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-03 16:57:04,514][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 16:57:04,514][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:57:06,043][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:57:06,043][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-03 16:57:06,045][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:57:06,052][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-03 16:57:06,052][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:57:07,645][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:57:07,645][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-03 16:57:07,648][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:57:19,153][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:57:19,153][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:57:19,760][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:57:19,760][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:57:21,217][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-03 16:57:21,217][simple_request.py 277][INFO]: Response status code: 400
+[2026-06-03 16:57:21,217][simple_request.py 279][ERROR]: Response content: {
+  "code": 100007,
+  "message": "登录账户和密码不匹配",
+  "originalUrl": "/web/user/login",
+  "timestamp": 1780477041081
+}
+[2026-06-03 16:57:21,217][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:58:22,832][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 16:58:22,833][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-03 16:58:23,474][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:58:23,474][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryan.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:58:25,348][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:58:25,348][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-03 16:58:25,349][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:58:25,355][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-03 16:58:25,355][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "1989908@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-03 16:58:26,832][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-03 16:58:26,832][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-03 16:58:26,833][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-03 16:58:47,623][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-03 16:58:50,904][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 16:58:50,904][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:02:24,106][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-03 17:02:27,111][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:02:27,111][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:03:56,170][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:03:59,441][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:03:59,441][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:04:25,596][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:04:27,439][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:04:27,439][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:07:37,539][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:07:37,544][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:07:40,904][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:07:40,904][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:10:45,083][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:10:45,090][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:10:47,628][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:10:47,628][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:10:47,630][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:10:47,938][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:10:47,939][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:10:47,939][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:10:48,246][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:10:48,246][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:11:30,915][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:11:30,920][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:11:33,766][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:11:33,766][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:11:33,767][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:11:34,077][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:11:34,077][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:11:34,077][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:11:34,383][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:11:34,383][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:13:29,834][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:13:29,839][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:13:34,282][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:13:34,282][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:13:34,283][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:13:34,596][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:13:34,596][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:13:34,596][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:13:34,907][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:13:34,907][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:13:44,921][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:13:44,925][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:13:47,453][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:13:47,453][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:13:47,454][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:13:47,766][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:13:47,766][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:13:47,766][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:13:48,068][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:13:48,068][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:14:05,049][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:14:05,054][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:14:07,998][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:14:07,998][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:14:07,999][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:14:08,362][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:14:08,363][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:14:08,363][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:14:08,673][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:14:08,673][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:14:30,357][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:14:30,361][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:14:33,310][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:14:33,310][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:14:33,310][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:14:33,626][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:14:33,627][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:14:33,627][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:14:33,941][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:14:33,941][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:18:13,590][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:18:13,600][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:18:15,902][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:18:15,902][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:18:15,903][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:18:16,217][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:18:16,217][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:18:16,217][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:18:16,532][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:18:16,532][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:18:35,647][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:18:35,654][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:18:40,052][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:18:40,052][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:18:40,053][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:18:40,682][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:18:40,682][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:18:40,683][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:18:41,001][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:18:41,001][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:43:55,304][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:43:55,309][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:43:58,622][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:43:58,622][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:43:58,624][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:43:59,366][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:43:59,366][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:43:59,366][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:43:59,679][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:43:59,680][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:44:13,839][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:44:13,843][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:44:23,675][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:44:23,676][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:44:23,676][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:44:25,153][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:44:25,154][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:44:25,154][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:44:25,471][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:44:25,471][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:44:55,814][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:44:55,821][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:45:00,707][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:45:00,707][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:45:00,708][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:45:01,310][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:45:01,310][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:45:01,311][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:45:01,768][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:45:01,768][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:46:21,751][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:46:21,757][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:46:28,982][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:46:28,982][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:46:28,983][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:46:30,214][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:46:30,214][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:46:30,214][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:46:30,554][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:46:30,554][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:49:19,505][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-03 17:49:19,509][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-03 17:49:22,943][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:49:22,943][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:49:22,945][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-03 17:49:23,541][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:49:23,541][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-03 17:49:23,541][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-03 17:49:23,902][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-03 17:49:23,902][simple_request.py 277][INFO]: Response status code: 200

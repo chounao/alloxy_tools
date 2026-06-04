@@ -169,8 +169,8 @@ class HttpRequest:
 
             # 打印响应状态码和格式化后的内容
             self.logger.info(f"Response status code: {response.status_code}")
-            # if response.status_code != 200 and response.status_code != 201:
-            #     self.logger.error(f"Response content: {self.format_response_content(response.text)}")
+            if response.status_code >= 400:
+                self.logger.error(f"Response content: {self.format_response_content(response.text)}")
 
             response.raise_for_status()
 
@@ -274,8 +274,9 @@ class HttpRequest:
             # print(response.text)
             # print(response.json())
 
-            # if response.status_code != 200 and response.status_code != 201:
-            #     self.logger.error(f"Response content: {self.format_response_content(response.text)}")
+            self.logger.info(f"Response status code: {response.status_code}")
+            if response.status_code >= 400:
+                self.logger.error(f"Response content: {self.format_response_content(response.text)}")
 
             response.raise_for_status()
 

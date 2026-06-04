@@ -88,14 +88,18 @@ def init_default_env(env='test'):
 
 
 if __name__ == '__main__':
+    import sys
+    # 将 common.execute 映射到当前模块，避免双重加载导致环境变量不同步
+    sys.modules.setdefault('common.execute', sys.modules['__main__'])
+
     # 初始化默认环境
-    init_default_env('test')
+    init_default_env('uat')
 
     # 执行登录认证
     from common import login
 
     login_instance = login.Login()
-    # login_instance.authenticate('ADMIN_EMAIL', 'ADMIN_PASSWORD')
-    # login_instance.authenticate('EMAIL', 'PASSWORD')
     user_req, admin_req = login_instance.login_tools()
+
+
 
