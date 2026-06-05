@@ -473,6 +473,83 @@ class SunRateTools:
         num = self.get_card_balance(bank_card_id)
         print(num)
 
+
+    # ==================== 寻汇卡相关 API ==============================
+
+
+    def get_acct_jnl_list(self, acct_id):
+        """
+        查询寻汇卡渠道账户流水
+
+        :param txn_date: 交易日期，格式如 '2026-06-03'，默认使用今天
+        :param current: 页码，默认 '1'
+        :param size: 每页大小，默认 '100'
+        :param acct_id: 账户ID
+        :return: 账户流水数据
+        """
+
+        txn_date = datetime.now().strftime('%Y-%m-%d')
+
+        url = f'{self.url}/web/virtual-card/getAcctJnlList'
+
+
+        data = {
+            "txnDate": txn_date,
+            "pageInfo": {
+                "current": 1,
+                "size": 100
+            },
+            "acctId": acct_id
+        }
+
+        response = self.user_http.requests('post', url, data)
+
+        print( response.json())
+        return response
+
+    def get_acct_bal_list(self, acct_id):
+        """
+        查询寻汇卡账户余额
+
+        :param acct_id: 账户ID
+        :return: 账户余额数据
+        """
+        url = f'{self.url}/web/virtual-card/getAcctBalList'
+
+
+        data = {
+            "acctId": acct_id
+        }
+
+
+        response = self.user_http.posts(url, data=data)
+        print( response.json())
+
+        return response
+
+    def get_sunrate_card_info(self, acct_id, last4):
+        """
+        查询虚拟卡信息
+
+        :param acct_id: 账户ID
+        :param card_id: 卡ID
+        :return: 虚拟卡信息
+        """
+        url = f'{self.url}/web/virtual-card/getSunrateCardInfo'
+
+        bank_card_id, card_id, category, product_code = self.get_card_data(last4)
+        data = {
+            "acctId": acct_id,
+            "cardId": bank_card_id
+        }
+
+
+        response = self.user_http.posts(url, data=data)
+        print( response.json())
+
+        # 恢复默认请求头
+        return response
+
 if __name__ == '__main__':
     import sys
     from common.execute import set_env
@@ -482,7 +559,7 @@ if __name__ == '__main__':
 
 
     amount = 100
-
+    acct_id = '31167445'
 
     # 创建SunRateTools对象
     sun_rate_tools = SunRateTools()
@@ -492,8 +569,13 @@ if __name__ == '__main__':
     """
     last4 = '9258'
     # sun_rate_tools.card_consume(amount,last4)
-    sun_rate_tools.get_all_fee_info(last4,amount)
+    # sun_rate_tools.get_all_fee_info(last4,amount)
 
+
+
+    sun_rate_tools.get_acct_jnl_list(acct_id)
+    sun_rate_tools.get_acct_bal_list(acct_id)
+    sun_rate_tools.get_sunrate_card_info(acct_id,last4)
 
 
 
