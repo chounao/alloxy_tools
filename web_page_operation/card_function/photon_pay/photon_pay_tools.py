@@ -85,7 +85,7 @@ class PhotonPayTools:
     def get_card_data(self, last4, force_refresh=False):
         if not force_refresh and last4 in self._card_data_cache:
             return self._card_data_cache[last4]
-        data_url = f'{self.url}/admin/virtual-card/get-all-cards?page=1&take=100'
+        data_url = f'{self.url}/admin/virtual-card/get-all-cards?page=1&take=200'
 
         try:
             response = self.admin_http.requests('get', data_url)
@@ -94,7 +94,7 @@ class PhotonPayTools:
             response.raise_for_status()
             data = response.json()
             card_data_list = data['data']['list']
-
+            # print("card_data_list:", card_data_list)
             for card in card_data_list:
                 if card['last4'] == last4:
                     bank_card_id = card['bank_card_id']
@@ -468,7 +468,7 @@ if __name__ == '__main__':
 
 
 
-    amount = 100
+    amount = 10
 
 
     # 创建PhotonPayTools对象
@@ -477,7 +477,7 @@ if __name__ == '__main__':
     """
     消费
     """
-    last4 = '8508'
+    last4 = '5742'
     photon_pay_tools.card_consume(amount,last4)
 
 
@@ -486,7 +486,7 @@ if __name__ == '__main__':
     """
     退款
     """
-    # source_id="IT2056322630953320448"
+    # source_id="IT2063903315922632704"
     # photon_pay_tools.card_refund(amount,last4,source_id)
 
 

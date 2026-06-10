@@ -1,5 +1,10 @@
 
-# photon_pay_tools.py
+"""
+
+寻汇的卡只能在uat环境验证
+date:2026-6-03
+
+"""
 from datetime import datetime
 from common.Sql import DatabaseConnection
 import json
@@ -435,20 +440,14 @@ class SunRateTools:
     # 消费
     def card_consume(self,amount, last4):
         bank_card_id, card_id, category ,product_code= self.get_card_data(last4)
-        num1 = self.get_card_balance(bank_card_id)
-        print('消费前的金额', num1)
-        # 消费
-        self.card_operation(last4,'auth',bank_card_id,amount)
         # 共享手续费
         fee_per_count, fee_prorate = self.calculate_transaction_fee(last4)
         print('手续费：',fee_per_count,'费率：',fee_prorate)
         num2 = amount + fee_per_count + fee_prorate* amount
-        num3 = self.get_authorization_fee( last4,amount)
+        num3 = self.get_authorization_fee( last4,amount) - 0.25
         print('手续费和消费金额：',num2,'授权费：',num3)
-        num = num1 - num2 - num3
-        print('剩下额度',num)
-        later_num = self.get_card_balance(bank_card_id)
-        print('三方返回的值',later_num)
+
+
 
     # 退款
     def card_refund(self, amount, last4,originTransactionId):
@@ -476,7 +475,6 @@ class SunRateTools:
 
     # ==================== 寻汇卡相关 API ==============================
 
-
     def get_acct_jnl_list(self, acct_id):
         """
         查询寻汇卡渠道账户流水
@@ -503,8 +501,8 @@ class SunRateTools:
         }
 
         response = self.user_http.requests('post', url, data)
-
-        print( response.json())
+        print("查询寻汇卡渠道账户流水")
+        print(response.json())
         return response
 
     def get_acct_bal_list(self, acct_id):
@@ -522,7 +520,8 @@ class SunRateTools:
         }
 
 
-        response = self.user_http.posts(url, data=data)
+        response = self.user_http.requests('post', url, data)
+        print("查询寻汇卡账户余额")
         print( response.json())
 
         return response
@@ -545,11 +544,26 @@ class SunRateTools:
 
 
         response = self.user_http.posts(url, data=data)
+        print("查询虚拟卡信息")
         print( response.json())
 
         # 恢复默认请求头
         return response
+    #查询注册用户
+    def get_register_user(self):
+        """
+        查询注册用户
 
+        :param acct_id: 账户ID
+        :return: 注册用户信息
+        """
+        url = f'{self.url}/web/virtual-card/getRegisterUser'
+        body ={"acctId": "63877812", "outBizId": "mq0bzcszqr8jvwlhvhb"}
+
+        requests = self.user_http.requests("post",url, body)
+        print("查询注册用户")
+        print(requests.json())
+        return  requests
 if __name__ == '__main__':
     import sys
     from common.execute import set_env
@@ -558,8 +572,8 @@ if __name__ == '__main__':
     set_env('uat')
 
 
-    amount = 100
-    acct_id = '31167445'
+    amount = 21
+    acct_id = '63877812'
 
     # 创建SunRateTools对象
     sun_rate_tools = SunRateTools()
@@ -567,7 +581,7 @@ if __name__ == '__main__':
     """
     消费
     """
-    last4 = '9258'
+    last4 = '3603'
     # sun_rate_tools.card_consume(amount,last4)
     # sun_rate_tools.get_all_fee_info(last4,amount)
 
@@ -575,8 +589,8 @@ if __name__ == '__main__':
 
     sun_rate_tools.get_acct_jnl_list(acct_id)
     sun_rate_tools.get_acct_bal_list(acct_id)
-    sun_rate_tools.get_sunrate_card_info(acct_id,last4)
-
+    # sun_rate_tools.get_sunrate_card_info(acct_id,last4)
+    # sun_rate_tools.get_register_user()
 
 
     """

@@ -1,0 +1,899 @@
+[2026-06-08 09:32:41,847][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 09:32:41,847][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 09:32:41,847][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 09:32:41,847][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-08 09:32:42,836][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-08 09:32:42,836][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryan.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 09:32:44,438][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 09:32:44,438][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 09:32:44,441][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 09:32:44,446][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-08 09:32:44,447][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "1989908@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 09:32:45,444][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 09:32:45,444][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 09:32:45,445][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 10:05:02,593][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 10:05:02,594][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 10:05:03,080][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 10:05:03,084][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 10:05:05,925][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 10:05:05,926][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 10:05:05,927][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-08 10:05:06,368][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 10:05:06,368][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 10:05:06,369][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-08 10:05:06,891][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 10:05:06,891][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 10:05:06,892][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 10:05:06,892][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 10:05:09,180][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 10:05:09,180][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 10:16:13,227][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 10:16:13,228][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 10:16:13,709][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 10:16:13,712][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 10:16:13,712][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 10:16:16,120][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 10:16:16,121][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:12:43,484][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:12:43,484][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:12:43,957][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:12:43,961][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:12:43,962][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:12:46,109][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:12:46,110][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:12:58,091][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:12:58,091][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:12:58,498][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:12:58,501][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:12:58,502][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:13:00,559][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:13:00,559][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:13:13,113][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:13:13,113][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:13:13,515][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:13:13,519][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:13:13,519][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:13:15,241][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:13:15,241][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:14:16,601][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:14:16,601][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:14:17,054][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:14:17,057][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:14:17,057][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:14:19,547][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:14:19,547][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:15:00,746][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:15:00,746][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:15:01,172][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:15:01,176][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:15:01,176][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:15:02,849][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:15:02,850][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:15:11,432][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:15:11,432][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:15:11,748][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:15:11,752][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:15:11,752][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:15:13,412][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:15:13,412][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:17:38,844][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:17:38,844][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:17:39,270][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:17:39,274][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:17:39,274][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:17:41,076][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:17:41,076][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:22:33,072][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:22:33,072][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:22:33,473][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:22:33,477][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 11:22:33,477][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 11:22:35,789][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:22:35,790][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:22:35,790][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:22:35,790][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:22:36,977][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:22:36,977][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:24:47,547][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:24:47,547][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:24:47,964][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:24:47,967][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 11:24:47,967][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 11:24:49,939][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:24:49,939][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:24:49,939][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:24:49,939][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:24:50,540][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:24:50,541][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:25:35,487][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 11:25:35,488][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 11:25:35,910][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 11:25:35,914][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 11:25:35,914][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 11:25:39,139][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:25:39,139][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:25:39,139][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 11:25:39,139][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 11:25:39,719][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:25:39,719][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:25:39,720][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 11:25:41,484][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 11:25:41,484][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 11:25:41,485][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getSunrateCardInfo
+[2026-06-08 11:25:41,485][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "cardId": "2062770265477246978"
+}
+[2026-06-08 11:25:42,154][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:25:42,155][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 11:25:42,155][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getRegisterUser
+[2026-06-08 11:25:42,155][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "outBizId": "mq0bzcszqr8jvwlhvhb"
+}
+[2026-06-08 11:25:43,540][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 11:25:43,540][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:28:51,738][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:28:51,738][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:28:52,607][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 14:28:54,550][simple_request.py 273][INFO]: Response status code: 401
+[2026-06-08 14:28:54,551][simple_request.py 277][INFO]: Response status code: 401
+[2026-06-08 14:28:54,551][simple_request.py 279][ERROR]: Response content: {
+  "code": 401,
+  "message": "Unauthorized",
+  "originalUrl": "/admin/virtual-card/get-all-cards?page=1&take=100",
+  "timestamp": 1780900138786
+}
+[2026-06-08 14:28:54,551][simple_request.py 305][ERROR]: Error occurred during request: 401 Client Error: Unauthorized for url: https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 14:29:25,126][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:29:25,127][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:29:25,127][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:29:25,127][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-08 14:29:25,569][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-08 14:29:25,569][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 14:29:27,624][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:29:27,624][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:29:27,627][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 14:29:27,633][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-08 14:29:27,634][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 14:29:29,650][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:29:29,651][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:29:29,652][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 14:29:33,823][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:29:33,823][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:29:34,156][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 14:29:34,159][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 14:29:34,159][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 14:29:36,761][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:29:36,761][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:29:36,761][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 14:29:36,761][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 14:29:37,530][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:29:37,530][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:29:37,531][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 14:29:40,821][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:29:40,822][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:29:40,823][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getSunrateCardInfo
+[2026-06-08 14:29:40,823][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "cardId": "2062770265477246978"
+}
+[2026-06-08 14:29:41,750][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:29:41,750][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:29:41,750][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getRegisterUser
+[2026-06-08 14:29:41,750][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "outBizId": "mq0bzcszqr8jvwlhvhb"
+}
+[2026-06-08 14:29:43,413][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:29:43,413][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:29:48,949][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:29:48,949][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:29:49,259][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 14:29:52,324][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:29:52,324][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:29:58,335][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056628140185337856
+[2026-06-08 14:30:00,019][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:30:00,020][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:30:00,020][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2056628140185337856
+[2026-06-08 14:30:00,976][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:30:00,976][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:30:00,976][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 14:30:00,976][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608143000",
+  "cardID": "XR2056628140185337856",
+  "cvv": "905",
+  "expirationDate": "07/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 10,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 14:30:04,391][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:30:04,392][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:30:04,392][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 14:30:04,858][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:30:04,858][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:30:04,858][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 14:30:05,315][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:30:05,315][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:30:11,321][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056628140185337856
+[2026-06-08 14:30:12,266][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:30:12,266][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:36:20,295][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:36:20,295][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:36:20,751][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 14:36:22,993][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:36:22,993][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:36:29,006][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056628140185337856
+[2026-06-08 14:36:30,611][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:36:30,612][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:36:30,612][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2056628140185337856
+[2026-06-08 14:36:31,659][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:36:31,659][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:36:31,659][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 14:36:31,659][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608143630",
+  "cardID": "XR2056628140185337856",
+  "cvv": "905",
+  "expirationDate": "07/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 10,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 14:36:33,788][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:36:33,788][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:36:33,788][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 14:36:34,502][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:36:34,502][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:36:34,502][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 14:36:35,329][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:36:35,329][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:36:41,333][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2056628140185337856
+[2026-06-08 14:36:42,146][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:36:42,146][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:41:42,611][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:41:42,612][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:41:43,076][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 14:41:46,448][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:41:46,448][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:42:14,940][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:42:14,941][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:42:15,417][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 14:42:15,421][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 14:42:17,497][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:42:17,498][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:42:17,498][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-08 14:42:18,023][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:42:18,023][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:42:18,023][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-08 14:42:18,412][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:42:18,413][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:42:29,693][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:42:29,693][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:42:30,145][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 14:42:30,148][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 14:42:33,102][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:42:33,102][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:42:33,103][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-08 14:42:34,206][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:42:34,206][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:42:34,207][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-08 14:42:34,660][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:42:34,660][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:43:13,985][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:43:13,985][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:43:14,430][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 14:43:14,434][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 14:43:17,472][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:43:17,472][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:43:17,474][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-08 14:43:17,977][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:43:17,978][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:43:17,978][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-08 14:43:18,498][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:43:18,499][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:43:34,269][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:43:34,269][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:43:34,680][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 14:43:34,684][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 14:43:41,042][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:43:41,042][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:43:41,044][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-08 14:43:41,602][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:43:41,602][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:43:41,602][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-08 14:43:43,457][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:43:43,457][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:44:59,551][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:44:59,551][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:44:59,982][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 14:44:59,986][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 14:44:59,986][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 14:45:03,172][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:45:03,173][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:45:25,778][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 14:45:25,778][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 14:45:26,186][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 14:45:26,190][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 14:45:26,190][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 14:45:28,148][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:45:28,148][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:45:28,149][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 14:45:28,149][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 14:45:28,855][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:45:28,855][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:45:28,855][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 14:45:31,403][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 14:45:31,403][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 14:45:31,404][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getSunrateCardInfo
+[2026-06-08 14:45:31,404][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "cardId": "2062770265477246978"
+}
+[2026-06-08 14:45:32,118][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:45:32,119][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 14:45:32,119][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getRegisterUser
+[2026-06-08 14:45:32,119][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "outBizId": "mq0bzcszqr8jvwlhvhb"
+}
+[2026-06-08 14:45:33,497][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 14:45:33,498][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:12:11,244][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:12:11,245][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:12:11,245][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 15:12:11,245][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-08 15:12:11,699][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-08 15:12:11,699][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryan.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 15:12:13,946][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:12:13,946][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:12:13,949][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 15:12:13,955][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-08 15:12:13,955][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "1989908@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 15:12:16,573][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:12:16,574][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:12:16,574][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 15:12:35,827][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:12:35,827][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:12:36,237][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 15:12:42,661][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:12:42,662][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:20:36,833][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:20:36,833][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:20:37,281][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 15:20:39,872][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:20:39,872][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:20:51,988][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:20:51,988][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:21:07,832][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:21:07,832][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:21:07,832][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:21:07,832][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-08 15:21:08,274][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-08 15:21:08,274][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 15:21:10,024][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:21:10,027][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:21:10,035][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 15:21:10,037][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-08 15:21:10,037][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-08 15:21:11,242][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:21:11,242][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:21:11,243][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-08 15:21:13,705][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:21:13,705][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:21:14,019][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 15:21:16,342][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:21:16,342][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:21:47,490][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:21:47,490][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:21:47,911][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 15:21:50,055][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:21:50,056][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:26:33,351][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:26:33,352][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:26:33,809][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 15:26:33,814][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 15:26:33,814][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 15:26:36,113][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:26:36,113][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:26:36,113][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 15:26:36,114][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 15:26:36,714][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:26:36,714][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:26:36,714][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 15:26:38,520][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:26:38,520][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:26:38,522][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getSunrateCardInfo
+[2026-06-08 15:26:38,522][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "cardId": "2062770265477246978"
+}
+[2026-06-08 15:26:39,711][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:26:39,711][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:26:39,711][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getRegisterUser
+[2026-06-08 15:26:39,712][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "outBizId": "mq0bzcszqr8jvwlhvhb"
+}
+[2026-06-08 15:26:40,951][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:26:40,951][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:27:03,607][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:27:03,607][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:27:04,030][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 15:27:04,034][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 15:27:06,206][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:27:06,206][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:27:06,207][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-08 15:27:06,573][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:27:06,573][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:27:06,573][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-08 15:27:07,249][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:27:07,249][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:29:02,167][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:29:02,168][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:29:02,602][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 15:29:02,606][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=20
+[2026-06-08 15:29:05,370][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:29:05,371][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:29:05,373][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/transaction-fee-list?page=1&take=100&identifier_id=9738483283
+[2026-06-08 15:29:05,986][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:29:05,986][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:29:05,987][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9738483283
+[2026-06-08 15:29:06,511][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 15:29:06,511][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 15:29:06,512][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 15:29:06,512][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 15:29:09,343][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:29:09,343][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:29:53,215][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 15:29:53,215][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 15:29:53,667][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-08 15:29:53,671][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-08 15:29:53,671][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-08",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-08 15:29:55,791][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:29:55,791][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 15:29:55,792][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-08 15:29:55,792][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-08 15:29:56,836][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 15:29:56,837][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 16:27:23,924][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:27:23,924][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:27:24,410][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 16:27:26,586][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:27:26,586][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:28:34,582][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:28:34,583][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:28:34,996][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=100
+[2026-06-08 16:28:39,768][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:28:39,769][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:29:09,487][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:29:09,487][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:29:09,946][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 16:29:12,726][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:29:12,726][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:29:18,757][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2055164125110194176
+[2026-06-08 16:29:21,586][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:29:21,586][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:29:21,587][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2055164125110194176
+[2026-06-08 16:29:23,217][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-08 16:29:23,218][simple_request.py 277][INFO]: Response status code: 400
+[2026-06-08 16:29:23,218][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: 参数错误，请检查报文内容！",
+  "originalUrl": "/web/virtual-card/card-cvv/XR2055164125110194176",
+  "timestamp": 1780907363091
+}
+[2026-06-08 16:29:23,218][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2055164125110194176
+[2026-06-08 16:29:53,971][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:29:53,972][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:29:54,431][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 16:30:00,190][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:30:00,191][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:30:06,205][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2055164125110194176
+[2026-06-08 16:30:08,426][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:30:08,427][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:30:08,427][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2055164125110194176
+[2026-06-08 16:30:10,372][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-08 16:30:10,373][simple_request.py 277][INFO]: Response status code: 400
+[2026-06-08 16:30:10,373][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: 参数错误，请检查报文内容！",
+  "originalUrl": "/web/virtual-card/card-cvv/XR2055164125110194176",
+  "timestamp": 1780907410229
+}
+[2026-06-08 16:30:10,373][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2055164125110194176
+[2026-06-08 16:37:34,247][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:37:34,247][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:37:34,692][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 16:37:38,220][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:37:38,220][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:37:44,231][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:37:48,662][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:37:48,663][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:37:48,663][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2063902975248678912
+[2026-06-08 16:37:49,559][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:37:49,560][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:37:49,560][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 16:37:49,560][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608163748",
+  "cardID": "XR2063902975248678912",
+  "cvv": "420",
+  "expirationDate": "08/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 10,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 16:37:51,522][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 16:37:51,523][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 16:37:51,523][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:37:52,046][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:37:52,047][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:37:52,047][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:37:52,380][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:37:52,380][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:37:58,384][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:37:59,258][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:37:59,259][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:42:13,797][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:42:13,797][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:42:14,263][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 16:42:16,626][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:42:16,627][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:42:22,641][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:42:24,565][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:42:24,565][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:42:24,565][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2063902975248678912
+[2026-06-08 16:42:25,364][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:42:25,364][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:42:25,364][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 16:42:25,365][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608164224",
+  "cardID": "XR2063902975248678912",
+  "cvv": "420",
+  "expirationDate": "08/28",
+  "originTransactionId": "IT2063903315922632704",
+  "txnCurrency": "USD",
+  "txnAmount": 10,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 16:42:27,557][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 16:42:27,557][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 16:42:27,557][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:42:28,513][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:42:28,513][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:42:28,514][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:42:28,756][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:42:28,756][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:42:34,757][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:42:35,591][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:42:35,591][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:52:55,934][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:52:55,934][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:52:56,368][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 16:52:59,909][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:52:59,909][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:53:05,910][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:53:08,012][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:53:08,012][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:53:08,012][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2063902975248678912
+[2026-06-08 16:53:09,053][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:53:09,053][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:53:09,053][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 16:53:09,053][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608165308",
+  "cardID": "XR2063902975248678912",
+  "cvv": "420",
+  "expirationDate": "08/28",
+  "originTransactionId": "IT2063903315922632704",
+  "txnCurrency": "USD",
+  "txnAmount": 100,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 16:53:10,041][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 16:53:10,042][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 16:53:10,042][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:53:10,476][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:53:10,477][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:53:10,477][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:53:10,975][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:53:10,975][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:53:16,971][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:53:17,935][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:53:17,935][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:54:55,433][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:54:55,433][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:54:55,831][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 16:54:59,118][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:54:59,119][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:55:05,129][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:55:08,002][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:55:08,002][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:55:08,002][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2063902975248678912
+[2026-06-08 16:55:09,036][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:55:09,037][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:55:09,037][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 16:55:09,037][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608165508",
+  "cardID": "XR2063902975248678912",
+  "cvv": "420",
+  "expirationDate": "08/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 100,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 16:55:12,821][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 16:55:12,822][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 16:55:12,822][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:55:13,278][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:55:13,279][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:55:13,279][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:55:14,294][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:55:14,294][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:55:20,297][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:55:21,265][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:55:21,265][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:56:57,518][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 16:56:57,519][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 16:56:57,977][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 16:57:01,601][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:57:01,601][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:57:07,615][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:57:11,002][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:57:11,002][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:57:11,003][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2063902975248678912
+[2026-06-08 16:57:12,013][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:57:12,013][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:57:12,013][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 16:57:12,013][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608165711",
+  "cardID": "XR2063902975248678912",
+  "cvv": "420",
+  "expirationDate": "08/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 16,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 16:57:14,900][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 16:57:14,900][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 16:57:14,901][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:57:15,402][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:57:15,403][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:57:15,403][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 16:57:15,915][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:57:15,915][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 16:57:21,917][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 16:57:22,909][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 16:57:22,909][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 17:35:32,515][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 17:35:32,515][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 17:35:32,985][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 17:35:52,416][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-08 17:35:52,416][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-08 17:35:52,835][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-08 17:35:55,301][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 17:35:55,301][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 17:36:01,315][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 17:36:03,106][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 17:36:03,106][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 17:36:03,107][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2063902975248678912
+[2026-06-08 17:36:04,130][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 17:36:04,130][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 17:36:04,130][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-08 17:36:04,130][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260608173603",
+  "cardID": "XR2063902975248678912",
+  "cvv": "420",
+  "expirationDate": "08/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 10,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-08 17:36:07,131][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-08 17:36:07,131][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-08 17:36:07,131][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 17:36:07,598][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 17:36:07,599][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 17:36:07,599][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id=9498570428
+[2026-06-08 17:36:08,061][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 17:36:08,062][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-08 17:36:14,066][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2063902975248678912
+[2026-06-08 17:36:15,014][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-08 17:36:15,015][simple_request.py 277][INFO]: Response status code: 200
