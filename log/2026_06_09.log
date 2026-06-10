@@ -1,0 +1,72 @@
+[2026-06-09 10:57:35,144][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-09 10:57:35,144][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-09 10:57:35,144][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-09 10:57:35,144][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-09 10:57:35,898][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-09 10:57:35,899][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-09 10:57:37,631][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-09 10:57:37,631][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-09 10:57:37,634][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-09 10:57:37,638][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-09 10:57:37,639][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-09 10:57:39,521][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-09 10:57:39,522][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-09 10:57:39,523][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-09 10:57:45,561][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-09 10:57:45,561][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-09 10:57:45,561][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-09 10:57:45,561][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-09 10:57:45,884][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-09 10:57:45,884][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryan.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-09 10:57:48,703][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-09 10:57:48,704][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-09 10:57:48,705][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-09 10:57:48,712][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-09 10:57:48,712][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "1989908@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-09 10:57:51,334][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-09 10:57:51,334][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-09 10:57:51,336][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-09 11:39:13,896][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-09 11:39:13,896][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-09 11:39:14,522][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-09 11:39:14,525][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-09 11:39:14,525][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-09",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-09 11:39:17,185][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-09 11:39:17,185][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-09 11:39:17,186][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-09 11:39:17,186][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-09 11:39:17,845][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-09 11:39:17,845][simple_request.py 277][INFO]: Response status code: 201

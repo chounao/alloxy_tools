@@ -119,7 +119,7 @@ if __name__ == '__main__':
     sys.modules.setdefault('common.execute', sys.modules['__main__'])
 
     # 初始化默认环境（这里会覆盖自动初始化的环境）
-    init_default_env('uat')
+    init_default_env('test')
 
     # 执行登录认证
     from common import login

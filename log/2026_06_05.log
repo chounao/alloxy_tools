@@ -193,3 +193,465 @@
 }
 [2026-06-05 10:37:41,154][simple_request.py 273][INFO]: Response status code: 201
 [2026-06-05 10:37:41,154][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 11:20:06,237][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 11:20:06,237][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 11:20:06,902][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 11:20:06,907][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getRegisterUser
+[2026-06-05 11:20:06,907][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812",
+  "outBizId": "mq0bzcszqr8jvwlhvhb"
+}
+[2026-06-05 11:20:08,879][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 11:20:08,880][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:45:19,451][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 13:45:19,451][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 13:45:19,452][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 13:45:19,452][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-05 13:45:20,159][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-05 13:45:20,159][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryan.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-05 13:45:23,387][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:45:23,387][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:45:23,388][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-05 13:45:23,393][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-05 13:45:23,393][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "1989908@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-05 13:45:25,859][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:45:25,859][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:45:25,860][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-05 13:45:28,817][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 13:45:28,817][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 13:45:29,211][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 13:45:29,215][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 13:45:29,215][simple_request.py 255][INFO]: Request data: {
+  "acctId": "31167445"
+}
+[2026-06-05 13:45:32,768][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:45:32,768][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:45:43,289][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 13:45:43,289][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 13:45:43,832][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 13:45:43,838][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 13:45:43,838][simple_request.py 255][INFO]: Request data: {
+  "acctId": "31167445"
+}
+[2026-06-05 13:45:46,069][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:45:46,069][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:46:10,986][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 13:46:10,986][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 13:46:11,490][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 13:46:11,494][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 13:46:11,494][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "31167445"
+}
+[2026-06-05 13:46:15,952][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:46:15,952][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:46:15,953][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 13:46:15,953][simple_request.py 255][INFO]: Request data: {
+  "acctId": "31167445"
+}
+[2026-06-05 13:46:17,318][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:46:17,318][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:46:54,701][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 13:46:54,701][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 13:46:55,268][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 13:46:55,272][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 13:46:55,273][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 13:47:00,692][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:47:00,692][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:47:00,692][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 13:47:00,692][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 13:47:01,571][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:47:01,571][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:48:29,067][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 13:48:29,067][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 13:48:29,618][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 13:48:29,623][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 13:48:29,623][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 13:48:31,836][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:48:31,836][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 13:48:31,836][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 13:48:31,836][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 13:48:32,628][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 13:48:32,629][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:07:31,883][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:07:31,883][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:07:32,407][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:07:32,411][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:07:35,993][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:07:35,993][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:07:36,013][simple_request.py 122][ERROR]: JSONPath extraction error: Parse error at 1:0 near token . (.)
+[2026-06-05 14:07:36,013][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:07:36,013][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": null
+}
+[2026-06-05 14:07:37,669][simple_request.py 273][INFO]: Response status code: 400
+[2026-06-05 14:07:37,669][simple_request.py 277][INFO]: Response status code: 400
+[2026-06-05 14:07:37,669][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: 参数错误，请检查报文内容！",
+  "originalUrl": "/web/virtual-card/getAcctJnlList",
+  "timestamp": 1780639657529
+}
+[2026-06-05 14:07:37,669][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:07:52,700][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:07:52,700][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:07:53,212][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:07:53,217][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:07:55,442][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:07:55,442][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:07:55,462][simple_request.py 122][ERROR]: JSONPath extraction error: Parse error at 1:0 near token . (.)
+[2026-06-05 14:07:55,462][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:07:55,462][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:07:57,294][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:07:57,295][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:07:57,295][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:07:57,295][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:07:58,067][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:07:58,067][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:08:41,601][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:08:41,601][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:08:42,097][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:08:42,101][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual?page=1&?page=1&take=100
+[2026-06-05 14:08:45,306][simple_request.py 273][INFO]: Response status code: 404
+[2026-06-05 14:08:45,306][simple_request.py 277][INFO]: Response status code: 404
+[2026-06-05 14:08:45,306][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-06-05 14:08:45,306][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://uat-api.alloyx-payment.net/web/virtual?page=1&?page=1&take=100
+[2026-06-05 14:08:45,307][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:08:45,307][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:08:46,567][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:08:46,568][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:08:46,568][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:08:46,568][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:08:47,158][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:08:47,158][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:09:16,622][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:09:16,623][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:09:17,094][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:09:17,098][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:09:18,432][simple_request.py 273][INFO]: Response status code: 404
+[2026-06-05 14:09:18,432][simple_request.py 277][INFO]: Response status code: 404
+[2026-06-05 14:09:18,432][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-06-05 14:09:18,432][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:09:18,432][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:09:18,432][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:09:19,732][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:09:19,732][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:09:19,732][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:09:19,732][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:09:20,838][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:09:20,838][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:13:10,535][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:13:10,535][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:13:11,046][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:13:11,050][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:13:12,634][simple_request.py 273][INFO]: Response status code: 404
+[2026-06-05 14:13:12,634][simple_request.py 277][INFO]: Response status code: 404
+[2026-06-05 14:13:12,634][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-06-05 14:13:12,634][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:13:12,634][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:13:12,634][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:13:14,364][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:13:14,364][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:13:14,365][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:13:14,365][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:13:14,986][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:13:14,987][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:13:45,425][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:13:45,425][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:13:45,945][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:13:45,949][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:13:48,220][simple_request.py 273][INFO]: Response status code: 404
+[2026-06-05 14:13:48,220][simple_request.py 277][INFO]: Response status code: 404
+[2026-06-05 14:13:48,220][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-06-05 14:13:48,220][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:13:48,220][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:13:48,220][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:13:49,242][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:13:49,242][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:13:49,242][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:13:49,242][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:13:49,787][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:13:49,787][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:18:15,940][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:18:15,940][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:18:16,448][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:18:16,452][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:18:18,455][simple_request.py 273][INFO]: Response status code: 404
+[2026-06-05 14:18:18,456][simple_request.py 277][INFO]: Response status code: 404
+[2026-06-05 14:18:18,456][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-06-05 14:18:18,456][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://uat-api.alloyx-payment.net/web/virtual?page=1&take=100
+[2026-06-05 14:18:18,456][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:18:18,456][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:18:20,107][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:18:20,107][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:18:20,107][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:18:20,107][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:18:20,661][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:18:20,661][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:18:59,715][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:18:59,715][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:19:00,245][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:19:00,251][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:19:03,649][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:19:03,649][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:19:03,668][simple_request.py 122][ERROR]: JSONPath extraction error: Parse error at 1:0 near token . (.)
+[2026-06-05 14:19:03,668][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:19:03,668][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:19:05,656][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:19:05,656][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:19:05,657][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:19:05,657][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:19:06,214][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:19:06,214][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:19:17,995][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:19:17,995][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:19:18,491][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:19:18,495][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:19:21,703][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:19:21,703][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:19:21,703][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:19:21,703][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:19:23,025][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:19:23,026][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:19:23,026][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:19:23,026][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:19:23,609][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:19:23,609][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:20:26,832][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:20:26,832][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:20:27,580][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:20:27,585][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:20:32,680][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:20:32,681][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:20:32,702][simple_request.py 122][ERROR]: JSONPath extraction error: Parse error at 1:0 near token . (.)
+[2026-06-05 14:20:32,702][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:20:32,702][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:20:33,872][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:20:33,872][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:20:33,873][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctBalList
+[2026-06-05 14:20:33,873][simple_request.py 255][INFO]: Request data: {
+  "acctId": "63877812"
+}
+[2026-06-05 14:20:34,659][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:20:34,659][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:20:42,384][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:20:42,384][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:20:43,092][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:20:43,096][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:20:46,610][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:20:46,610][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:20:46,631][simple_request.py 122][ERROR]: JSONPath extraction error: Parse error at 1:0 near token . (.)
+[2026-06-05 14:20:58,907][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:20:58,908][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:20:58,908][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:20:58,908][execute.py 87][INFO]: ---测试开始---执行的是uat环境
+[2026-06-05 14:20:59,436][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-05 14:20:59,436][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "ryan.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-05 14:21:02,897][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:21:02,897][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:21:02,899][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-05 14:21:02,902][simple_request.py 253][INFO]: method:POST,url:https://uat-api.alloyx-payment.net/web/user/login
+[2026-06-05 14:21:02,902][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "1989908@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-05 14:21:06,230][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:21:06,230][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 14:21:06,231][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-05 14:21:06,898][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:21:06,898][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:21:07,582][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:21:07,586][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:21:10,424][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:21:10,424][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:21:10,446][simple_request.py 122][ERROR]: JSONPath extraction error: Parse error at 1:0 near token . (.)
+[2026-06-05 14:22:46,682][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:22:46,683][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:22:47,234][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:22:47,238][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:22:50,042][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:22:50,042][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:29:08,279][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:29:08,279][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:29:08,815][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:29:08,819][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:29:11,732][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:29:11,732][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:33:07,330][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:33:07,330][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:33:07,887][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:33:07,892][simple_request.py 253][INFO]: method:get,url:https://uat-api.alloyx-payment.net/web/virtual-card/get-holders?page=1&take=100
+[2026-06-05 14:33:11,519][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-05 14:33:11,519][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-05 14:35:17,808][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:35:17,808][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:35:18,365][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:35:43,613][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 14:35:43,614][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 14:35:44,132][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 14:35:44,137][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 14:35:44,137][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 14:35:48,104][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 14:35:48,104][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 17:41:05,465][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 17:41:05,465][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 17:41:06,188][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 17:41:06,194][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 17:41:06,194][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 17:41:08,570][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 17:41:08,570][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-05 17:42:11,670][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-05 17:42:11,671][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-05 17:42:12,169][execute.py 53][DEBUG]: Environment switched to: uat (config: UAT_CONFIG)
+[2026-06-05 17:42:12,175][simple_request.py 253][INFO]: method:post,url:https://uat-api.alloyx-payment.net/web/virtual-card/getAcctJnlList
+[2026-06-05 17:42:12,175][simple_request.py 255][INFO]: Request data: {
+  "txnDate": "2026-06-05",
+  "pageInfo": {
+    "current": 1,
+    "size": 100
+  },
+  "acctId": "63877812"
+}
+[2026-06-05 17:42:14,641][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-05 17:42:14,641][simple_request.py 277][INFO]: Response status code: 201

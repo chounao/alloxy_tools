@@ -24,7 +24,7 @@ class DatabaseConnection:
             'port': 5432,
             'user': 'random_0312',
             'password': 'UxpA_GoMhW8s7P84',
-            'database': 'sandbox'
+            'database': 'uat_sandbox'
         }
         self.connection = None
         self.cursor = None
