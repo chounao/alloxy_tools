@@ -1,0 +1,514 @@
+[2026-06-26 10:00:43,896][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:00:43,896][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:00:43,896][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:00:43,896][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-26 10:00:44,853][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-26 10:00:44,853][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-26 10:00:47,304][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:00:47,305][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:00:47,307][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-26 10:00:47,314][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-26 10:00:47,314][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-26 10:00:49,277][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:00:49,277][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:00:49,278][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-26 10:06:39,880][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:06:39,880][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:06:40,324][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:06:43,966][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:06:43,966][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:06:49,979][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935559255019520
+[2026-06-26 10:06:52,665][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:06:52,666][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:06:52,666][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2068935559255019520
+[2026-06-26 10:06:53,722][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:06:53,722][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:06:53,722][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:06:53,744][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626100652",
+  "cardID": "XR2068935559255019520",
+  "cvv": "603",
+  "expirationDate": "02/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 3,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:06:55,891][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:06:55,892][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:07:01,897][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935559255019520
+[2026-06-26 10:07:02,913][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:07:02,913][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:11:36,322][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:11:36,322][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:11:36,750][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:11:38,989][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:11:38,989][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:11:45,002][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935664456552448
+[2026-06-26 10:11:46,907][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:11:46,907][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:11:46,907][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2068935664456552448
+[2026-06-26 10:11:48,094][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:11:48,094][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:11:48,095][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:11:48,095][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626101146",
+  "cardID": "XR2068935664456552448",
+  "cvv": "218",
+  "expirationDate": "08/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 110,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:11:49,703][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:11:49,703][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:11:55,705][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935664456552448
+[2026-06-26 10:11:56,884][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:11:56,885][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:12:30,545][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:12:30,545][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:12:30,974][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:12:34,561][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:12:34,561][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:12:40,573][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935664456552448
+[2026-06-26 10:12:42,445][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:12:42,445][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:12:42,445][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2068935664456552448
+[2026-06-26 10:12:43,485][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:12:43,485][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:12:43,485][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:12:43,485][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626101242",
+  "cardID": "XR2068935664456552448",
+  "cvv": "218",
+  "expirationDate": "08/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 10,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:12:45,222][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:12:45,223][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:12:51,228][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935664456552448
+[2026-06-26 10:12:55,550][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:12:55,550][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:14:02,809][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:14:02,809][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:14:03,289][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:14:06,728][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:14:06,728][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:14:12,743][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935664456552448
+[2026-06-26 10:14:14,916][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:14:14,916][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:14:14,916][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2068935664456552448
+[2026-06-26 10:14:16,449][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:14:16,449][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:14:16,450][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:14:16,450][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626101414",
+  "cardID": "XR2068935664456552448",
+  "cvv": "218",
+  "expirationDate": "08/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 120,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:14:18,120][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:14:18,120][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:14:24,125][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068935664456552448
+[2026-06-26 10:14:25,783][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:14:25,784][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:19:44,224][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:19:44,224][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:19:44,661][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:19:48,221][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:19:48,221][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:19:54,232][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070330400295735296
+[2026-06-26 10:19:57,825][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:19:57,825][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:19:57,825][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2070330400295735296
+[2026-06-26 10:19:58,840][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:19:58,840][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:19:58,840][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:19:58,840][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626101957",
+  "cardID": "XR2070330400295735296",
+  "cvv": "248",
+  "expirationDate": "05/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 5,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:20:01,070][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:20:01,071][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:20:07,076][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070330400295735296
+[2026-06-26 10:20:08,368][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:20:08,369][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:21:26,543][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:21:26,543][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:21:26,975][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:21:30,072][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:21:30,072][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:21:36,087][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070330400295735296
+[2026-06-26 10:21:38,367][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:21:38,368][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:21:38,368][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2070330400295735296
+[2026-06-26 10:21:39,356][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:21:39,356][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:21:39,356][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:21:39,357][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626102138",
+  "cardID": "XR2070330400295735296",
+  "cvv": "248",
+  "expirationDate": "05/29",
+  "originTransactionId": "IT2070331209054015488",
+  "txnCurrency": "USD",
+  "txnAmount": 5,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:21:41,170][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:21:41,170][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:21:47,172][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070330400295735296
+[2026-06-26 10:21:48,237][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:21:48,238][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:27:05,871][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:27:05,871][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:27:06,466][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:27:10,733][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:27:10,733][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:27:16,747][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068934029919506432
+[2026-06-26 10:27:18,611][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:27:18,612][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:27:18,613][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2068934029919506432
+[2026-06-26 10:27:19,635][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:27:19,635][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:27:19,635][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:27:19,636][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626102718",
+  "cardID": "XR2068934029919506432",
+  "cvv": "510",
+  "expirationDate": "02/29",
+  "originTransactionId": "IT2070331209054015488",
+  "txnCurrency": "USD",
+  "txnAmount": 15,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:27:20,880][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:27:20,880][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:27:26,885][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068934029919506432
+[2026-06-26 10:27:28,021][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:27:28,022][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:29:17,695][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:29:17,695][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:29:18,127][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:29:21,467][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:29:21,467][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:29:27,481][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068934029919506432
+[2026-06-26 10:29:29,873][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:29:29,873][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:29:29,873][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2068934029919506432
+[2026-06-26 10:29:30,907][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:29:30,907][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:29:30,908][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:29:30,908][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626102929",
+  "cardID": "XR2068934029919506432",
+  "cvv": "510",
+  "expirationDate": "02/29",
+  "originTransactionId": "IT2070331209054015488",
+  "txnCurrency": "USD",
+  "txnAmount": 15,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:29:32,161][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:29:32,161][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:29:38,166][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068934029919506432
+[2026-06-26 10:29:39,166][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:29:39,166][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:31:17,377][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:31:17,378][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:31:17,811][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:31:21,341][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:31:21,341][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:31:27,355][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070333911796404224
+[2026-06-26 10:31:31,338][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:31:31,339][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:31:31,339][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2070333911796404224
+[2026-06-26 10:31:32,358][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:31:32,358][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:31:32,358][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:31:32,358][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626103131",
+  "cardID": "XR2070333911796404224",
+  "cvv": "558",
+  "expirationDate": "06/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 20,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:31:35,223][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:31:35,224][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:31:41,229][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070333911796404224
+[2026-06-26 10:31:43,501][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:31:43,501][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:33:14,984][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:33:14,985][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:33:15,439][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:33:19,671][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:33:19,671][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:33:25,685][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070333911796404224
+[2026-06-26 10:33:27,886][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:33:27,886][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:33:27,887][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2070333911796404224
+[2026-06-26 10:33:29,026][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:33:29,027][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:33:29,027][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:33:29,027][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626103327",
+  "cardID": "XR2070333911796404224",
+  "cvv": "558",
+  "expirationDate": "06/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 30,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:33:31,132][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:33:31,132][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:33:37,136][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070333911796404224
+[2026-06-26 10:33:38,189][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:33:38,189][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:34:27,257][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:34:27,258][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:34:27,668][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:34:30,840][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:34:30,840][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:34:36,849][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070333911796404224
+[2026-06-26 10:34:39,342][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:34:39,342][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:34:39,342][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2070333911796404224
+[2026-06-26 10:34:40,408][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:34:40,408][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:34:40,409][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:34:40,409][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626103439",
+  "cardID": "XR2070333911796404224",
+  "cvv": "558",
+  "expirationDate": "06/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 3,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:34:42,412][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:34:42,412][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:34:48,418][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070333911796404224
+[2026-06-26 10:34:49,498][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:34:49,498][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:42:38,094][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 10:42:38,094][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 10:42:38,544][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 10:42:40,792][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:42:40,792][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:42:46,805][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068883539869421568
+[2026-06-26 10:42:48,938][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:42:48,938][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:42:48,938][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2068883539869421568
+[2026-06-26 10:42:50,077][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:42:50,078][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 10:42:50,078][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 10:42:50,078][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626104248",
+  "cardID": "XR2068883539869421568",
+  "cvv": "580",
+  "expirationDate": "03/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 100,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 10:42:51,817][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 10:42:51,817][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 10:42:57,822][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2068883539869421568
+[2026-06-26 10:42:58,667][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 10:42:58,668][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:53:10,545][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 17:53:10,545][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 17:53:10,545][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 17:53:10,545][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-26 17:53:11,264][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-26 17:53:11,264][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-26 17:53:12,340][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 17:53:12,341][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 17:53:12,344][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-26 17:53:12,352][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-26 17:53:12,352][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-26 17:53:15,570][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 17:53:15,570][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 17:53:15,570][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-26 17:53:27,573][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 17:53:27,573][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 17:53:27,997][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 17:53:31,419][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:53:31,419][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:53:37,433][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070445062228135936
+[2026-06-26 17:53:39,747][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:53:39,747][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:53:39,748][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2070445062228135936
+[2026-06-26 17:53:41,203][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:53:41,203][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:53:41,203][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 17:53:41,204][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626175339",
+  "cardID": "XR2070445062228135936",
+  "cvv": "252",
+  "expirationDate": "05/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 10,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 17:53:42,738][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 17:53:42,738][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 17:53:48,740][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070445062228135936
+[2026-06-26 17:53:49,575][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:53:49,575][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:59:07,838][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-26 17:59:07,838][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-26 17:59:08,264][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-06-26 17:59:12,266][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:59:12,266][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:59:18,276][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070445062228135936
+[2026-06-26 17:59:20,499][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:59:20,500][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:59:20,500][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2070445062228135936
+[2026-06-26 17:59:21,336][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:59:21,336][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-26 17:59:21,336][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-06-26 17:59:21,336][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260626175920",
+  "cardID": "XR2070445062228135936",
+  "cvv": "252",
+  "expirationDate": "05/29",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 3,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-06-26 17:59:23,063][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-26 17:59:23,063][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-26 17:59:29,066][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2070445062228135936
+[2026-06-26 17:59:29,921][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-26 17:59:29,921][simple_request.py 277][INFO]: Response status code: 200

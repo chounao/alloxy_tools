@@ -1,0 +1,107 @@
+[2026-06-29 10:58:51,286][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 10:58:51,286][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:05:10,154][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:05:10,154][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:05:10,154][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:05:10,154][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-06-29 11:05:10,632][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-29 11:05:10,632][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-29 11:05:12,159][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-29 11:05:12,159][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-29 11:05:12,161][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-29 11:05:12,167][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-06-29 11:05:12,167][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-06-29 11:05:14,085][simple_request.py 273][INFO]: Response status code: 201
+[2026-06-29 11:05:14,086][simple_request.py 277][INFO]: Response status code: 201
+[2026-06-29 11:05:14,087][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-06-29 11:05:16,733][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:05:16,733][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:05:33,174][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:05:33,174][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:05:59,137][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:05:59,137][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:06:27,726][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:06:27,726][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:06:28,173][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:06:30,336][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:06:30,336][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:08:38,006][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:08:38,006][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:08:38,424][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:08:40,295][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:08:40,295][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:09:21,727][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:09:21,727][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:09:22,146][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:09:23,707][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:09:23,707][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:09:57,342][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:09:57,342][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:09:57,734][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:09:59,275][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:09:59,276][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:11:03,290][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:11:03,290][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:11:03,737][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:11:05,656][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:11:05,656][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:11:44,772][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:11:44,773][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:11:45,194][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:11:46,845][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:11:46,845][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:11:46,846][simple_request.py 253][INFO]: method:delect,url:https://ax-api.pertest.tech/web/crypto/payer/fiat/None
+[2026-06-29 11:11:58,932][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:11:58,932][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:11:59,352][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:12:00,800][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:12:00,800][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:12:00,800][simple_request.py 253][INFO]: method:delect,url:https://ax-api.pertest.tech/web/crypto/payer/fiat/None
+[2026-06-29 11:12:18,170][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:12:18,170][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:12:18,585][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:12:21,137][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:12:21,138][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:12:21,138][simple_request.py 253][INFO]: method:delect,url:https://ax-api.pertest.tech/web/crypto/payer/fiat/None
+[2026-06-29 11:12:40,355][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:12:40,356][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:12:40,851][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:12:43,258][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:12:43,259][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:12:43,261][simple_request.py 253][INFO]: method:delete,url:https://ax-api.pertest.tech/web/crypto/payer/fiat/None
+[2026-06-29 11:12:43,674][simple_request.py 273][INFO]: Response status code: 500
+[2026-06-29 11:12:43,674][simple_request.py 277][INFO]: Response status code: 500
+[2026-06-29 11:12:43,674][simple_request.py 279][ERROR]: Response content: {
+  "code": 500,
+  "message": "System exception",
+  "originalUrl": "/web/crypto/payer/fiat/None",
+  "timestamp": 1782702763562
+}
+[2026-06-29 11:12:43,674][simple_request.py 305][ERROR]: Error occurred during request: 500 Server Error: Internal Server Error for url: https://ax-api.pertest.tech/web/crypto/payer/fiat/None
+[2026-06-29 11:17:02,473][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-06-29 11:17:02,473][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-06-29 11:17:02,906][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/crypto/payer/fiat?page=1&take=10
+[2026-06-29 11:17:04,329][simple_request.py 273][INFO]: Response status code: 200
+[2026-06-29 11:17:04,330][simple_request.py 277][INFO]: Response status code: 200
+[2026-06-29 11:17:04,330][simple_request.py 253][INFO]: method:delete,url:https://ax-api.pertest.tech/web/crypto/payer/fiat/None
+[2026-06-29 11:17:04,739][simple_request.py 273][INFO]: Response status code: 500
+[2026-06-29 11:17:04,739][simple_request.py 277][INFO]: Response status code: 500
+[2026-06-29 11:17:04,739][simple_request.py 279][ERROR]: Response content: {
+  "code": 500,
+  "message": "System exception",
+  "originalUrl": "/web/crypto/payer/fiat/None",
+  "timestamp": 1782703024598
+}
+[2026-06-29 11:17:04,739][simple_request.py 305][ERROR]: Error occurred during request: 500 Server Error: Internal Server Error for url: https://ax-api.pertest.tech/web/crypto/payer/fiat/None

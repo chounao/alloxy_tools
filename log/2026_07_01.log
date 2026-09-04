@@ -1,0 +1,521 @@
+[2026-07-01 09:57:35,237][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 09:57:35,238][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 09:57:35,238][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 09:57:35,238][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-07-01 09:57:36,189][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-07-01 09:57:36,189][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-07-01 09:57:37,376][simple_request.py 273][INFO]: Response status code: 201
+[2026-07-01 09:57:37,377][simple_request.py 277][INFO]: Response status code: 201
+[2026-07-01 09:57:37,381][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-07-01 09:57:37,388][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-07-01 09:57:37,388][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-07-01 09:57:38,390][simple_request.py 273][INFO]: Response status code: 201
+[2026-07-01 09:57:38,390][simple_request.py 277][INFO]: Response status code: 201
+[2026-07-01 09:57:38,391][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-07-01 13:47:03,249][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 13:47:03,249][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 13:47:04,075][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 13:47:09,226][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:47:09,226][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:47:09,228][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 13:47:11,655][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:47:11,655][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:47:11,660][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 13:47:12,934][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:47:12,934][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:47:12,935][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 13:47:13,500][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:47:13,500][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:02,814][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 13:57:02,814][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 13:57:03,241][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 13:57:05,597][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:05,597][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:05,602][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 13:57:07,127][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:07,127][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:07,133][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 13:57:07,854][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:07,855][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:07,856][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 13:57:08,872][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:08,872][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:31,294][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 13:57:31,294][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 13:57:31,636][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 13:57:35,272][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:35,272][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:35,275][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 13:57:36,855][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:36,856][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:36,859][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 13:57:37,366][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:37,367][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 13:57:37,368][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 13:57:37,726][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 13:57:37,726][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:02:02,428][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:02:02,428][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:02:02,927][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:02:06,517][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:02:06,517][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:02:06,522][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:02:09,207][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:02:09,208][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:02:09,212][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:02:10,045][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:02:10,046][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:02:10,047][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:02:10,882][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:02:10,882][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:39,236][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:04:39,237][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:04:39,745][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:42,976][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:42,977][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:42,982][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:45,484][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:45,484][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:45,489][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:47,434][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:47,434][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:47,442][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:49,772][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:49,773][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:49,778][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:50,946][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:50,946][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:50,952][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:52,911][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:52,912][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:52,917][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:54,371][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:54,371][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:54,376][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:55,971][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:55,971][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:55,975][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:57,307][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:57,308][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:57,313][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:58,503][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:58,506][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:58,510][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:04:59,644][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:04:59,645][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:04:59,653][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:05:01,031][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:05:01,032][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:05:01,036][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:05:02,006][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:05:02,006][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:05:02,010][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:05:09,671][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:05:09,671][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:05:09,942][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:05:14,416][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:05:14,416][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:05:14,421][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:05:18,605][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:05:18,605][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:05:18,611][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:05:19,381][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:05:19,381][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:05:19,383][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:05:21,081][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:05:21,081][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:06:34,879][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:06:34,880][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:06:35,213][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:06:40,722][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:06:40,723][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:06:40,726][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:06:41,864][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:06:41,865][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:06:41,868][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:06:42,647][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:06:42,647][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:06:42,648][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:06:43,182][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:06:43,182][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:07:22,835][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:07:22,835][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:07:23,150][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:07:27,195][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:07:27,195][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:07:27,200][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:07:30,415][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:07:30,416][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:07:30,421][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:07:31,780][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:07:31,781][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:07:31,782][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:07:32,963][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:07:32,963][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:02,434][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:08:02,434][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:08:02,744][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:08:06,351][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:06,351][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:06,357][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:08:09,251][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:09,251][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:09,256][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:08:09,747][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:09,748][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:09,748][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:08:10,277][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:10,277][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:10,278][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&category=recharge
+[2026-07-01 14:08:12,981][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:12,981][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:12,990][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=2&take=100&category=recharge
+[2026-07-01 14:08:14,661][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:14,661][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:14,673][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=3&take=100&category=recharge
+[2026-07-01 14:08:16,064][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:16,064][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:16,072][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=4&take=100&category=recharge
+[2026-07-01 14:08:17,087][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:17,088][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:17,097][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=5&take=100&category=recharge
+[2026-07-01 14:08:18,132][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:18,133][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:18,138][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=6&take=100&category=recharge
+[2026-07-01 14:08:19,172][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:19,173][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:19,178][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=7&take=100&category=recharge
+[2026-07-01 14:08:20,120][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:20,121][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:20,124][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=8&take=100&category=recharge
+[2026-07-01 14:08:21,285][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:21,285][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:21,290][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=9&take=100&category=recharge
+[2026-07-01 14:08:22,155][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:22,155][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:22,159][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=10&take=100&category=recharge
+[2026-07-01 14:08:23,037][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:23,037][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:23,046][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=11&take=100&category=recharge
+[2026-07-01 14:08:24,161][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:24,161][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:24,166][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=12&take=100&category=recharge
+[2026-07-01 14:08:25,349][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:25,349][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:25,356][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=13&take=100&category=recharge
+[2026-07-01 14:08:26,548][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:26,549][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:26,562][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=14&take=100&category=recharge
+[2026-07-01 14:08:27,704][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:27,704][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:27,712][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=15&take=100&category=recharge
+[2026-07-01 14:08:28,963][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:28,963][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:28,971][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=16&take=100&category=recharge
+[2026-07-01 14:08:30,083][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:30,083][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:30,094][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=17&take=100&category=recharge
+[2026-07-01 14:08:31,240][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:31,240][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:31,246][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=18&take=100&category=recharge
+[2026-07-01 14:08:32,493][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:32,493][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:32,497][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=19&take=100&category=recharge
+[2026-07-01 14:08:33,673][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:33,673][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:33,682][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=20&take=100&category=recharge
+[2026-07-01 14:08:34,677][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:34,678][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:34,683][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=21&take=100&category=recharge
+[2026-07-01 14:08:35,961][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:35,962][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:35,974][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=22&take=100&category=recharge
+[2026-07-01 14:08:37,017][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:37,017][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:37,021][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=23&take=100&category=recharge
+[2026-07-01 14:08:38,056][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:38,057][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:38,060][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=24&take=100&category=recharge
+[2026-07-01 14:08:39,593][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:39,594][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:39,601][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=25&take=100&category=recharge
+[2026-07-01 14:08:40,776][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:40,776][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:40,779][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=26&take=100&category=recharge
+[2026-07-01 14:08:41,838][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:41,838][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:41,842][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=27&take=100&category=recharge
+[2026-07-01 14:08:43,446][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:43,446][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:43,449][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=28&take=100&category=recharge
+[2026-07-01 14:08:44,456][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:44,456][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:44,460][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=29&take=100&category=recharge
+[2026-07-01 14:08:45,718][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:45,718][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:45,721][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=30&take=100&category=recharge
+[2026-07-01 14:08:47,602][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:47,602][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:47,605][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=31&take=100&category=recharge
+[2026-07-01 14:08:49,160][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:49,160][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:49,164][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=32&take=100&category=recharge
+[2026-07-01 14:08:50,207][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:50,207][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:50,210][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=33&take=100&category=recharge
+[2026-07-01 14:08:51,923][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:51,923][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:51,930][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=34&take=100&category=recharge
+[2026-07-01 14:08:53,339][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:53,340][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:53,343][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=35&take=100&category=recharge
+[2026-07-01 14:08:54,493][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:54,493][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:54,496][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=36&take=100&category=recharge
+[2026-07-01 14:08:55,870][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:55,870][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:55,877][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=37&take=100&category=recharge
+[2026-07-01 14:08:57,108][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:57,109][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:57,119][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=38&take=100&category=recharge
+[2026-07-01 14:08:58,202][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:58,202][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:58,210][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=39&take=100&category=recharge
+[2026-07-01 14:08:59,250][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:08:59,250][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:08:59,257][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=40&take=100&category=recharge
+[2026-07-01 14:09:00,435][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:09:00,436][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:09:00,447][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=41&take=100&category=recharge
+[2026-07-01 14:09:02,048][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:09:02,048][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:09:02,058][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=42&take=100&category=recharge
+[2026-07-01 14:09:03,384][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:09:03,385][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:09:03,393][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=43&take=100&category=recharge
+[2026-07-01 14:09:04,480][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:09:04,480][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:09:04,490][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=44&take=100&category=recharge
+[2026-07-01 14:09:05,513][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:09:05,514][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:09:05,523][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=45&take=100&category=recharge
+[2026-07-01 14:09:06,373][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:09:06,373][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:11:59,127][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:11:59,127][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:11:59,463][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:12:02,571][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:12:02,572][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:12:02,576][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:12:03,420][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:12:03,420][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:12:03,422][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:12:04,826][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:12:04,826][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:12:04,827][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:12:05,321][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:12:05,321][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:12:05,322][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&category=recharge&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:12:07,277][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:12:07,278][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:13:52,013][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:13:52,014][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:13:52,340][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:13:54,667][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:13:54,667][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:13:54,672][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:13:55,992][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:13:55,992][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:13:55,993][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:13:56,355][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:13:56,356][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:13:56,357][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:13:57,440][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:13:57,440][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:13:57,440][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:13:59,006][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:13:59,007][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:14:47,680][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:14:47,680][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:14:48,022][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:14:50,071][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:14:50,071][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:14:50,076][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:14:50,743][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:14:50,744][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:14:50,749][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:14:51,138][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:14:51,139][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:14:51,140][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:14:51,513][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:14:51,514][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:14:51,514][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:14:52,727][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:14:52,727][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:15:07,109][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:15:07,109][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:15:07,435][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:15:09,625][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:15:09,625][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:15:09,630][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:15:10,186][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:15:10,186][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:15:10,190][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:15:10,564][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:15:10,564][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:15:10,565][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:15:10,921][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:15:10,921][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:15:10,922][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:15:12,245][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:15:12,245][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:16:35,137][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:16:35,138][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:16:35,467][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:16:37,826][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:16:37,826][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:16:37,831][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:16:39,488][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:16:39,488][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:16:39,493][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:16:40,010][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:16:40,011][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:16:40,012][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:16:40,383][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:16:40,383][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:16:40,384][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:16:41,914][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:16:41,914][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:32:30,086][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:32:30,087][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:32:30,421][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:32:33,869][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:32:33,869][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:32:33,874][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:32:36,954][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:32:36,956][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:32:36,961][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:32:37,736][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:32:37,736][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:32:37,738][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:32:38,445][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:32:38,445][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:32:38,445][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:32:41,374][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:32:41,374][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:03,484][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:56:03,484][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:56:03,813][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:56:07,412][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:07,413][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:07,418][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:56:08,566][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:08,566][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:08,569][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:56:11,464][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:11,465][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:11,470][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=4&take=100&category=recharge
+[2026-07-01 14:56:13,091][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:13,092][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:13,094][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=5&take=100&category=recharge
+[2026-07-01 14:56:14,199][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:14,199][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:14,202][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=6&take=100&category=recharge
+[2026-07-01 14:56:14,731][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:14,731][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:14,732][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:56:15,527][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:15,527][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:56:15,528][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:56:17,589][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:56:17,589][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:32,470][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:57:32,470][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:57:32,811][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:57:36,194][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:36,195][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:36,199][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:57:37,691][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:37,691][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:37,695][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:57:38,561][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:38,561][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:38,564][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=4&take=100&category=recharge
+[2026-07-01 14:57:39,799][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:39,800][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:39,805][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=5&take=100&category=recharge
+[2026-07-01 14:57:40,644][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:40,644][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:40,649][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=6&take=100&category=recharge
+[2026-07-01 14:57:41,188][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:41,189][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:41,189][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:57:42,263][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:42,263][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:57:42,264][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:57:44,247][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:57:44,247][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:09,304][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 14:59:09,304][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 14:59:09,647][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:59:12,820][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:12,821][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:12,826][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=2&take=100&category=recharge
+[2026-07-01 14:59:13,686][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:13,687][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:13,693][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=3&take=100&category=recharge
+[2026-07-01 14:59:14,498][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:14,499][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:14,504][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=4&take=100&category=recharge
+[2026-07-01 14:59:15,310][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:15,311][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:15,316][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=5&take=100&category=recharge
+[2026-07-01 14:59:16,142][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:16,143][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:16,148][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/get-card-list?page=6&take=100&category=recharge
+[2026-07-01 14:59:16,669][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:16,670][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:16,671][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-group-card-list?page=1&take=100&category=recharge
+[2026-07-01 14:59:17,186][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:17,186][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 14:59:17,187][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=100&transaction_sub_type=card_account&created_at[]=2026-07-01+00:00&created_at[]=2026-07-31+00:00
+[2026-07-01 14:59:18,703][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-01 14:59:18,703][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-01 15:01:45,267][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 15:01:45,267][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-01 15:01:45,267][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-01 15:01:45,268][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-07-01 15:01:45,742][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-07-01 15:01:45,742][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-07-01 15:01:48,180][simple_request.py 273][INFO]: Response status code: 201
+[2026-07-01 15:01:48,180][simple_request.py 277][INFO]: Response status code: 201
+[2026-07-01 15:01:48,182][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-07-01 15:01:48,189][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-07-01 15:01:48,190][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-07-01 15:01:51,036][simple_request.py 273][INFO]: Response status code: 201
+[2026-07-01 15:01:51,036][simple_request.py 277][INFO]: Response status code: 201
+[2026-07-01 15:01:51,038][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini

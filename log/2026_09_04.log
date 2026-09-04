@@ -1,0 +1,66 @@
+[2026-09-04 15:01:09,448][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-04 15:01:09,448][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-04 15:01:10,308][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-04 15:01:10,308][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-04 15:01:10,315][simple_request.py 305][ERROR]: Error occurred during request: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+[2026-09-04 15:04:15,818][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-04 15:04:15,818][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-04 15:04:15,819][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-04 15:04:15,819][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-09-04 15:04:16,356][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-04 15:04:16,356][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-04 15:04:16,362][simple_request.py 305][ERROR]: Error occurred during request: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+[2026-09-04 15:07:50,657][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-04 15:07:50,658][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-04 15:07:50,658][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-04 15:07:50,658][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-09-04 15:07:51,198][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-04 15:07:51,198][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-04 15:07:51,203][simple_request.py 305][ERROR]: Error occurred during request: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+[2026-09-04 15:34:06,016][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-04 15:34:06,016][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-04 15:34:06,768][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-04 15:34:06,768][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-04 15:34:08,436][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-04 15:34:08,436][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-04 15:34:08,439][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-04 15:34:08,445][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-04 15:34:08,445][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-04 15:34:10,418][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-04 15:34:10,418][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-04 15:34:10,419][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini

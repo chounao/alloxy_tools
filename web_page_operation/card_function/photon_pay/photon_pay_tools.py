@@ -1,18 +1,19 @@
-# photon_pay_tools.py
 from datetime import datetime
-from common.Sql import DatabaseConnection
 import json
 import time
 import requests
+
+from common.Sql import DatabaseConnection
 from common.simple_request import HttpRequest
 from common import read_and_save_tool
 from common.execute import get_config_section
 
 
-
 TEST_ENTERPRISE_ID = '9498570428'
 UAT_ENTERPRISE_ID = '9738483283'
-merchantCountry = 'US'
+MERCHANT_COUNTRY = 'US'
+
+
 class PhotonPayTools:
 
     def __init__(self, user_http=None, admin_http=None):
@@ -23,89 +24,101 @@ class PhotonPayTools:
         self.config_url = self.config.get_url_data()
         self.config_section = get_config_section()
         self.url = self.config.get_url_data()
+
         if self.config_section == 'TEST_CONFIG':
             self.enterprise_id = TEST_ENTERPRISE_ID
         else:
             self.enterprise_id = UAT_ENTERPRISE_ID
-        # 模拟交易接口
+
         self.card_base_url = f'{self.url}/web/virtual-card/simulate-transaction'
         self._card_data_cache = {}
+        self._fee_data_cache = {}
 
     # 数据库获取参数
     def get_raw_data(self, source_id):
-
         with DatabaseConnection() as db:
             result = db.execute_sql(
-                "SELECT raw FROM virtual_card_transaction_webhook WHERE transaction_id = %s ORDER BY created_at desc limit 1;",
+                "SELECT raw FROM virtual_card_transaction_webhook "
+                "WHERE transaction_id = %s ORDER BY created_at desc limit 1;",
                 (source_id,)
             )
-            if result:
-                first_row = result[0]
-                # 处理返回结果为字典或元组的情况
-                if isinstance(first_row, dict):
-                    # 如果已经是字典，直接返回
-                    return first_row
-                elif isinstance(first_row, (list, tuple)):
-                    # 如果是元组或列表，提取第一个元素
-                    raw_value = first_row[0]
-                    if isinstance(raw_value, str):
-                        # 如果是字符串，进行JSON解析
-                        result_json = json.loads(raw_value)
-                        return result_json
-                    elif isinstance(raw_value, dict):
-                        # 如果已经是字典，直接返回
-                        return raw_value
-                    else:
-                        return raw_value
-                else:
-                    return first_row
-            return None
 
-    # h获取第三方费用
+            if not result:
+                return None
+
+            first_row = result[0]
+            if isinstance(first_row, dict):
+                raw_value = first_row.get('raw', first_row)
+            elif isinstance(first_row, (list, tuple)):
+                raw_value = first_row[0]
+            else:
+                raw_value = first_row
+
+            if isinstance(raw_value, str):
+                return json.loads(raw_value)
+
+            return raw_value
+
+    # 获取第三方费用
     def get_google_or_app_fee(self, last4):
         source_id = self.get_source_id(last4)
-        raw = self.get_raw_data(source_id)
+        raw = self.get_raw_data(source_id) or {}
 
         """
-        手续费扣费金额明细。
+        手续费扣费金额明细：
         transactionFeeAmount：交易手续费金额；
         crossBroadFeeAmount：跨境手续费金额；
         conversionFeeAmount：汇率转换费金额；
         refundFeeAmount：退款手续费金额；
         voidFeeAmount：撤销手续费金额；
         gatewayFeeAmount：网关手续费金额；
-        authFailedFeeAmount：失败交易手续费金额
-        ；fundInFeeAmount：汇入手续费金额；
-        applePayCostFeeAmount：apply支付成本金额
+        authFailedFeeAmount：失败交易手续费金额；
+        fundInFeeAmount：汇入手续费金额；
+        applePayCostFeeAmount：apple支付成本金额
         """
-        feeDeductionAmount = raw.get('feeDeductionAmount', 0)
-        return feeDeductionAmount
+        fee_deduction_amount = raw.get('feeDeductionAmount', 0)
+        return fee_deduction_amount
 
     # 获取card信息
     def get_card_data(self, last4, force_refresh=False):
         if not force_refresh and last4 in self._card_data_cache:
             return self._card_data_cache[last4]
+
         data_url = f'{self.url}/admin/virtual-card/get-all-cards?page=1&take=200'
 
         try:
             response = self.admin_http.requests('get', data_url)
             if response is None:
                 raise Exception("请求失败，未获取到响应")
+
             response.raise_for_status()
             data = response.json()
-            card_data_list = data['data']['list']
-            # print("card_data_list:", card_data_list)
+            card_data_list = data.get('data', {}).get('list', [])
+
             for card in card_data_list:
-                if card['last4'] == last4:
-                    bank_card_id = card['bank_card_id']
-                    card_id = card['id']
-                    category = card['category'] # 卡片类型recharge share
-                    product_code = card['vcc_product_code'] # 卡片产品代码
-                    print(f"bank_card_id: {bank_card_id}, card_id: {card_id}", "卡片类型:", category, "卡片产品代码:", product_code)
-                    self._card_data_cache[last4] = (bank_card_id, card_id, category, product_code)
-                    return bank_card_id, card_id, category, product_code
+                if card.get('last4') == last4:
+                    bank_card_id = card.get('bank_card_id')
+                    card_id = card.get('id')
+                    category = card.get('category')
+                    product_code = card.get('vcc_product_code')
+                    product_name = card.get('product_name')
+
+                    if not all([bank_card_id, card_id, category, product_code, product_name]):
+                        raise ValueError(f"卡片数据字段缺失: {card}")
+
+                    print(
+                        f"bank_card_id: {bank_card_id}, card_id: {card_id}",
+                        "卡片类型:", category,
+                        "卡片产品代码:", product_code,
+                        "卡片产品名称:", product_name
+                    )
+
+                    card_data = (bank_card_id, card_id, category, product_code, product_name)
+                    self._card_data_cache[last4] = card_data
+                    return card_data
 
             raise Exception(f"未找到后四位为 {last4} 的卡片")
+
         except requests.exceptions.RequestException as e:
             raise Exception(f"获取卡片信息失败: {str(e)}")
         except (KeyError, ValueError) as e:
@@ -113,7 +126,7 @@ class PhotonPayTools:
 
     # 根据卡片类型获取数据结构
     def get_fee_type(self, last4, card_type_fee_name):
-        bank_card_id, card_id, category ,product_code= self.get_card_data(last4)
+        bank_card_id, card_id, category, product_code, product_name = self.get_card_data(last4)
 
         if category == 'recharge':
             card_type, card_type_fee = self.get_transaction_type('光子易虚拟储值卡', card_type_fee_name)
@@ -121,27 +134,28 @@ class PhotonPayTools:
             card_type, card_type_fee = self.get_transaction_type('光子易虚拟共享卡', card_type_fee_name)
         else:
             raise ValueError(f"未知的卡片类型: '{category}'")
+
         return card_type, card_type_fee
 
-    # 根据卡片产品代码判断是美卡还是港卡然后自己的判断流程
-    def get_card_type_for_code(self,last4):
-        bank_card_id, card_id, category, product_code = self.get_card_data(last4)
-        if product_code == 'photon-us':
-            return 'photon-us'
-        elif product_code == 'photon-hk':
-            return 'photon-hk'
-        else:
-            raise ValueError(f"未知的卡片产品代码: '{product_code}'")
+    # 根据卡片产品代码判断是美卡还是港卡
+    def get_card_type_for_code(self, last4):
+        bank_card_id, card_id, category, product_code, product_name = self.get_card_data(last4)
+
+        if product_code in ['photon-us', 'photon-hk']:
+            return product_code, product_name
+
+        raise ValueError(f"未知的卡片产品代码: '{product_code}'")
 
     # 把当前时间转格式
     def get_requestId(self):
         return datetime.now().strftime('%Y%m%d%H%M%S')
 
-    # 获取卡信息进行bodu传参数
+    # 获取卡信息进行body传参数
     def get_card_info(self, card_id):
-        self.card_url = f'{self.url}/web/virtual-card/card-cvv/{card_id}'
+        card_url = f'{self.url}/web/virtual-card/card-cvv/{card_id}'
+
         try:
-            response = self.user_http.requests('get', self.card_url)
+            response = self.user_http.requests('get', card_url)
             if response is None:
                 raise Exception("请求失败，未获取到响应")
 
@@ -153,12 +167,13 @@ class PhotonPayTools:
 
             card_data = data['data']
             cvv = card_data.get('cvv')
-            expirationDate = card_data.get('expirationDate')
+            expiration_date = card_data.get('expirationDate')
 
-            if cvv is None or expirationDate is None:
+            if cvv is None or expiration_date is None:
                 raise ValueError("响应数据中缺少 'cvv' 或 'expirationDate' 字段")
 
-            return cvv, expirationDate
+            return cvv, expiration_date
+
         except requests.exceptions.RequestException as e:
             raise Exception(f"获取卡片信息失败: {str(e)}")
         except (ValueError, KeyError) as e:
@@ -166,47 +181,36 @@ class PhotonPayTools:
 
     # 获取请求体的数据body
     def get_request_data(self, last4, txnType, amount, card_id, originTransactionId=None):
-        productCode = self.get_card_type_for_code(last4)
+        product_code, product_name = self.get_card_type_for_code(last4)
         times = self.get_requestId()
-        cvv, expirationDate = self.get_card_info(card_id)
+        cvv, expiration_date = self.get_card_info(card_id)
+
         body = {
             "requestId": times,
             "cardID": card_id,
             "cvv": cvv,
-            "expirationDate": expirationDate,
+            "expirationDate": expiration_date,
             "originTransactionId": originTransactionId,
             "txnCurrency": "USD",
             "txnAmount": amount,
             "txnType": txnType,
             "mcc": "1234",
             "merchantName": "Ryan",
-            "merchantCountry": merchantCountry,
+            "merchantCountry": MERCHANT_COUNTRY,
             "merchantCity": "test",
             "merchantPostcode": "12345"
         }
+
         if txnType == 'auth':
             body['originTransactionId'] = ''
-        if productCode == 'photon-us':
+
+        if product_code == 'photon-us':
             body['productCode'] = 'photon-us'
+
         return body
 
     # 获取手续费类型type
     def get_transaction_type(self, card_type_name, card_type_fee_name):
-        """
-        根据卡片类型名称和费用类型名称获取对应的交易类型和费用字段
-
-        Args:
-            card_type_name: 卡片类型名称，如'光子易虚拟储值卡'
-            card_type_fee_name: 费用类型名称，如'充值'、'本地消费'等
-
-        Returns:
-            tuple: (card_type, card_type_fee)
-                   - card_type: 卡片类型标识
-                   - card_type_fee: 费用字段列表 [每笔费用, 比例费用]
-
-        Raises:
-            ValueError: 当卡片类型或费用类型无效时抛出
-        """
         card_type_dict = {
             '光子易虚拟储值卡': 'photon_recharge_virtual',
             '光子易虚拟共享卡': 'photon_share_virtual',
@@ -235,10 +239,10 @@ class PhotonPayTools:
 
     # 获取三方返回的数据
     def get_card_balance(self, card_id):
-
         time.sleep(6)
-        URL = f'{self.config_url}/web/virtual-card/photon-card-detail/{card_id}'
-        response = self.user_http.requests('get', URL)
+        url = f'{self.config_url}/web/virtual-card/photon-card-detail/{card_id}'
+
+        response = self.user_http.requests('get', url)
         if response is None:
             raise requests.exceptions.HTTPError("请求失败，未获取到响应")
 
@@ -247,174 +251,167 @@ class PhotonPayTools:
 
         data = response.json()
 
-        # 验证返回数据结构
         if 'data' not in data:
             raise ValueError("响应数据中缺少 'data' 字段")
 
-        if 'availableTransactionLimit' in data['data']:
-            value = data['data']['availableTransactionLimit']
+        card_data = data['data']
+
+        if 'availableTransactionLimit' in card_data:
+            value = card_data['availableTransactionLimit']
             if value == 0:
-                if 'cardBalance' in data['data']:
-                    balance_value = data['data']['cardBalance']
-                else:
-                     balance_value = 0
-            else:
-                balance_value = value
-        elif 'cardBalance' in data['data']:
-            balance_value = data['data']['cardBalance']
-        else:
-            raise ValueError("响应数据中缺少 'availableTransactionLimit' 或 'cardBalance' 字段")
+                return card_data.get('cardBalance', 0)
+            return value
 
-        return balance_value
+        if 'cardBalance' in card_data:
+            return card_data['cardBalance']
 
-     # 获取开卡费
-    def get_open_card_fee(self, last4, card_type_fee_name):
+        raise ValueError("响应数据中缺少 'availableTransactionLimit' 或 'cardBalance' 字段")
 
-        card_type, card_type_fee = self.get_fee_type(last4, card_type_fee_name)
-        open_card_fee_url = f'{self.url}/admin/virtual-card/open-card-fee-list?page=1&take=10&identifier_id={self.enterprise_id}'
+    # 获取卡产品费用设置，根据企业id、product_code、product_name返回对应的数据
+    def get_all_fee_data(self, product_code, product_name, force_refresh=False):
+        cache_key = (product_code, product_name)
+        if not force_refresh and cache_key in self._fee_data_cache:
+            return self._fee_data_cache[cache_key]
+
+        card_fee_url = (
+            f'{self.url}/admin/virtual-card/card-fee'
+            f'?page=1&take=10&identifier_id={self.enterprise_id}'
+        )
 
         try:
-            response = self.admin_http.requests('get', open_card_fee_url)
+            datas = self.admin_http.requests(
+                'get',
+                card_fee_url,
+                jsonpath_expr='$.data.list[?(@.product_code=="%s")]' % (
+                    product_code
 
+                )
+            )
 
-            if response is None:
-                raise Exception("请求失败，未获取到响应")
-
-            response.raise_for_status()
-            data = response.json()
-
-            # 验证数据结构
-            if 'data' not in data or 'list' not in data['data']:
-                raise ValueError("响应数据结构异常，缺少 'data' 或 'list' 字段")
-
-            # 获取指定卡片类型的费用
-            usd_num = data['data']['list'][0].get(card_type, [None])
-
-            if usd_num is None:
-                raise ValueError(f"未找到卡片类型 '{card_type}' 的开卡费用")
-
-            return usd_num
+            if not datas:
+                raise ValueError(f"未找到费用配置: product_code={product_code}")
+            #判断data的类型是否为列表，如果是列表说明是多个需要跟product_name匹配
+            if isinstance(datas, list):
+                for data in datas:
+                    if data['product_name'] == product_name:
+                        return data
+            else:
+                return datas
+            # self._fee_data_cache[cache_key] = data
+            # return data
 
         except requests.exceptions.RequestException as e:
-            raise Exception(f"获取开卡费请求失败: {str(e)}")
+            raise Exception(f"获取所有费用数据请求失败: {str(e)}")
         except (ValueError, KeyError) as e:
-            raise Exception(f"解析开卡费数据失败: {str(e)}")
+            raise Exception(f"解析所有费用数据失败: {str(e)}")
+
+    # 根据卡后四位获取费用配置
+    def get_fee_data_by_last4(self, last4):
+        product_code, product_name = self.get_card_type_for_code(last4)
+        data = self.get_all_fee_data(product_code, product_name)
+        return data
+
+
+    # 获取开卡费
+    def get_open_card_fee(self, product_code, product_name):
+        data = self.get_all_fee_data(product_code, product_name)
+        open_card_fee = data.get('open_card_fee')
+        return open_card_fee
 
     # 获取交易手续费用
     def get_transaction_fee(self, last4, card_type_fee_name):
-
         card_type, card_type_fee = self.get_fee_type(last4, card_type_fee_name)
-        product_code = self.get_card_type_for_code(last4)
+        fee_data = self.get_fee_data_by_last4(last4)
 
-        transaction_fee_url = f'{self.url}/admin/virtual-card/transaction-fee-list?page=1&take=10&identifier_id={self.enterprise_id}'
+        transaction_fee = fee_data.get('transaction_fee') or {}
+        # print('手续费字段：', transaction_fee)
 
-        try:
-            response = self.admin_http.requests('get', transaction_fee_url)
+        fee_per_count = transaction_fee.get(card_type_fee[0])
+        fee_prorate = transaction_fee.get(card_type_fee[1])
 
-            if response is None:
-                raise Exception("请求失败，未获取到响应")
+        if fee_per_count is None or fee_prorate is None:
+            raise ValueError(f"未找到费用配置: {card_type} - {card_type_fee_name}")
 
-            response.raise_for_status()
-            data = response.json()
-
-            # 验证数据结构
-            if 'data' not in data or 'list' not in data['data']:
-                raise ValueError("响应数据结构异常，缺少 'data' 或 'list' 字段")
-
-            # 获取指定卡片类型的费用配置
-            data_list = data['data']['list'][0].get(card_type)
-            if data_list is None:
-                raise ValueError(f"未找到卡片类型 '{card_type}' 的交易手续费配置")
-
-
-            fee_config_0 = data_list.get(card_type_fee[0])
-            fee_config_1 = data_list.get(card_type_fee[1])
-
-            if fee_config_0 is None or fee_config_1 is None:
-                raise ValueError(f"未找到卡片类型 '{card_type}' 的费用类型 '{card_type_fee_name}' 的配置")
-
-            fee_per_count = fee_config_0.get(product_code)
-            fee_prorate = fee_config_1.get(product_code)
-
-            if fee_per_count is None or fee_prorate is None:
-                raise ValueError(f"未找到区域 '{product_code}' 的费用配置")
-
-            return fee_per_count, fee_prorate
-
-        except requests.exceptions.RequestException as e:
-            raise Exception(f"获取交易手续费请求失败: {str(e)}")
-        except (ValueError, KeyError, AttributeError) as e:
-            raise Exception(f"解析交易手续费数据失败: {str(e)}")
+        print('手续费：', fee_per_count, '费率：', fee_prorate)
+        return fee_per_count, fee_prorate
 
     # 获取交易授权费
-    def get_authorization_fee(self, last4,amount):
-        card_type, card_type_fee = self.get_fee_type(last4, '本地消费')
-        product_code = self.get_card_type_for_code(last4)
-        authorization_url = f'{self.url}/admin/virtual-card/auth-fee-list?page=1&take=10&identifier_id={self.enterprise_id}'
-        try:
-            response = self.admin_http.requests('get', authorization_url)
-            if response is None:
-                raise Exception("请求失败，未获取到响应")
-            response.raise_for_status()
-            data = response.json()
-            # 验证数据结构
-            if 'data' not in data or 'list' not in data['data']:
-                raise ValueError("响应数据结构异常，缺少 'data' 或 'list' 字段")
+    def get_authorization_fee(self, last4, amount):
+        fee_data = self.get_fee_data_by_last4(last4)
+        authorization_fee = fee_data.get('auth_fee') or []
 
-            data_list = data['data']['list'][0].get(card_type).get(product_code)
+        for item in authorization_fee:
+            if item['min'] <= amount <= item['max']:
+                print(f"授权费为：{item['fee']}")
+                return item['fee']
 
-            for i in data_list:
+        return 0
 
-                if i['min'] <= amount <= i['max']:
-                    print(f'授权费为为：{i['fee']}')
-                    return i['fee']
-        except requests.exceptions.RequestException as e:
-            raise Exception(f"获取授权费请求失败: {str(e)}")
+    # 计算消费手续费
+    def calculate_transaction_fee(self, last4):
+        product_code, product_name = self.get_card_type_for_code(last4)
+        print('产品代码：', product_code, product_name)
 
-    #计算消费手续费
-    def calculate_transaction_fee(self,last):
-        if merchantCountry == 'HK':
-            fee_per_count, fee_prorate = self.get_transaction_fee(last, '本地消费')
+        if "hk" in product_code:
+            fee_per_count, fee_prorate = self.get_transaction_fee(last4, '跨境消费')
         else:
-            fee_per_count, fee_prorate = self.get_transaction_fee(last, '跨境消费')
+            fee_per_count, fee_prorate = self.get_transaction_fee(last4, '本地消费')
 
-        #缺少交易授权费
-        print('交易手续费',fee_per_count, fee_prorate)
+        print('交易手续费', fee_per_count, fee_prorate)
         return fee_per_count, fee_prorate
 
     # 获取source_id退款时候用
     def get_source_id(self, last4):
         time.sleep(3)
-        self.transaction_url = f'{self.url}/admin/virtual-card/get-all-transactions?page=1&take=10&transaction_sub_type=card'
+        transaction_url = (
+            f'{self.url}/admin/virtual-card/get-all-transactions'
+            f'?page=1&take=10&transaction_sub_type=card'
+        )
+
         try:
-            response = self.admin_http.requests('get', self.transaction_url)
+            response = self.admin_http.requests('get', transaction_url)
             if response is None:
                 raise Exception("请求失败，未获取到响应")
+
             response.raise_for_status()
             data = response.json()
-            data_list = data['data']['list']
+            data_list = data.get('data', {}).get('list', [])
+
             for transaction in data_list:
-                if transaction['vc_last4'] == last4 and transaction['vc_customerType'] == 'Consumer':
-                    source_id = transaction['source_id']
+                if transaction.get('vc_last4') == last4 and transaction.get('vc_customerType') == 'Consumer':
+                    print('找到交易', transaction)
+                    source_id = transaction.get('source_id')
+                    print('source_id', source_id)
                     return source_id
+
             raise Exception(f"未找到后四位为 {last4} 且类型为 Consumer 的交易")
+
         except requests.exceptions.RequestException as e:
             raise Exception(f"获取交易信息失败: {str(e)}")
         except (KeyError, ValueError) as e:
             raise Exception(f"响应数据格式错误: {str(e)}")
 
     # 计算退款手续费
-    def calculate_refund_fee(self, last4,amount):
-        fee_per_count, fee_prorate = self.get_transaction_fee(last4, '退款')
-        all_refund_num = fee_prorate* amount+ fee_per_count
-        print('退款手续费',all_refund_num)
+    def calculate_refund_fee(self, last4, amount):
+        card_type, card_type_fee = self.get_fee_type(last4, "退款")
+        fee_data = self.get_fee_data_by_last4(last4)
+
+        transaction_fee = fee_data.get('transaction_fee') or {}
+        fee_per_count = transaction_fee.get(card_type_fee[0])
+        fee_prorate = transaction_fee.get(card_type_fee[1])
+
+        if fee_per_count is None or fee_prorate is None:
+            raise ValueError(f"未找到退款费用配置: {card_type}")
+
+        print('手续费：', fee_per_count, '费率：', fee_prorate)
+        all_refund_num = fee_prorate * amount + fee_per_count
         return all_refund_num
 
     # 进行操作消费等操作流程
-    def card_operation(self,last4, txnType,bank_card_id ,amount,originTransactionId=None):
-
-        body = self.get_request_data(last4,txnType, amount, bank_card_id,originTransactionId)
+    def card_operation(self, last4, txnType, bank_card_id, amount, originTransactionId=None):
+        body = self.get_request_data(last4, txnType, amount, bank_card_id, originTransactionId)
         response = self.user_http.requests('post', self.card_base_url, data=body)
+
         if response is None:
             raise requests.exceptions.HTTPError("请求失败，未获取到响应")
 
@@ -424,71 +421,138 @@ class PhotonPayTools:
         return body
 
     # 消费
-    def card_consume(self,amount, last4):
-        bank_card_id, card_id, category ,product_code= self.get_card_data(last4)
-        num1 = self.get_card_balance(bank_card_id)
-        print('消费前的金额', num1)
-        # 消费
-        self.card_operation(last4,'auth',bank_card_id,amount)
-        # 共享手续费
+    def card_consume(self, amount, last4):
+        bank_card_id, card_id, category, product_code, product_name = self.get_card_data(last4)
+
+        before_amount = self.get_card_balance(bank_card_id)
+        print('消费前的金额', before_amount)
+
+        self.card_operation(last4, 'auth', bank_card_id, amount)
+
         fee_per_count, fee_prorate = self.calculate_transaction_fee(last4)
-        print('手续费：',fee_per_count,'费率：',fee_prorate)
-        num2 = amount + fee_per_count + fee_prorate* amount
-        num3 = self.get_authorization_fee( last4,amount)
-        print('手续费：',num2,'授权费：',num3)
-        num = num1 - num2 - num3
-        print('剩下额度',num)
-        later_num = self.get_card_balance(bank_card_id)
-        print('三方返回的值',later_num)
+        print('手续费：', fee_per_count, '费率：', fee_prorate)
+
+        consume_amount = amount + fee_per_count + fee_prorate * amount
+        authorization_fee = self.get_authorization_fee(last4, amount)
+        print('消费：', consume_amount, '授权费：', authorization_fee)
+
+        calculate_amount = before_amount - consume_amount - authorization_fee
+        print('剩下额度', calculate_amount)
+
+        later_amount = self.get_card_balance(bank_card_id)
+        print('三方返回的值', later_amount)
+
+        return {
+            "before_amount": before_amount,
+            "consume_amount": consume_amount,
+            "authorization_fee": authorization_fee,
+            "calculate_amount": calculate_amount,
+            "later_amount": later_amount
+        }
 
     # 退款
-    def card_refund(self, amount, last4,originTransactionId):
-        bank_card_id, card_id, category ,product_code= self.get_card_data(last4)
-        num1 = self.get_card_balance(bank_card_id)
-        print('退款前的金额', num1)
-        # 退款
-        self.card_operation(last4 ,'refund',bank_card_id,amount,originTransactionId)
-        # 获取共享卡的实际余额
-        num2 = self.calculate_refund_fee(last4,amount)
-        fee_per_count, fee_prorate = self.calculate_transaction_fee(last4)
-        num3 = fee_prorate* amount
-        print('退还的消费手续费',num3)
-        num4 = num1 - num2 + num3 +amount
-        print('剩下额度',num4)
-        later_num = self.get_card_balance(bank_card_id)
-        print('三方返回的值',later_num)
+    def card_refund(self, amount, last4):
+        bank_card_id, card_id, category, product_code, product_name = self.get_card_data(last4)
 
-    # 获取共享卡的实际余额
+        before_amount = self.get_card_balance(bank_card_id)
+        print('退款前的金额', before_amount)
+        originTransactionId = self.get_source_id(last4)
+        print('originTransactionId', originTransactionId)
+        self.card_operation(last4, 'refund', bank_card_id, amount, originTransactionId)
+
+        refund_fee = self.calculate_refund_fee(last4, amount)
+        print('需要扣掉的退款费用', refund_fee)
+        fee_per_count, fee_prorate = self.calculate_transaction_fee(last4)
+        refund_transaction_fee = fee_prorate * amount
+        print('退还的消费手续费', refund_transaction_fee)
+
+        calculate_amount = before_amount - refund_fee + refund_transaction_fee + amount
+        print('剩下额度', calculate_amount)
+
+        later_amount = self.get_card_balance(bank_card_id)
+        print('三方返回的值', later_amount)
+
+        return {
+            "before_amount": before_amount,
+            "refund_fee": refund_fee,
+            "refund_transaction_fee": refund_transaction_fee,
+            "calculate_amount": calculate_amount,
+            "later_amount": later_amount
+        }
+    # 撤销退款
+    def card_reverse_refund(self, amount, last4):
+        bank_card_id, card_id, category, product_code, product_name = self.get_card_data(last4)
+
+        before_amount = self.get_card_balance(bank_card_id)
+        print('退款前的金额', before_amount)
+        originTransactionId = self.get_source_id(last4)
+        self.card_operation(last4, 'void', bank_card_id, amount, originTransactionId)
+
+        void_fee = self.calculate_refund_fee(last4, amount)
+        print('需要扣掉的退款费用', void_fee)
+        fee_per_count, fee_prorate = self.calculate_transaction_fee(last4)
+        void_transaction_fee = fee_prorate * amount
+        print('退还的消费手续费', void_transaction_fee)
+
+        calculate_amount = before_amount - void_fee + void_transaction_fee + amount
+        print('剩下额度', calculate_amount)
+
+        later_amount = self.get_card_balance(bank_card_id)
+        print('三方返回的值', later_amount)
+
+        return {
+            "before_amount": before_amount,
+            "void_fee": void_fee,
+            "void_transaction_fee": void_transaction_fee,
+            "calculate_amount": calculate_amount,
+            "later_amount": later_amount
+        }
+    # 获取source_id
+    def get_source_id(self, last4):
+        bank_card_id, card_id, category, product_code, product_name = self.get_card_data(last4)
+        url = f"{self.url}/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id={card_id}&transaction_type[]=card_consume&transaction_sub_type=card"
+        sourceId = self.user_http.requests('get', url,jsonpath_expr= "$.data.list[0].source_id")
+        if sourceId is None:
+            url = f"{self.url}/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id={card_id}&transaction_type=card_consume&transaction_sub_type=card_share_group"
+            sourceId = self.user_http.requests('get', url, jsonpath_expr="$.data.list[0].source_id")
+        print(sourceId)
+        return sourceId
+
+# 获取共享卡的实际余额
     def get_card_balance_data(self, last4):
-        bank_card_id, card_id, category ,product_code = self.get_card_data(last4)
+        bank_card_id, card_id, category, product_code, product_name = self.get_card_data(last4)
         num = self.get_card_balance(bank_card_id)
         print(num)
+        return num
+
 
 if __name__ == '__main__':
+    amount = 2
+    last4 = '0914'
 
-
-
-    amount = 10
-
-
-    # 创建PhotonPayTools对象
     photon_pay_tools = PhotonPayTools()
+
+
 
     """
     消费
     """
-    last4 = '5742'
-    photon_pay_tools.card_consume(amount,last4)
-
+    photon_pay_tools.card_consume(amount, last4)
 
 
 
     """
     退款
     """
-    # source_id="IT2063903315922632704"
-    # photon_pay_tools.card_refund(amount,last4,source_id)
+    time.sleep(5)
+    photon_pay_tools.card_refund(amount, last4)
 
+
+    """
+    撤销
+    """
+    # time.sleep(5)
+    # photon_pay_tools.card_reverse_refund(amount, last4)
 
 
 

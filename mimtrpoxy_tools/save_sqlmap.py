@@ -15,7 +15,7 @@ from mitmproxy import http, ctx
 
 # 配置常量
 DEFAULT_OUTPUT_DIR = './sqlmap_output'
-DEFAULT_TARGET_URL = 'https://qnjy.xyy001.com'
+DEFAULT_TARGET_URL = 'https://ax-api.pertest.tech'
 
 # 需要匹配的路径关键字
 PATH_KEYWORDS = {'query', 'delete', 'get', 'update', 'insert'}
@@ -108,7 +108,15 @@ class SQLMapRequestSaver:
                 f"Host: {host}",
                 f"User-Agent: {user_agent}",
                 f"Content-Type: {content_type}",
+                f"Authorization: {flow.request.headers.get('Authorization', '')}",
                 "",
+                f"origin: {flow.request.headers.get('origin', '')}",
+                f"referer: {flow.request.headers.get('referer', '')}",
+                f"Accept: {flow.request.headers.get('Accept', '')}",
+                f"Sec-Ch-Ua: {flow.request.headers.get('Sec-Ch-Ua', '')}",
+                f"Sec-Ch-Ua-Mobile: {flow.request.headers.get('Sec-Ch-Ua-Mobile', '')}",
+                f"Sec-Ch-Ua-Platform: {flow.request.headers.get('Sec-Ch-Ua-Platform', '')}",
+
                 body
             ]
             output_content = '\n'.join(output_lines)
@@ -125,17 +133,54 @@ class SQLMapRequestSaver:
         except Exception as e:
             print(f"❌ 保存 POST 请求失败: {e}")
 
-    def _save_get_requests(self):
+    def _save_get_requests(self,flow: http.HTTPFlow):
         """批量保存 GET 请求"""
-        if not self.get_requests:
-            return
-
+        # if not self.get_requests:
+        #     return
+        #
+        # try:
+        #     filepath = os.path.join(self.output_dir, 'get_requests.txt')
+        #     with open(filepath, 'w', encoding='utf-8') as f:
+        #         for url in self.get_requests:
+        #             f.write(f"{url} HTTP/1.1\n\n")
+        #     print(f"💾 保存 {len(self.get_requests)} 个 GET 请求 -> get_requests.txt")
+        # except Exception as e:
+        #     print(f"❌ 保存 GET 请求失败: {e}")
         try:
-            filepath = os.path.join(self.output_dir, 'get_requests.txt')
+            method = flow.request.method
+            path = flow.request.path
+            host = flow.request.host
+            user_agent = flow.request.headers.get('User-Agent', '')
+            content_type = flow.request.headers.get('Content-Type', '')
+            body = flow.request.get_text()
+
+            output_lines = [
+                f"{method} {path} HTTP/1.1",
+                f"Host: {host}",
+                f"User-Agent: {user_agent}",
+                f"Content-Type: {content_type}",
+                f"Authorization: {flow.request.headers.get('Authorization', '')}",
+                "",
+                f"origin: {flow.request.headers.get('origin', '')}",
+                f"referer: {flow.request.headers.get('referer', '')}",
+                f"Accept: {flow.request.headers.get('Accept', '')}",
+                f"Sec-Ch-Ua: {flow.request.headers.get('Sec-Ch-Ua', '')}",
+                f"Sec-Ch-Ua-Mobile: {flow.request.headers.get('Sec-Ch-Ua-Mobile', '')}",
+                f"Sec-Ch-Ua-Platform: {flow.request.headers.get('Sec-Ch-Ua-Platform', '')}",
+
+                body
+            ]
+            output_content = '\n'.join(output_lines)
+
+            filename = get_output_filename(path)
+            filepath = os.path.join(self.output_dir, filename)
+
             with open(filepath, 'w', encoding='utf-8') as f:
-                for url in self.get_requests:
-                    f.write(f"{url} HTTP/1.1\n\n")
-            print(f"💾 保存 {len(self.get_requests)} 个 GET 请求 -> get_requests.txt")
+                f.write(output_content)
+
+            self.saved_count += 1
+            print(f"💾 保存 GET 请求: {path} -> {filename}")
+
         except Exception as e:
             print(f"❌ 保存 GET 请求失败: {e}")
 
@@ -157,15 +202,16 @@ class SQLMapRequestSaver:
             print(f"📡 记录 GET 请求: {url}")
 
     def done(self):
-        """代理关闭时保存剩余的 GET 请求"""
+        """代理关闭时的清理工作"""
+        # 保存剩余的 GET 请求（save_sqlmap.py）
         self._save_get_requests()
 
+        # 打印统计信息
         print("\n" + "=" * 70)
         print(f"📊 代理服务结束")
         print(f"📡 总请求数: {self.request_count}")
-        print(f"💾 已保存请求数: {self.saved_count} POST + {len(self.get_requests)} GET")
+        print(f"💾 已保存请求数: {self.saved_count} POST + {len(self.get_requests)} GET")  # save_sqlmap.py
         print("=" * 70)
-
 
 addons = [
     SQLMapRequestSaver()
@@ -178,13 +224,13 @@ addons = [
     mitmdump -p 8080 -s save_sqlmap.py
 
 指定目标域名:
-    mitmdump -p 8080 -s save_sqlmap.py --set target_url=https://api.example.com
+    mitmdump -p 8080 -s save_sqlmap.py --set target_url=https://ax-api.pertest.tech
 
 指定输出目录:
     mitmdump -p 8080 -s save_sqlmap.py --set output_dir=./my_output
 
 完整示例:
     mitmdump -p 8080 -s save_sqlmap.py \
-        --set target_url=https://qnjy.xyy001.com \
+        --set target_url=https://ax-api.pertest.tech \
         --set output_dir=./sqlmap_results
 """

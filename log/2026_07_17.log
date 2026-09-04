@@ -1,0 +1,81 @@
+[2026-07-17 15:59:53,571][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-17 15:59:53,571][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-17 15:59:53,571][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-17 15:59:53,571][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-07-17 15:59:56,891][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-07-17 15:59:56,891][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-07-17 16:00:00,284][simple_request.py 273][INFO]: Response status code: 201
+[2026-07-17 16:00:00,284][simple_request.py 277][INFO]: Response status code: 201
+[2026-07-17 16:00:00,288][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-07-17 16:00:00,292][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-07-17 16:00:00,293][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-07-17 16:00:02,376][simple_request.py 273][INFO]: Response status code: 201
+[2026-07-17 16:00:02,376][simple_request.py 277][INFO]: Response status code: 201
+[2026-07-17 16:00:02,377][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-07-17 16:00:17,112][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-17 16:00:17,113][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-17 16:00:17,578][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-07-17 16:00:21,646][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:00:21,646][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:00:27,656][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2078026713036611584
+[2026-07-17 16:00:29,935][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:00:29,936][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:04,818][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-17 16:01:04,818][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-17 16:01:05,271][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-07-17 16:01:08,956][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:08,956][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:14,968][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2078026713036611584
+[2026-07-17 16:01:16,939][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:16,939][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:30,491][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-07-17 16:01:30,492][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-07-17 16:01:30,947][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-07-17 16:01:33,404][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:33,404][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:39,418][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2078026713036611584
+[2026-07-17 16:01:41,347][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:41,347][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:41,348][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/card-cvv/XR2078026713036611584
+[2026-07-17 16:01:42,180][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:42,180][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:42,180][simple_request.py 253][INFO]: method:post,url:https://ax-api.pertest.tech/web/virtual-card/simulate-transaction
+[2026-07-17 16:01:42,181][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260717160141",
+  "cardID": "XR2078026713036611584",
+  "cvv": "125",
+  "expirationDate": "09/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 11,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-07-17 16:01:43,725][simple_request.py 273][INFO]: Response status code: 201
+[2026-07-17 16:01:43,725][simple_request.py 277][INFO]: Response status code: 201
+[2026-07-17 16:01:43,725][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-07-17 16:01:44,293][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:44,293][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:44,315][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-07-17 16:01:44,645][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:44,645][simple_request.py 277][INFO]: Response status code: 200
+[2026-07-17 16:01:50,661][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/web/virtual-card/photon-card-detail/XR2078026713036611584
+[2026-07-17 16:01:51,516][simple_request.py 273][INFO]: Response status code: 200
+[2026-07-17 16:01:51,516][simple_request.py 277][INFO]: Response status code: 200

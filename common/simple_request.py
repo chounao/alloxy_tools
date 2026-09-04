@@ -263,7 +263,7 @@ class HttpRequest:
             elif method == 'put':
                 response = self.session.put(url, json=data)
             elif method == 'delete':
-                response = self.session.delete(url, json=data)
+                response = self.session.delete(url)
             elif method == 'patch':
                 response = self.session.patch(url, json=data)
             else:

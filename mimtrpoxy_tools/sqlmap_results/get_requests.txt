@@ -1,0 +1,10 @@
+https://ax-api.pertest.tech/socket.io/?EIO=4&transport=websocket HTTP/1.1
+
+https://ax-api.pertest.tech/web/notice/system-notice HTTP/1.1
+
+https://ax-api.pertest.tech/web/rbac/user/roles/menus HTTP/1.1
+
+https://ax-api.pertest.tech/web/user HTTP/1.1
+
+https://ax-api.pertest.tech/web/crypto/transaction?page=1&take=20 HTTP/1.1
+

@@ -30,8 +30,14 @@ class Login():
     def login(self,EMAIL, PASSWORD):
         email,password = self.set_user_data(EMAIL, PASSWORD)
         self.password = self.get_md5(password)
-        params = {"loginMethod": "email", "password": self.password, "email": email, "laissezPasser": False,
-                  "language": "zh_CN"}
+        params = {
+            "loginMethod": "email",
+            "password": self.password,
+            "email": email,
+            "laissezPasser": False,
+            "check_method": "email",
+            "access_code": "123456",
+        }
         if 'ADMIN' in EMAIL:
             api_name = '管理员-登录'
         else:

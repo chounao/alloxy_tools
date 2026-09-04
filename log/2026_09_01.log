@@ -1,0 +1,1106 @@
+[2026-09-01 14:12:45,090][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:12:45,090][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:12:45,790][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-09-01 14:12:45,790][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-09-01 14:12:47,425][simple_request.py 305][ERROR]: Error occurred during request: HTTPSConnectionPool(host='ax-api.pertest.tech', port=443): Max retries exceeded with url: /web/user/login (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)')))
+[2026-09-01 14:13:20,789][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:13:20,789][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:13:20,789][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:13:20,789][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-09-01 14:13:21,231][simple_request.py 253][INFO]: method:POST,url:https://ax-api.pertest.tech/web/user/login
+[2026-09-01 14:13:21,231][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-09-01 14:13:23,414][simple_request.py 305][ERROR]: Error occurred during request: HTTPSConnectionPool(host='ax-api.pertest.tech', port=443): Max retries exceeded with url: /web/user/login (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)')))
+[2026-09-01 14:21:34,695][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:21:34,695][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:21:35,083][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:21:36,662][simple_request.py 305][ERROR]: Error occurred during request: HTTPSConnectionPool(host='ax-api.pertest.tech', port=443): Max retries exceeded with url: /admin/virtual-card/get-all-cards?page=1&take=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)')))
+[2026-09-01 14:23:15,731][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:23:15,731][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:23:16,095][simple_request.py 253][INFO]: method:get,url:https://ax-api.pertest.tech/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:23:17,680][simple_request.py 305][ERROR]: Error occurred during request: HTTPSConnectionPool(host='ax-api.pertest.tech', port=443): Max retries exceeded with url: /admin/virtual-card/get-all-cards?page=1&take=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)')))
+[2026-09-01 14:27:00,915][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:27:00,915][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:27:01,325][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-01 14:27:01,325][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-09-01 14:27:02,798][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:27:02,799][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:27:02,800][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-01 14:27:02,805][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-01 14:27:02,805][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "language": "zh_CN"
+}
+[2026-09-01 14:27:04,199][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:27:04,199][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:27:04,201][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-01 14:27:22,414][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:27:22,415][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:27:22,765][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:27:26,352][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:27:26,353][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:27:32,362][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:27:36,112][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:27:36,112][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:27:36,112][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:27:37,925][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:27:37,925][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:27:37,925][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:27:37,925][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901142736",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 11,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:27:40,566][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:27:40,567][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:27:40,567][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:27:40,907][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:27:40,907][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:27:40,918][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:27:41,270][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:27:41,270][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:27:47,288][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:27:48,702][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:27:48,702][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:28:43,762][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:28:43,762][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:28:44,100][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:28:48,665][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:28:48,666][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:28:54,676][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:28:58,251][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:28:58,251][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:28:58,251][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=40291c98-9fdc-4074-bdd6-4924c6197dbc&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:28:59,256][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:28:59,256][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:28:59,275][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:29:01,254][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:01,254][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:01,254][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:29:01,254][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901142859",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "IT2094673520293670912",
+  "txnCurrency": "USD",
+  "txnAmount": 11,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:29:04,393][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:29:04,394][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:29:04,394][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:29:05,033][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:05,033][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:05,051][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:29:05,442][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:05,442][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:11,452][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:29:13,145][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:13,145][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:19,492][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:29:19,492][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:29:24,811][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:29:28,930][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:28,930][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:34,942][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:29:37,555][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:37,555][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:37,555][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=40291c98-9fdc-4074-bdd6-4924c6197dbc&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:29:37,950][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:37,951][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:37,972][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:29:39,309][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:29:39,309][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:29:39,309][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:29:39,309][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901142937",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "IT2094673520293670912",
+  "txnCurrency": "USD",
+  "txnAmount": 11,
+  "txnType": "void",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:29:40,652][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:29:40,653][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:29:40,653][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: invalid parameter[The reversal amount is greater than the auth transaction amount]",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788244180596
+}
+[2026-09-01 14:29:40,653][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:34:13,125][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:34:13,125][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:34:14,260][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:34:19,205][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:19,205][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:25,219][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:34:27,725][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:27,725][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:27,725][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:34:29,114][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:29,114][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:29,114][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:34:29,114][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901143427",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 11,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:34:32,618][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:34:32,618][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:34:32,618][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:34:32,981][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:32,981][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:33,000][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:34:33,357][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:33,357][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:39,369][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:34:40,839][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:40,839][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:51,848][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:34:53,183][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:53,183][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:53,183][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=40291c98-9fdc-4074-bdd6-4924c6197dbc&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:34:53,597][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:53,597][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:53,604][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:34:54,894][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:54,894][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:54,894][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:34:54,894][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901143453",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "IT2094675248271421440",
+  "txnCurrency": "USD",
+  "txnAmount": 11,
+  "txnType": "void",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:34:56,858][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:34:56,858][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:34:56,858][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:34:57,419][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:57,420][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:34:57,435][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:34:57,776][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:34:57,776][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:35:03,788][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:35:05,653][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:35:05,653][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:35:42,474][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:35:42,474][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:35:42,835][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:35:46,604][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:35:46,604][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:35:52,616][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:35:55,345][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:35:55,345][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:35:55,345][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:35:57,220][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:35:57,220][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:35:57,220][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:35:57,220][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901143555",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 100,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:36:10,638][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:36:10,638][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:36:10,638][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:36:11,009][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:11,009][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:11,028][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:36:12,243][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:12,243][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:18,267][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:36:20,486][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:20,486][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:31,493][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:36:32,819][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:32,820][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:32,821][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=40291c98-9fdc-4074-bdd6-4924c6197dbc&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:36:33,414][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:33,414][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:33,433][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:36:34,722][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:34,722][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:34,723][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:36:34,723][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901143633",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "IT2094675616707440640",
+  "txnCurrency": "USD",
+  "txnAmount": 100,
+  "txnType": "void",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:36:37,274][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:36:37,274][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:36:37,274][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:36:38,057][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:38,058][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:38,075][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:36:38,421][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:38,421][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:36:44,442][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:36:45,751][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:36:45,751][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:42:53,526][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:42:53,527][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:42:53,898][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:42:58,639][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:42:58,639][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:04,654][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:43:07,532][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:07,532][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:07,532][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:43:09,148][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:09,148][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:09,148][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:43:09,148][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901144307",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 50,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:43:12,163][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:43:12,163][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:43:12,163][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:43:12,566][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:12,567][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:12,587][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:43:12,982][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:12,982][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:19,001][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:43:20,410][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:20,411][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:31,419][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:43:32,727][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:32,727][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:32,727][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:43:33,983][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:33,983][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:34,002][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:43:34,474][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:43:34,474][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:43:34,474][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "transaction_type must be an array",
+  "originalUrl": "/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group",
+  "timestamp": 1788245014293
+}
+[2026-09-01 14:43:34,474][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:43:34,474][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:43:36,452][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:43:36,452][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:43:36,452][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:43:36,452][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901144334",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": null,
+  "txnCurrency": "USD",
+  "txnAmount": 50,
+  "txnType": "void",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:43:38,324][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:43:38,324][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:43:38,324][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: originTransactionId is required for void or refund transactions",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788245018247
+}
+[2026-09-01 14:43:38,324][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:44:19,439][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:44:19,439][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:44:19,797][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:44:24,517][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:44:24,518][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:44:30,528][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:44:33,453][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:44:33,453][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:44:33,453][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:44:34,855][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:44:34,855][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:44:34,855][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:44:34,855][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901144433",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 20,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:44:48,610][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:44:48,611][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:44:48,611][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:44:49,020][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:44:49,021][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:44:49,040][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:44:49,490][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:44:49,490][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:44:55,510][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:44:57,346][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:44:57,346][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:45:08,351][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:45:11,173][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:45:11,173][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:45:11,174][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:45:11,686][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:45:11,686][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:45:11,703][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:45:12,066][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:45:12,066][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:45:12,066][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "transaction_type must be an array",
+  "originalUrl": "/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group",
+  "timestamp": 1788245111990
+}
+[2026-09-01 14:45:12,066][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:45:12,067][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:45:13,428][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:45:13,428][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:45:13,428][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:45:13,428][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901144512",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": null,
+  "txnCurrency": "USD",
+  "txnAmount": 20,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:45:14,325][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:45:14,326][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:45:14,326][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: originTransactionId is required for void or refund transactions",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788245114076
+}
+[2026-09-01 14:45:14,327][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:53:18,315][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:53:18,315][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:53:18,677][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:53:23,198][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:23,198][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:29,210][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:53:32,771][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:32,772][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:32,772][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:53:34,050][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:34,050][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:34,050][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:53:34,050][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901145332",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 20,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:53:36,823][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:53:36,823][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:53:36,823][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:53:37,182][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:37,182][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:37,191][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:53:37,545][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:37,545][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:43,568][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:53:44,931][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:44,931][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:55,936][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:53:58,024][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:58,024][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:58,024][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:53:58,394][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:53:58,394][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:53:58,402][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:53:58,735][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:53:58,736][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:53:58,736][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "transaction_type must be an array",
+  "originalUrl": "/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group",
+  "timestamp": 1788245638687
+}
+[2026-09-01 14:53:58,736][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:53:58,736][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:54:00,210][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:54:00,210][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:54:00,211][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:54:00,211][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901145358",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": null,
+  "txnCurrency": "USD",
+  "txnAmount": 20,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:54:00,555][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:54:00,555][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:54:00,555][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: originTransactionId is required for void or refund transactions",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788245640505
+}
+[2026-09-01 14:54:00,556][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:56:27,916][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:56:27,916][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:56:28,271][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:56:31,978][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:56:31,978][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:56:37,991][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:56:41,135][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:56:41,135][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:56:41,135][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:56:42,553][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:56:42,553][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:56:42,553][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:56:42,554][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901145641",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:56:45,379][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:56:45,379][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:56:45,379][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:56:45,722][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:56:45,722][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:56:45,742][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:56:46,407][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:56:46,408][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:56:52,431][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:56:54,627][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:56:54,628][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:57:05,633][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 14:57:07,803][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:57:07,803][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:57:07,803][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:57:08,207][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:57:08,208][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:57:08,227][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:57:08,578][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:57:08,578][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:57:08,578][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "transaction_type must be an array",
+  "originalUrl": "/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group",
+  "timestamp": 1788245828508
+}
+[2026-09-01 14:57:08,578][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 14:57:08,578][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 14:57:10,027][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:57:10,027][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:57:10,027][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:57:10,027][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901145708",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": null,
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:57:10,630][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 14:57:10,630][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 14:57:10,630][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: originTransactionId is required for void or refund transactions",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788245830553
+}
+[2026-09-01 14:57:10,630][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:57:36,421][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 14:57:36,421][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 14:57:36,790][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 14:57:40,431][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:57:40,432][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:57:46,445][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:57:50,346][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:57:50,347][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:57:50,347][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:57:51,768][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:57:51,768][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:57:51,768][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:57:51,768][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901145750",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:58:05,918][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:58:05,918][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:58:05,919][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:58:06,262][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:06,262][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:06,282][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:58:06,626][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:06,626][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:12,648][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:58:14,009][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:14,009][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:25,018][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:58:26,832][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:26,833][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:26,833][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=40291c98-9fdc-4074-bdd6-4924c6197dbc&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 14:58:27,567][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:27,567][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:27,584][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 14:58:29,428][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:29,428][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:29,428][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 14:58:29,428][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901145827",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "IT2094681138613514240",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 14:58:46,197][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 14:58:46,198][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 14:58:46,198][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:58:46,542][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:46,542][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:46,560][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 14:58:46,932][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:46,932][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 14:58:52,956][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 14:58:56,141][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 14:58:56,142][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:01:43,221][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 15:01:43,222][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 15:01:43,576][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 15:01:49,878][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:01:49,879][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:01:55,891][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 15:02:00,780][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:00,781][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:00,781][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 15:02:03,851][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:03,852][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:03,852][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:02:03,852][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901150200",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:02:07,526][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 15:02:07,526][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 15:02:07,526][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:02:07,912][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:07,912][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:07,932][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:02:08,585][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:08,585][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:14,607][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 15:02:15,956][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:15,956][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:26,964][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 15:02:28,506][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:28,506][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:28,506][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=40291c98-9fdc-4074-bdd6-4924c6197dbc&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 15:02:29,535][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:29,535][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:29,553][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094667998236602368
+[2026-09-01 15:02:31,940][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:31,940][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:31,940][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:02:31,941][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901150229",
+  "cardID": "XR2094667998236602368",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "IT2094682185776066560",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:02:52,424][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 15:02:52,424][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 15:02:52,424][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:02:53,008][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:53,009][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:02:53,027][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:02:54,017][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:02:54,017][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:03:00,038][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094667998236602368
+[2026-09-01 15:03:02,458][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:03:02,458][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:03:24,741][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 15:03:24,741][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 15:03:25,082][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 15:03:28,478][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:03:28,478][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:03:34,487][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 15:03:37,206][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:03:37,206][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:03:37,206][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 15:03:38,549][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:03:38,549][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:03:38,549][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:03:38,549][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901150337",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:03:43,104][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 15:03:43,104][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 15:03:43,104][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:03:43,802][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:03:43,803][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:03:43,822][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:03:44,167][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:03:44,167][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:03:50,190][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 15:03:52,725][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:03:52,725][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:04:03,731][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 15:04:05,744][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:04:05,744][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:04:05,744][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 15:04:06,128][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:04:06,128][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:04:06,135][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 15:04:06,478][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 15:04:06,479][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 15:04:06,479][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "transaction_type must be an array",
+  "originalUrl": "/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group",
+  "timestamp": 1788246246412
+}
+[2026-09-01 15:04:06,479][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 15:04:06,479][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 15:04:07,832][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:04:07,832][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:04:07,832][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:04:07,832][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901150406",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": null,
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:04:08,391][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 15:04:08,392][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 15:04:08,392][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: originTransactionId is required for void or refund transactions",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788246248323
+}
+[2026-09-01 15:04:08,392][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:04:24,691][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 15:04:24,691][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 15:04:25,057][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 15:04:30,919][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:04:30,919][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:04:36,933][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2076955648919199744
+[2026-09-01 15:04:40,955][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:04:40,955][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:04:40,955][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2076955648919199744
+[2026-09-01 15:04:43,738][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:04:43,738][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:04:43,738][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:04:43,738][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901150440",
+  "cardID": "XR2076955648919199744",
+  "cvv": "863",
+  "expirationDate": "07/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:05:10,331][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 15:05:10,331][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 15:05:10,332][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:05:10,703][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:05:10,703][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:05:10,724][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:05:11,926][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:05:11,926][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:05:17,949][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2076955648919199744
+[2026-09-01 15:05:19,668][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:05:19,668][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:05:30,674][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2076955648919199744
+[2026-09-01 15:05:32,634][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:05:32,634][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:05:32,635][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=93244d6a-4c1d-4290-9109-109fabbbe035&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 15:05:32,988][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:05:32,988][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:05:33,001][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=93244d6a-4c1d-4290-9109-109fabbbe035&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 15:05:33,349][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 15:05:33,349][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 15:05:33,349][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "transaction_type must be an array",
+  "originalUrl": "/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=93244d6a-4c1d-4290-9109-109fabbbe035&transaction_type=card_consume&transaction_sub_type=card_share_group",
+  "timestamp": 1788246333285
+}
+[2026-09-01 15:05:33,349][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=93244d6a-4c1d-4290-9109-109fabbbe035&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 15:05:33,349][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2076955648919199744
+[2026-09-01 15:05:34,617][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:05:34,617][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:05:34,617][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:05:34,617][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901150533",
+  "cardID": "XR2076955648919199744",
+  "cvv": "863",
+  "expirationDate": "07/28",
+  "originTransactionId": null,
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:05:34,958][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 15:05:34,959][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 15:05:34,959][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: originTransactionId is required for void or refund transactions",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788246334895
+}
+[2026-09-01 15:05:34,959][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:35:00,390][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 15:35:00,390][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 15:35:00,756][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 15:35:07,929][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:35:07,929][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:35:13,941][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 15:35:17,090][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:35:17,090][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:35:17,090][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 15:35:20,526][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:35:20,526][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:35:20,526][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:35:20,527][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901153517",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:35:22,116][simple_request.py 273][INFO]: Response status code: 500
+[2026-09-01 15:35:22,117][simple_request.py 277][INFO]: Response status code: 500
+[2026-09-01 15:35:22,117][simple_request.py 279][ERROR]: Response content: {
+  "code": 500,
+  "message": "System exception",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788248122153
+}
+[2026-09-01 15:35:22,117][simple_request.py 305][ERROR]: Error occurred during request: 500 Server Error: Internal Server Error for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:36:16,071][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-01 15:36:16,071][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-01 15:36:16,421][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/get-all-cards?page=1&take=200
+[2026-09-01 15:36:21,171][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:36:21,171][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:36:27,183][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 15:36:30,591][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:36:30,592][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:36:30,592][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 15:36:32,473][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:36:32,474][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:36:32,474][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:36:32,474][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901153630",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": "",
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "auth",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:36:41,386][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-01 15:36:41,387][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-01 15:36:41,387][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:36:41,727][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:36:41,727][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:36:41,747][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/admin/virtual-card/card-fee?page=1&take=10&identifier_id=9498570428
+[2026-09-01 15:36:42,095][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:36:42,095][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:36:48,116][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 15:36:49,495][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:36:49,496][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:37:00,506][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/photon-card-detail/XR2094665771879034880
+[2026-09-01 15:37:02,368][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:37:02,368][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:37:02,368][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type[]=card_consume&transaction_sub_type=card
+[2026-09-01 15:37:02,734][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:37:02,734][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:37:02,741][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 15:37:03,082][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 15:37:03,082][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 15:37:03,082][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "transaction_type must be an array",
+  "originalUrl": "/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group",
+  "timestamp": 1788248223110
+}
+[2026-09-01 15:37:03,082][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/transaction-list?page=1&take=20&virtual_card_id=53ec5e04-3c2b-4c35-8ed5-baea33831637&transaction_type=card_consume&transaction_sub_type=card_share_group
+[2026-09-01 15:37:03,082][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-cvv/XR2094665771879034880
+[2026-09-01 15:37:04,660][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-01 15:37:04,660][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-01 15:37:04,660][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
+[2026-09-01 15:37:04,660][simple_request.py 255][INFO]: Request data: {
+  "requestId": "20260901153703",
+  "cardID": "XR2094665771879034880",
+  "cvv": "000",
+  "expirationDate": "04/28",
+  "originTransactionId": null,
+  "txnCurrency": "USD",
+  "txnAmount": 2,
+  "txnType": "refund",
+  "mcc": "1234",
+  "merchantName": "Ryan",
+  "merchantCountry": "US",
+  "merchantCity": "test",
+  "merchantPostcode": "12345",
+  "productCode": "photon-us"
+}
+[2026-09-01 15:37:06,937][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-01 15:37:06,938][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-01 15:37:06,938][simple_request.py 279][ERROR]: Response content: {
+  "code": -1,
+  "message": "参数错误: originTransactionId is required for void or refund transactions",
+  "originalUrl": "/web/virtual-card/simulate-transaction",
+  "timestamp": 1788248226967
+}
+[2026-09-01 15:37:06,938][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/simulate-transaction
