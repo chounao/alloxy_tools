@@ -1,0 +1,451 @@
+[2026-09-07 10:53:44,658][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 10:53:44,658][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 10:53:44,658][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 10:53:44,658][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-09-07 10:53:45,721][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-07 10:53:45,721][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-07 10:53:47,191][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 10:53:47,191][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 10:53:47,194][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-07 10:53:47,201][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-07 10:53:47,201][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-07 10:53:48,470][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 10:53:48,470][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 10:53:48,472][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-07 11:15:44,366][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 11:15:44,366][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 11:16:08,632][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 11:16:08,633][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 11:16:08,928][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/create-card-group
+[2026-09-07 11:16:08,928][simple_request.py 255][INFO]: Request data: {
+  "name": "测试分组001",
+  "label": "auto_test",
+  "amount": 100
+}
+[2026-09-07 11:16:10,751][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 11:16:10,751][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 11:16:10,779][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/virtual-card/card-group-balance/2fb96255-e1fe-40d8-b4c5-8028ad636fa2
+[2026-09-07 11:16:11,135][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-07 11:16:11,135][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-07 11:16:11,136][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-07 11:16:11,136][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/virtual-card/card-group-balance/2fb96255-e1fe-40d8-b4c5-8028ad636fa2
+[2026-09-07 11:16:11,136][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 11:16:11,136][simple_request.py 255][INFO]: Request data: {
+  "amount": 50,
+  "verify": false,
+  "channel": "Web",
+  "card_share_group_id": null
+}
+[2026-09-07 11:16:11,689][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-07 11:16:11,690][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-07 11:16:11,690][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "card_share_group_id must be a UUID",
+  "originalUrl": "/web/virtual-card/card-account-to-card-group",
+  "timestamp": 1788750971700
+}
+[2026-09-07 11:16:11,690][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 11:16:11,690][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/all-channels?category=share
+[2026-09-07 11:16:12,315][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 11:16:12,315][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 11:16:12,332][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/get-all-holders?product_code=photon-us
+[2026-09-07 11:16:13,413][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 11:16:13,413][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 11:16:13,434][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/create-card
+[2026-09-07 11:16:13,434][simple_request.py 255][INFO]: Request data: {
+  "cardType": "Virtual",
+  "bin_id": null,
+  "virtualCardHolderId": "b69e3edc-7a3c-4e06-abc8-0498ad9671bb",
+  "label": "1111",
+  "card_share_group_id": "2fb96255-e1fe-40d8-b4c5-8028ad636fa2",
+  "tradable_amount": 30,
+  "limit": [],
+  "receiveEmail": true,
+  "cardCategory": "share",
+  "verify": false
+}
+[2026-09-07 11:16:21,841][simple_request.py 273][INFO]: Response status code: 500
+[2026-09-07 11:16:21,842][simple_request.py 277][INFO]: Response status code: 500
+[2026-09-07 11:16:21,842][simple_request.py 279][ERROR]: Response content: {
+  "code": 500,
+  "message": "System exception",
+  "originalUrl": "/web/virtual-card/create-card",
+  "timestamp": 1788750981782
+}
+[2026-09-07 11:16:21,842][simple_request.py 305][ERROR]: Error occurred during request: 500 Server Error: Internal Server Error for url: https://test-api.alloyx-payment.net/web/virtual-card/create-card
+[2026-09-07 11:16:21,842][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/virtual-card/card-group-balance/2fb96255-e1fe-40d8-b4c5-8028ad636fa2
+[2026-09-07 11:16:22,631][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-07 11:16:22,632][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-07 11:16:22,632][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-07 11:16:22,632][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/virtual-card/card-group-balance/2fb96255-e1fe-40d8-b4c5-8028ad636fa2
+[2026-09-07 11:16:22,632][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-to-card-account
+[2026-09-07 11:16:22,632][simple_request.py 255][INFO]: Request data: {
+  "amount": 10,
+  "card_share_group_id": null
+}
+[2026-09-07 11:16:23,647][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-07 11:16:23,648][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-07 11:16:23,648][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "card_share_group_id must be a UUID",
+  "originalUrl": "/web/virtual-card/card-group-to-card-account",
+  "timestamp": 1788750983203
+}
+[2026-09-07 11:16:23,648][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/card-group-to-card-account
+[2026-09-07 14:16:32,414][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:16:32,414][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:16:32,804][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/create-card-group
+[2026-09-07 14:16:32,804][simple_request.py 255][INFO]: Request data: {
+  "name": "测试分组002",
+  "label": "auto_test",
+  "amount": 100
+}
+[2026-09-07 14:16:36,338][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 14:16:36,339][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 14:18:55,385][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:18:55,385][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:18:55,711][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 14:18:57,030][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-07 14:18:57,031][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-07 14:18:57,031][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-07 14:18:57,031][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 14:18:57,031][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 14:18:57,031][simple_request.py 255][INFO]: Request data: {
+  "amount": 50,
+  "verify": false,
+  "channel": "Web",
+  "card_share_group_id": null
+}
+[2026-09-07 14:18:57,401][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-07 14:18:57,401][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-07 14:18:57,401][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "card_share_group_id must be a UUID",
+  "originalUrl": "/web/virtual-card/card-account-to-card-group",
+  "timestamp": 1788761937545
+}
+[2026-09-07 14:18:57,401][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 14:23:55,403][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:23:55,403][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:23:55,728][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 14:23:57,861][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-07 14:23:57,862][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-07 14:23:57,862][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-07 14:23:57,862][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 14:23:57,862][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 14:23:57,862][simple_request.py 255][INFO]: Request data: {
+  "amount": 50,
+  "verify": false,
+  "channel": "Web",
+  "card_share_group_id": null
+}
+[2026-09-07 14:23:58,536][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-07 14:23:58,536][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-07 14:23:58,537][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "card_share_group_id must be a UUID",
+  "originalUrl": "/web/virtual-card/card-account-to-card-group",
+  "timestamp": 1788762238578
+}
+[2026-09-07 14:23:58,537][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 14:27:24,415][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:27:24,415][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:27:24,741][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 14:27:26,170][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:27:26,170][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:27:26,199][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 14:27:26,200][simple_request.py 255][INFO]: Request data: {
+  "amount": 50,
+  "verify": false,
+  "channel": "Web",
+  "card_share_group_id": null
+}
+[2026-09-07 14:27:26,713][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-07 14:27:26,714][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-07 14:27:26,714][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "card_share_group_id must be a UUID",
+  "originalUrl": "/web/virtual-card/card-account-to-card-group",
+  "timestamp": 1788762446847
+}
+[2026-09-07 14:27:26,714][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 14:28:45,066][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:28:45,067][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:28:45,363][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-account-to-card-group
+[2026-09-07 14:28:45,363][simple_request.py 255][INFO]: Request data: {
+  "amount": 50,
+  "verify": false,
+  "channel": "Web",
+  "card_share_group_id": "b09a5cdb-1677-413c-8e06-2ca3c71d8ce1"
+}
+[2026-09-07 14:28:46,823][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 14:28:46,823][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 14:30:37,442][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:30:37,442][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:30:37,760][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-to-card-account
+[2026-09-07 14:30:37,760][simple_request.py 255][INFO]: Request data: {
+  "amount": 10,
+  "card_share_group_id": "b09a5cdb-1677-413c-8e06-2ca3c71d8ce1"
+}
+[2026-09-07 14:30:40,030][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 14:30:40,030][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 14:32:14,423][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:32:14,423][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:32:14,721][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/all-channels?category=share
+[2026-09-07 14:32:16,819][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:32:16,820][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:32:16,847][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/get-all-holders?product_code=photon-us
+[2026-09-07 14:32:17,620][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:32:17,621][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:32:17,644][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/create-card
+[2026-09-07 14:32:17,644][simple_request.py 255][INFO]: Request data: {
+  "cardType": "Virtual",
+  "bin_id": null,
+  "virtualCardHolderId": "b69e3edc-7a3c-4e06-abc8-0498ad9671bb",
+  "label": "1111",
+  "card_share_group_id": "b09a5cdb-1677-413c-8e06-2ca3c71d8ce1",
+  "tradable_amount": 30,
+  "limit": [],
+  "receiveEmail": true,
+  "cardCategory": "share",
+  "verify": false
+}
+[2026-09-07 14:32:26,941][simple_request.py 273][INFO]: Response status code: 500
+[2026-09-07 14:32:26,942][simple_request.py 277][INFO]: Response status code: 500
+[2026-09-07 14:32:26,943][simple_request.py 279][ERROR]: Response content: {
+  "code": 500,
+  "message": "System exception",
+  "originalUrl": "/web/virtual-card/create-card",
+  "timestamp": 1788762747088
+}
+[2026-09-07 14:32:26,943][simple_request.py 305][ERROR]: Error occurred during request: 500 Server Error: Internal Server Error for url: https://test-api.alloyx-payment.net/web/virtual-card/create-card
+[2026-09-07 14:39:47,171][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:39:47,171][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:39:47,489][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/all-channels?category=share
+[2026-09-07 14:39:49,769][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:39:49,769][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:40:11,857][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:40:11,857][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:40:12,164][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/all-channels?category=share
+[2026-09-07 14:40:13,573][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:40:13,574][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:42:01,934][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:42:01,934][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:42:02,249][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/all-channels?category=share
+[2026-09-07 14:42:04,323][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:42:04,323][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:42:36,635][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:42:36,636][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:42:36,937][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/all-channels?category=share
+[2026-09-07 14:42:38,383][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:42:38,383][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:42:38,395][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/get-all-holders?product_code=photon-us
+[2026-09-07 14:42:39,094][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:42:39,094][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:42:39,115][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/create-card
+[2026-09-07 14:42:39,116][simple_request.py 255][INFO]: Request data: {
+  "cardType": "Virtual",
+  "bin_id": "fef80fab-a1db-474a-b324-be124c5ce5ff",
+  "virtualCardHolderId": "b69e3edc-7a3c-4e06-abc8-0498ad9671bb",
+  "label": "1111",
+  "card_share_group_id": "b09a5cdb-1677-413c-8e06-2ca3c71d8ce1",
+  "tradable_amount": 30,
+  "limit": [],
+  "receiveEmail": true,
+  "cardCategory": "share",
+  "verify": false
+}
+[2026-09-07 14:42:44,710][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 14:42:44,711][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 14:49:34,364][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:49:34,364][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:49:34,675][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 14:49:36,015][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:49:36,015][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 14:49:57,920][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 14:49:57,920][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 14:49:58,221][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 14:50:00,525][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 14:50:00,526][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 15:03:39,641][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:03:39,641][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:03:39,949][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 15:03:42,195][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 15:03:42,195][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 15:03:42,223][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/update-tradable-amount-increment
+[2026-09-07 15:03:42,223][simple_request.py 255][INFO]: Request data: {
+  "card_id": "523c7477-4987-45f1-94ab-5aba59e28e89",
+  "amount": 10,
+  "type": "increase",
+  "verify": false
+}
+[2026-09-07 15:03:44,837][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 15:03:44,837][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 15:03:59,293][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:03:59,293][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:03:59,605][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 15:04:01,740][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 15:04:01,740][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 15:04:01,769][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/update-tradable-amount-increment
+[2026-09-07 15:04:01,769][simple_request.py 255][INFO]: Request data: {
+  "card_id": "523c7477-4987-45f1-94ab-5aba59e28e89",
+  "amount": 10,
+  "type": "increase",
+  "verify": false
+}
+[2026-09-07 15:04:06,958][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 15:04:06,959][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 15:05:06,018][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:05:06,018][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:05:06,316][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 15:05:07,846][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 15:05:07,846][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 15:05:07,874][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/update-tradable-amount-increment
+[2026-09-07 15:05:07,874][simple_request.py 255][INFO]: Request data: {
+  "card_id": "22a6dda6-3578-4528-a079-61e6dcbdae52",
+  "amount": 10,
+  "type": "increase",
+  "verify": false
+}
+[2026-09-07 15:05:09,966][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 15:05:09,967][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 15:05:38,764][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:05:38,764][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:05:39,053][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 15:05:40,463][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 15:05:40,464][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 15:05:40,493][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/update-tradable-amount-increment
+[2026-09-07 15:05:40,493][simple_request.py 255][INFO]: Request data: {
+  "card_id": "22a6dda6-3578-4528-a079-61e6dcbdae52",
+  "amount": 10,
+  "type": "decrease",
+  "verify": false
+}
+[2026-09-07 15:05:42,600][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 15:05:42,600][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 15:06:10,287][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:06:10,288][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:06:10,604][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/virtual-card/card-group-balance/b09a5cdb-1677-413c-8e06-2ca3c71d8ce1
+[2026-09-07 15:06:12,154][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 15:06:12,154][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 15:06:12,178][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/update-tradable-amount-increment
+[2026-09-07 15:06:12,178][simple_request.py 255][INFO]: Request data: {
+  "card_id": "22a6dda6-3578-4528-a079-61e6dcbdae52",
+  "amount": 10,
+  "type": "decrease",
+  "verify": false
+}
+[2026-09-07 15:06:15,061][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 15:06:15,061][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 15:45:51,067][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:45:51,067][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:46:02,361][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:46:02,361][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:46:08,926][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:46:08,926][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:46:09,109][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/rbac/departments
+[2026-09-07 15:46:10,468][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-07 15:46:10,497][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/admin/rbac/members?department_id=069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-09-07 15:46:10,818][simple_request.py 171][INFO]: Response status code: 403
+[2026-09-07 15:46:10,818][simple_request.py 173][ERROR]: Response content: {
+  "code": 403,
+  "message": "",
+  "originalUrl": "/admin/rbac/members?department_id=069a95c9-483e-4cc0-830b-7c4c6e8d8a6c",
+  "timestamp": 1788767170845
+}
+[2026-09-07 15:46:10,818][simple_request.py 198][ERROR]: Error occurred during request: 403 Client Error: Forbidden for url: https://test-api.alloyx-payment.net/admin/rbac/members?department_id=069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-09-07 15:46:26,839][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:46:26,840][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:47:25,836][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:47:25,836][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:47:26,165][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/create-card-holders
+[2026-09-07 15:47:26,165][simple_request.py 255][INFO]: Request data: {
+  "channel_code": "photon-hk,photon-us",
+  "is_external": 1,
+  "first_name": "ylgak",
+  "last_name": "mvytd",
+  "birthday": "1983-09-06",
+  "sex": "female",
+  "id_document_type": "Passport",
+  "id_document_number": "688114456429899498",
+  "phone": "13656955480",
+  "email": "oxykavd9kf@gmail.com",
+  "portrait": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-07/202609071527259684650.jpg",
+  "reverseSide": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-07/202609071527262597139.jpg",
+  "country": "AI",
+  "province": "North Side",
+  "city": "shanghuan",
+  "address": "FlatD7FKoShingBuildingNos4866KoShingStreet",
+  "postal_code": "0000000",
+  "isSameAsPersonalAddress": true,
+  "handFilePath": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-07/202609071527552458244.png",
+  "area_code": "86",
+  "iso_code": "AIA"
+}
+[2026-09-07 15:47:32,078][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 15:47:32,078][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 15:53:09,996][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 15:53:09,997][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 15:53:10,301][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/virtual-card/create-card-holders
+[2026-09-07 15:53:10,301][simple_request.py 255][INFO]: Request data: {
+  "channel_code": "photon-hk,photon-us",
+  "is_external": 1,
+  "first_name": "vesnx",
+  "last_name": "nvpoi",
+  "birthday": "1983-09-06",
+  "sex": "female",
+  "id_document_type": "Passport",
+  "id_document_number": "77637747429634106X",
+  "phone": "15864197255",
+  "email": "h0u8hdz09v@gmail.com",
+  "portrait": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-07/202609071527259684650.jpg",
+  "reverseSide": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-07/202609071527262597139.jpg",
+  "country": "AI",
+  "province": "North Side",
+  "city": "shanghuan",
+  "address": "FlatD7FKoShingBuildingNos4866KoShingStreet",
+  "postal_code": "0000000",
+  "isSameAsPersonalAddress": true,
+  "handFilePath": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-07/202609071527552458244.png",
+  "area_code": "86",
+  "iso_code": "AIA"
+}
+[2026-09-07 15:53:14,569][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-07 15:53:14,569][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-07 16:07:14,529][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 16:07:14,529][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 16:07:14,860][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/rbac/departments
+[2026-09-07 16:07:20,187][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-07 16:07:20,217][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/admin/rbac/members?department_id=069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-09-07 16:07:20,642][simple_request.py 171][INFO]: Response status code: 403
+[2026-09-07 16:07:20,643][simple_request.py 173][ERROR]: Response content: {
+  "code": 403,
+  "message": "",
+  "originalUrl": "/admin/rbac/members?department_id=069a95c9-483e-4cc0-830b-7c4c6e8d8a6c",
+  "timestamp": 1788768440502
+}
+[2026-09-07 16:07:20,643][simple_request.py 198][ERROR]: Error occurred during request: 403 Client Error: Forbidden for url: https://test-api.alloyx-payment.net/admin/rbac/members?department_id=069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-09-07 16:11:48,663][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 16:11:48,663][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 16:11:48,965][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/rbac/departments
+[2026-09-07 16:11:50,327][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 16:11:50,327][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 16:11:50,356][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/rbac/members?department_id=069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-09-07 16:11:50,744][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-07 16:11:50,745][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-07 16:11:50,765][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/country/country-info?business_type=common
+[2026-09-07 16:11:52,857][simple_request.py 171][INFO]: Response status code: 200
