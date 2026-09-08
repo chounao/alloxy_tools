@@ -449,3 +449,37 @@
 [2026-09-07 16:11:50,745][simple_request.py 277][INFO]: Response status code: 200
 [2026-09-07 16:11:50,765][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/country/country-info?business_type=common
 [2026-09-07 16:11:52,857][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-07 17:04:09,585][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 17:04:09,585][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 17:04:09,905][read_and_save_tool.py 209][ERROR]: 获取URL方法失败: invalid syntax (<unknown>, line 2)
+[2026-09-07 17:21:59,353][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 17:21:59,353][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 17:21:59,657][read_and_save_tool.py 209][ERROR]: 获取URL方法失败: invalid syntax (<unknown>, line 2)
+[2026-09-07 17:26:32,028][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 17:26:32,028][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 17:26:32,337][read_and_save_tool.py 209][ERROR]: 获取URL方法失败: invalid syntax (<unknown>, line 2)
+[2026-09-07 17:29:11,612][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-07 17:29:11,612][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-07 17:29:11,912][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=BWP
+[2026-09-07 17:29:13,265][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-07 17:29:13,266][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-07 17:29:13,266][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-07 17:29:13,266][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=BWP
+[2026-09-07 17:29:13,266][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active
+[2026-09-07 17:29:13,622][simple_request.py 171][INFO]: Response status code: 401
+[2026-09-07 17:29:13,622][simple_request.py 173][ERROR]: Response content: {
+  "code": 401,
+  "message": "Unauthorized",
+  "originalUrl": "/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active",
+  "timestamp": 1788773353516
+}
+[2026-09-07 17:29:13,622][simple_request.py 198][ERROR]: Error occurred during request: 401 Client Error: Unauthorized for url: https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active
+[2026-09-07 17:29:13,623][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-07 17:29:13,944][simple_request.py 171][INFO]: Response status code: 401
+[2026-09-07 17:29:13,944][simple_request.py 173][ERROR]: Response content: {
+  "code": 401,
+  "message": "Unauthorized",
+  "originalUrl": "/web/crypto/wallets",
+  "timestamp": 1788773353872
+}
+[2026-09-07 17:29:13,944][simple_request.py 198][ERROR]: Error occurred during request: 401 Client Error: Unauthorized for url: https://test-api.alloyx-payment.net/web/crypto/wallets

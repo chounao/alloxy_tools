@@ -1,3 +1,4 @@
+import random
 from traceback import print_tb
 
 from common.simple_request import HttpRequest
@@ -31,8 +32,8 @@ class PayMentOut:
         通过钱包接口获取usdc/usdt的ID
         :return: usdc/usdt的ID
         """
-        #url  = self.authority+'/web/crypto/wallets'
-        wallet_list = self.http_request.send_request(api_name='钱包-获取钱包列表', nested_keys=['data', 'list'])
+        url  = self.authority+'/web/crypto/wallets'
+        wallet_list = self.http_request.gets(url, nested_keys=['data', 'list'])
         for i in wallet_list:
             if i['currency'] == from_currency:
                 from_currency_id = i['id']
@@ -40,16 +41,16 @@ class PayMentOut:
                 print(from_currency_id)
                 return from_currency_id
 
-    def for_currency_get_fei(self,from_currency,to_currency):
-        #path = '/web/crypto/get-fiat-rate?from_currency={}&to_currency={}'.format(from_currency,to_currency)
-        #url = self.authority + path
-        dict_data ={
-            'from_currency':from_currency,
-            'to_currency':to_currency
-        }
-        fei = self.http_request.send_request(api_name='获取pay_out汇率', dict_data=dict_data, nested_keys=['data'])
-        print('汇率为：',fei,type(fei))
-        return fei
+    def get_payee_id(self,to_currency):
+        path = '/web/crypto/payee/fiat?currency={}&payee_name=&page=1&take=100&status=active'.format(to_currency)
+        url = self.authority + path
+        # dict_data ={
+        #     'from_currency':from_currency,
+        #     'to_currency':to_currency
+        # }
+        payee_id_list = self.http_request.gets(url, jsonpath_expr='$..id')
+        print('用户列表：',payee_id_list,type(payee_id_list))
+        return payee_id_list
     def get_payee_fee(self,to_currency):
         # 获取收款
         path = '/web/crypto/payee/fiat?currency={}&payee_name=&page=1&take=100&status=active'.format(to_currency)
@@ -61,10 +62,17 @@ class PayMentOut:
             'take':100,
             'status':'active'
         }
-        payee_id = self.http_request.send_request(api_name='钱包-获取法币收款地址列表', dict_data=dict_data, nested_keys=['data','list',0,'id'])
+        payee_id = self.http_request.posts(url ,  nested_keys=['data','list',0,'id'])
 
         return payee_id
 
+
+    def get_fiat_rate(self,from_currency,to_currency):
+        path = '/web/crypto/get-fiat-rate?from_currency={}&to_currency={}'.format(from_currency,to_currency)
+        url = self.authority + path
+        fiat_rate = self.http_request.gets(url, nested_keys=['data'])
+        print('汇率为：',fiat_rate,type(fiat_rate))
+        return fiat_rate
 
     def fiat_transfer_out(self,amount,from_currency,to_currency, memo):
         """
@@ -75,9 +83,9 @@ class PayMentOut:
         :param memo: 备注
         :return:
         """
-        to_currency_rate = self.for_currency_get_fei(from_currency,to_currency)
+        to_currency_rate = self.get_fiat_rate(from_currency,to_currency)
 
-        payee_id = self.get_payee_fee(to_currency)
+        payee_id = self.get_payee_id(to_currency)
         wallet_id = self.get_Wallet(from_currency)
         to_currency_amount = amount * to_currency_rate
 
@@ -87,18 +95,21 @@ class PayMentOut:
             "access_code": "123456",
             "amount": amount,
             "check_method": "email",
-            "payee_id": payee_id,
+            "payee_id": random.choice(payee_id),
             "wallet_id": wallet_id,
             "memo": memo,
-            "attachments": []
+            "attachments": [
+            { "fileUrl": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-08/202609081034203354059.pdf",
+                "name": "寻汇渠道接入需求文档.pdf",
+                "fileUseType": "other"}]
         }
         path = '/web/crypto/fiat-transfer-out'
         url = self.authority + path
 
-        response = self.http_request.send_request(api_name='钱包-法币转出', data=data)
+        response = self.http_request.posts(url, data=data)
         print(response.text)
 
-
+        print(data)
 
 
 if __name__ == '__main__':
@@ -118,16 +129,14 @@ if __name__ == '__main__':
 
     }
     pay_out = PayMentOut()
-    # for to_currency, value in count.items() :
-    #
-    #     print('---------------------------------------------------------------------------------')
-    #     print('执行的是小于最小值的情况')
-    #     pay_out.fiat_transfer_out(value[0]-1,from_currency, to_currency, memo)
-    #     print('执行的是大于最大值的情况')
-    #     pay_out.fiat_transfer_out(value[1]+1, from_currency, to_currency, memo)
-    #     print('执行边界最小值')
-    #     pay_out.fiat_transfer_out(value[0], from_currency, to_currency, memo)
-    #     print('执行正常最大值')
-    #     pay_out.fiat_transfer_out(value[1], from_currency, to_currency, memo)
-    pay_out.for_currency_get_fei(from_currency,to_currency)
-    pay_out.get_Wallet(from_currency)
+    for to_currency, value in count.items() :
+
+        print('---------------------------------------------------------------------------------')
+        print('执行的是小于最小值的情况')
+        pay_out.fiat_transfer_out(value[0]-1,from_currency, to_currency, memo)
+        # print('执行的是大于最大值的情况')
+        # pay_out.fiat_transfer_out(value[1]+1, from_currency, to_currency, memo)
+        # print('执行边界最小值')
+        # pay_out.fiat_transfer_out(value[0], from_currency, to_currency, memo)
+        # print('执行正常最大值')
+        # pay_out.fiat_transfer_out(value[1], from_currency, to_currency, memo)

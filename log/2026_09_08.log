@@ -1,0 +1,166 @@
+[2026-09-08 10:12:26,526][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:12:26,526][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:12:27,010][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=BWP
+[2026-09-08 10:12:28,523][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:12:28,523][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:12:28,523][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:12:28,524][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=BWP
+[2026-09-08 10:12:28,524][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:12:28,896][simple_request.py 273][INFO]: Response status code: 401
+[2026-09-08 10:12:28,896][simple_request.py 277][INFO]: Response status code: 401
+[2026-09-08 10:12:28,896][simple_request.py 279][ERROR]: Response content: {
+  "code": 401,
+  "message": "Unauthorized",
+  "originalUrl": "/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active",
+  "timestamp": 1788833548659
+}
+[2026-09-08 10:12:28,897][simple_request.py 305][ERROR]: Error occurred during request: 401 Client Error: Unauthorized for url: https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:12:28,897][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:12:29,749][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:12:29,749][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:12:29,749][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:12:29,749][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:12:41,717][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:12:41,717][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:12:42,066][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=KES
+[2026-09-08 10:12:43,680][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:12:43,680][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:12:43,681][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:12:43,681][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=KES
+[2026-09-08 10:12:43,681][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:12:44,102][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:12:44,103][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:12:44,103][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:12:44,103][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:17:49,108][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:17:49,108][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:17:49,438][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:17:50,917][simple_request.py 273][INFO]: Response status code: 401
+[2026-09-08 10:17:50,917][simple_request.py 277][INFO]: Response status code: 401
+[2026-09-08 10:17:50,917][simple_request.py 279][ERROR]: Response content: {
+  "code": 401,
+  "message": "Unauthorized",
+  "originalUrl": "/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active",
+  "timestamp": 1788833870684
+}
+[2026-09-08 10:17:50,917][simple_request.py 305][ERROR]: Error occurred during request: 401 Client Error: Unauthorized for url: https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:17:50,917][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:17:51,318][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:17:51,319][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:17:51,319][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:17:51,319][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:19:39,637][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:19:39,637][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:19:39,637][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:19:39,637][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-09-08 10:19:40,099][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-08 10:19:40,099][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 10:19:42,526][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-08 10:19:42,527][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-08 10:19:42,529][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-08 10:19:42,535][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-08 10:19:42,535][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 10:19:44,063][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-08 10:19:44,063][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-08 10:19:44,065][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-08 10:20:02,850][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:20:02,850][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:20:03,083][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:20:06,230][simple_request.py 273][INFO]: Response status code: 400
+[2026-09-08 10:20:06,230][simple_request.py 277][INFO]: Response status code: 400
+[2026-09-08 10:20:06,230][simple_request.py 279][ERROR]: Response content: {
+  "code": 400,
+  "message": "first_name must be a string | currency must be one of the following values: USD, EUR, SGD, HKD, NGN, ZMW, BWP, BNB, RWF, MWK, TZS, UGX, XAF, KES, ZAR, POL, TRX, AED, CAD, GBP, KRW, MXN, USDT, USDC, XSGD, ATUSD, ATHKD, AVAX, AXCNH, RYT, BUSD, ETH, CHR, AXBHD, AXUSD | payee_type must be one of the following values: business, personal",
+  "originalUrl": "/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active",
+  "timestamp": 1788834005996
+}
+[2026-09-08 10:20:06,230][simple_request.py 305][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:20:06,230][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:20:07,166][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:20:07,166][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:20:07,167][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:20:07,167][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:21:03,851][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:21:03,851][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:21:04,179][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:21:06,349][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:21:06,349][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:21:06,349][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:21:06,672][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:21:06,673][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:21:06,673][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:21:06,673][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:31:33,645][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:31:33,646][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:31:33,970][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=KES
+[2026-09-08 10:31:36,351][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:31:36,351][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:31:36,351][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:31:36,709][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:31:36,710][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:31:36,739][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:31:37,053][simple_request.py 273][INFO]: Response status code: 404
+[2026-09-08 10:31:37,054][simple_request.py 277][INFO]: Response status code: 404
+[2026-09-08 10:31:37,054][simple_request.py 279][ERROR]: Response content: 404 Not Found
+[2026-09-08 10:31:37,054][simple_request.py 305][ERROR]: Error occurred during request: 404 Client Error: Not Found for url: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:32:20,836][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:32:20,837][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:32:21,157][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=KES
+[2026-09-08 10:32:23,337][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:32:23,337][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:32:23,338][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=KES&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:32:23,720][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:32:23,720][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:32:23,734][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:32:24,148][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:32:24,149][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:32:45,795][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:32:45,796][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:32:46,113][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=BWP
+[2026-09-08 10:32:48,726][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:32:48,726][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:32:48,726][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:32:49,101][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:32:49,101][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:32:49,131][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:32:49,498][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:32:49,498][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:33:01,397][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:33:01,397][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:33:01,569][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/get-fiat-rate?from_currency=USDT&to_currency=BWP
+[2026-09-08 10:33:03,689][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:33:03,689][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:33:03,689][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/payee/fiat?currency=BWP&payee_name=&page=1&take=100&status=active
+[2026-09-08 10:33:04,092][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:33:04,093][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:33:04,119][simple_request.py 253][INFO]: method:get,url:https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:33:04,499][simple_request.py 273][INFO]: Response status code: 200
+[2026-09-08 10:33:04,499][simple_request.py 277][INFO]: Response status code: 200
+[2026-09-08 10:33:04,500][simple_request.py 253][INFO]: method:post,url:https://test-api.alloyx-payment.net/web/crypto/fiat-transfer-out
+[2026-09-08 10:33:04,500][simple_request.py 255][INFO]: Request data: {
+  "to_currency_rate": 13.63702648,
+  "to_currency_amount": 2031.91694552,
+  "access_code": "123456",
+  "amount": 149,
+  "check_method": "email",
+  "payee_id": "0dfc39c8-9d01-450b-8c4c-684280f3dba0",
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "memo": "housing",
+  "attachments": []
+}
+[2026-09-08 10:33:05,758][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-08 10:33:05,758][simple_request.py 277][INFO]: Response status code: 201
