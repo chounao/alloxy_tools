@@ -164,3 +164,388 @@
 }
 [2026-09-08 10:33:05,758][simple_request.py 273][INFO]: Response status code: 201
 [2026-09-08 10:33:05,758][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-08 10:56:48,967][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:56:48,969][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:56:49,284][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:56:51,004][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:56:51,033][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:56:51,417][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:56:51,436][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 10:56:54,416][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:56:54,436][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT
+[2026-09-08 10:56:55,013][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:58:25,704][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:58:25,704][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:58:26,038][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:58:28,256][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:58:28,285][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:58:28,669][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:58:28,688][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 10:58:31,210][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:58:31,226][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT
+[2026-09-08 10:58:31,758][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:58:58,093][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 10:58:58,093][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 10:58:58,432][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:58:59,909][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:58:59,933][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 10:59:00,584][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:59:00,604][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 10:59:02,894][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 10:59:02,914][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT
+[2026-09-08 10:59:03,437][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:01:07,538][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:01:07,538][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:01:07,874][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:01:09,477][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:01:09,506][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:01:10,123][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:01:10,143][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:01:12,002][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:01:12,021][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT
+[2026-09-08 11:01:12,716][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:03:17,028][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:03:17,028][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:03:17,371][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:03:19,012][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:03:19,040][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:03:19,461][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:03:19,480][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:03:21,912][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:16:50,799][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:16:50,799][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:16:51,137][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:16:52,833][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:16:52,863][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:16:53,554][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:16:53,574][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:16:55,605][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:29:59,206][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:29:59,206][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:29:59,550][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:30:02,418][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:30:17,545][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:30:17,546][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:30:17,861][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:30:19,994][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:30:59,926][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:30:59,927][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:31:00,239][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:31:01,807][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:31:01,820][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:31:02,348][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:31:02,357][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:31:03,908][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:31:03,928][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:31:04,281][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:32:12,340][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:32:12,340][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:32:12,658][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:32:14,570][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:32:14,598][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:32:14,982][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:32:14,994][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:32:16,903][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:32:16,923][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:32:17,540][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:00,126][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:33:00,127][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:33:00,456][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:33:01,920][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:01,949][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:33:02,394][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:02,413][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:33:05,335][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:05,354][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:33:05,737][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:12,308][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:33:12,308][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:33:12,486][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:33:14,657][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:14,687][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:33:15,061][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:15,081][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:33:17,092][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:33:17,112][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:33:17,467][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:35:01,860][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:35:01,860][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:35:02,197][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:35:03,671][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:35:03,687][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:35:04,067][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:35:04,086][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:35:07,909][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:35:07,929][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:35:08,375][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:36:50,118][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:36:50,118][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:36:50,446][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:36:51,908][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:36:51,939][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:36:52,315][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:36:52,326][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:36:54,180][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:36:54,200][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:36:54,559][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:36:54,575][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 11:36:54,575][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "dc3a7955-bdf8-4efb-9b82-14b3c9db09ae",
+  "amount": 1,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 11:36:55,117][simple_request.py 171][INFO]: Response status code: 500
+[2026-09-08 11:36:55,118][simple_request.py 173][ERROR]: Response content: {
+  "code": 500,
+  "message": "System exception",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788838614870
+}
+[2026-09-08 11:36:55,118][simple_request.py 198][ERROR]: Error occurred during request: 500 Server Error: Internal Server Error for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 11:37:54,168][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:37:54,168][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:37:54,493][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:37:56,455][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:37:56,479][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:37:58,148][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:37:58,167][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:38:00,298][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:38:00,316][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:38:00,757][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:38:00,773][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 11:38:00,773][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "dc3a7955-bdf8-4efb-9b82-14b3c9db09ae",
+  "amount": 10,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 11:38:01,546][simple_request.py 171][INFO]: Response status code: 400
+[2026-09-08 11:38:01,546][simple_request.py 173][ERROR]: Response content: {
+  "code": 300006,
+  "message": "交易策略验证不通过，订单已失败",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788838681303
+}
+[2026-09-08 11:38:01,546][simple_request.py 198][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 11:38:15,226][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 11:38:15,226][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 11:38:15,508][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:38:18,233][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:38:18,258][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 11:38:18,689][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:38:18,708][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 11:38:21,338][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:38:21,358][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 11:38:21,730][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 11:38:21,750][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 11:38:21,750][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "672bc807-5c6c-4fc5-ab34-c9f1c877b1a3",
+  "amount": 13,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 11:38:22,407][simple_request.py 171][INFO]: Response status code: 400
+[2026-09-08 11:38:22,407][simple_request.py 173][ERROR]: Response content: {
+  "code": 300006,
+  "message": "交易策略验证不通过，订单已失败",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788838702149
+}
+[2026-09-08 11:38:22,407][simple_request.py 198][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:12:09,894][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 14:12:09,894][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 14:12:10,279][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:12:12,772][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:12:12,801][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:12:13,439][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:12:13,459][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 14:12:18,007][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:12:18,028][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 14:12:18,408][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:12:18,426][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:12:18,426][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "27607ac4-6821-4a90-8356-5b0af4257096",
+  "amount": 13,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 14:12:19,069][simple_request.py 171][INFO]: Response status code: 400
+[2026-09-08 14:12:19,070][simple_request.py 173][ERROR]: Response content: {
+  "code": 300006,
+  "message": "交易策略验证不通过，订单已失败",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788847938746
+}
+[2026-09-08 14:12:19,070][simple_request.py 198][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:14:05,260][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 14:14:05,260][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 14:14:05,594][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:14:08,985][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:09,014][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:14:09,465][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:09,485][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 14:14:12,433][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:12,451][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 14:14:12,811][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:12,830][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:14:12,830][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "27607ac4-6821-4a90-8356-5b0af4257096",
+  "amount": 13,
+  "attachments": [
+    {
+      "fileUseType": "others",
+      "name": "寻汇渠道接入需求文档.pdf"
+    }
+  ],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 14:14:13,338][simple_request.py 171][INFO]: Response status code: 400
+[2026-09-08 14:14:13,339][simple_request.py 173][ERROR]: Response content: {
+  "code": 400,
+  "message": "fileUrl must be longer than or equal to 1 characters",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788848053027
+}
+[2026-09-08 14:14:13,339][simple_request.py 198][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:14:55,268][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 14:14:55,268][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 14:14:55,608][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:14:57,035][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:57,064][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:14:57,442][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:57,462][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 14:14:59,354][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:59,374][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 14:14:59,799][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:14:59,819][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:14:59,819][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9437c3c1-fe9e-4da8-9399-720288ca63e3",
+  "amount": 13,
+  "attachments": [
+    {
+      "fileUseType": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-08/202609081413222164920.pdf",
+      "name": "寻汇渠道接入需求文档.pdf"
+    }
+  ],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 14:15:00,411][simple_request.py 171][INFO]: Response status code: 400
+[2026-09-08 14:15:00,412][simple_request.py 173][ERROR]: Response content: {
+  "code": 400,
+  "message": "fileUrl must be longer than or equal to 1 characters",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788848100105
+}
+[2026-09-08 14:15:00,412][simple_request.py 198][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:16:20,262][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 14:16:20,262][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 14:16:20,607][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:16:24,016][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:16:24,045][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:16:24,735][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:16:24,755][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 14:16:26,833][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:16:26,852][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 14:16:27,216][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:16:27,236][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:16:27,236][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9437c3c1-fe9e-4da8-9399-720288ca63e3",
+  "amount": 13,
+  "attachments": [
+    {
+      "file_name": "寻汇渠道接入需求文档",
+      "file_suffix": "pdf",
+      "file_type": "application/pdf",
+      "file_url": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-08/202609081413222164920.pdf"
+    }
+  ],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 14:16:27,735][simple_request.py 171][INFO]: Response status code: 400
+[2026-09-08 14:16:27,736][simple_request.py 173][ERROR]: Response content: {
+  "code": 400,
+  "message": "fileUrl must be longer than or equal to 1 characters",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788848187421
+}
+[2026-09-08 14:16:27,736][simple_request.py 198][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:48:16,872][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 14:48:16,872][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 14:48:17,388][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:48:18,837][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:48:18,867][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 14:48:19,261][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:48:19,281][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 14:48:21,481][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:48:21,499][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 14:48:22,030][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 14:48:22,047][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 14:48:22,047][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "27607ac4-6821-4a90-8356-5b0af4257096",
+  "amount": 13,
+  "attachments": [
+    {
+      "file_name": "寻汇渠道接入需求文档",
+      "file_suffix": "pdf",
+      "file_type": "application/pdf",
+      "file_url": "https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/929ff175-e26b-43ad-ba02-467756bff867/2026-09-08/202609081413222164920.pdf"
+    }
+  ],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 14:48:22,643][simple_request.py 171][INFO]: Response status code: 400
+[2026-09-08 14:48:22,643][simple_request.py 173][ERROR]: Response content: {
+  "code": 400,
+  "message": "fileUrl must be longer than or equal to 1 characters",
+  "originalUrl": "/web/crypto/transfer-out",
+  "timestamp": 1788850102280
+}
+[2026-09-08 14:48:22,643][simple_request.py 198][ERROR]: Error occurred during request: 400 Client Error: Bad Request for url: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 15:10:46,817][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-08 15:10:46,818][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-08 15:10:47,163][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 15:10:49,151][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 15:10:49,181][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 15:10:49,606][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 15:10:49,627][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/chain
+[2026-09-08 15:10:52,049][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 15:10:52,069][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2026-09-08 15:10:52,457][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-08 15:10:52,477][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transfer-out
+[2026-09-08 15:10:52,477][simple_request.py 153][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "672bc807-5c6c-4fc5-ab34-c9f1c877b1a3",
+  "amount": 13,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-08 15:10:53,283][simple_request.py 171][INFO]: Response status code: 201
+[2026-09-08 15:10:53,283][read_and_save_tool.py 204][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/wallets
+[2026-09-08 15:10:54,114][simple_request.py 171][INFO]: Response status code: 200
