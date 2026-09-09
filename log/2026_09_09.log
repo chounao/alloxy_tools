@@ -1,0 +1,407 @@
+[2026-09-09 15:30:58,415][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 15:30:58,416][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 15:30:59,134][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-09 15:30:59,134][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-09 15:31:00,697][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-09 15:31:00,697][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-09 15:31:00,699][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-09 15:31:00,701][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-09 15:31:00,701][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-09 15:31:03,609][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-09 15:31:03,609][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-09 15:31:03,609][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-09 15:31:06,861][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 15:31:06,861][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 15:31:06,861][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 15:31:06,861][execute.py 87][INFO]: ---测试开始---执行的是test环境
+[2026-09-09 15:31:07,190][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-09 15:31:07,190][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-09 15:31:08,785][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-09 15:31:08,786][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-09 15:31:08,787][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-09 15:31:08,794][simple_request.py 253][INFO]: method:POST,url:https://test-api.alloyx-payment.net/web/user/login
+[2026-09-09 15:31:08,795][simple_request.py 255][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "670246852@qq.com",
+  "laissezPasser": false,
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-09-09 15:31:11,179][simple_request.py 273][INFO]: Response status code: 201
+[2026-09-09 15:31:11,179][simple_request.py 277][INFO]: Response status code: 201
+[2026-09-09 15:31:11,180][read_and_save_tool.py 88][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_interface_test/common/config.ini
+[2026-09-09 15:35:13,222][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 15:35:13,223][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:25:21,959][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:25:21,960][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:28:59,221][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:28:59,221][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:29:41,364][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:29:41,364][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:29:41,691][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:29:41,691][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_in&status=completed
+[2026-09-09 16:29:43,639][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:30:01,537][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:30:01,537][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:30:01,849][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:30:01,849][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_in&status=completed
+[2026-09-09 16:30:07,857][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:32:38,146][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:32:38,147][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:32:56,095][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:32:56,095][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:38:30,760][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:38:30,761][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:38:31,083][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:31,083][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_in&status=completed
+[2026-09-09 16:38:33,455][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:33,456][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_in&status=completed
+[2026-09-09 16:38:34,050][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:34,051][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:34,052][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_out&status=completed
+[2026-09-09 16:38:34,599][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:34,600][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_out&status=completed
+[2026-09-09 16:38:35,177][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:35,179][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:35,179][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:38:35,515][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:35,515][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:35,516][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_deduction&status=completed
+[2026-09-09 16:38:36,077][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:36,077][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_deduction&status=completed
+[2026-09-09 16:38:36,427][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:36,428][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:36,428][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_recharge&status=completed
+[2026-09-09 16:38:36,770][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:36,771][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_recharge&status=completed
+[2026-09-09 16:38:37,276][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:37,276][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:37,276][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_out&status=completed
+[2026-09-09 16:38:38,251][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:38,252][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_out&status=completed
+[2026-09-09 16:38:38,920][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:38,922][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:38,923][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_refund&status=completed
+[2026-09-09 16:38:39,650][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:39,651][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_refund&status=completed
+[2026-09-09 16:38:40,329][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:40,330][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:40,330][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=logistics_fee&status=completed
+[2026-09-09 16:38:40,677][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:40,677][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:40,677][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_create_virtual&status=completed
+[2026-09-09 16:38:41,010][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:41,010][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:41,010][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_create_physical&status=completed
+[2026-09-09 16:38:41,346][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:41,346][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:41,346][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_monthly_fee&status=completed
+[2026-09-09 16:38:41,680][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:41,681][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:41,681][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing&status=completed
+[2026-09-09 16:38:42,013][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:42,014][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:42,014][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_reversal&status=completed
+[2026-09-09 16:38:42,365][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:42,366][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_reversal&status=completed
+[2026-09-09 16:38:42,720][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:42,720][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:42,721][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_refund&status=completed
+[2026-09-09 16:38:43,069][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:43,069][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_refund&status=completed
+[2026-09-09 16:38:43,423][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:43,424][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:43,424][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_deposit&status=completed
+[2026-09-09 16:38:44,498][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:44,499][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_deposit&status=completed
+[2026-09-09 16:38:45,406][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:45,408][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:45,408][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_to_card_account&status=completed
+[2026-09-09 16:38:46,215][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:46,216][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_to_card_account&status=completed
+[2026-09-09 16:38:47,093][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:47,094][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:47,094][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing_deduction&status=completed
+[2026-09-09 16:38:47,449][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:47,449][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:47,450][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing_refund&status=completed
+[2026-09-09 16:38:47,788][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:47,789][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:47,789][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:38:48,489][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:48,490][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:38:49,027][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:49,027][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:49,028][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_atm&status=completed
+[2026-09-09 16:38:49,368][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:49,368][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:49,368][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_declined_refund&status=completed
+[2026-09-09 16:38:49,699][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:49,700][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:49,700][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_tradable_amount_update&status=completed
+[2026-09-09 16:38:50,060][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:50,061][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:50,061][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=vcsg_in&status=completed
+[2026-09-09 16:38:50,392][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:50,392][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:50,392][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=vcsg_out&status=completed
+[2026-09-09 16:38:51,120][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:51,121][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:51,121][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_consume&status=completed
+[2026-09-09 16:38:51,825][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:51,826][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_consume&status=completed
+[2026-09-09 16:38:52,683][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:52,683][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:52,684][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=system_deduction&status=completed
+[2026-09-09 16:38:53,015][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:38:53,015][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:38:53,015][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=system_recharge&status=completed
+[2026-09-09 16:38:53,402][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:43:49,966][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:43:49,966][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:43:50,296][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:43:50,296][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_in&status=completed
+[2026-09-09 16:43:58,718][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:43:58,720][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_in&status=completed
+[2026-09-09 16:44:00,124][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:00,126][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:00,126][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_recharge&status=completed
+[2026-09-09 16:44:00,771][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:00,772][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_recharge&status=completed
+[2026-09-09 16:44:01,330][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:01,330][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:01,331][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_refund&status=completed
+[2026-09-09 16:44:02,608][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:02,609][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_refund&status=completed
+[2026-09-09 16:44:03,714][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:03,715][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:03,715][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_out&status=completed
+[2026-09-09 16:44:05,495][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:05,497][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_out&status=completed
+[2026-09-09 16:44:07,901][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:07,904][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:07,904][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:44:08,670][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:08,670][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:08,670][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_deduction&status=completed
+[2026-09-09 16:44:09,430][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:09,431][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_deduction&status=completed
+[2026-09-09 16:44:10,133][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:10,134][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:10,134][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_out&status=completed
+[2026-09-09 16:44:11,715][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:11,717][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_out&status=completed
+[2026-09-09 16:44:13,854][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:13,856][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:13,856][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=logistics_fee&status=completed
+[2026-09-09 16:44:14,215][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:14,216][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:14,216][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_create_virtual&status=completed
+[2026-09-09 16:44:15,037][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:15,038][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:15,038][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_create_physical&status=completed
+[2026-09-09 16:44:15,412][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:15,412][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:15,413][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_monthly_fee&status=completed
+[2026-09-09 16:44:15,773][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:15,773][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:15,774][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing&status=completed
+[2026-09-09 16:44:16,620][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:16,621][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:16,621][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_reversal&status=completed
+[2026-09-09 16:44:17,045][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:17,045][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_reversal&status=completed
+[2026-09-09 16:44:17,673][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:17,674][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:17,674][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_refund&status=completed
+[2026-09-09 16:44:19,406][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:19,406][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_refund&status=completed
+[2026-09-09 16:44:20,687][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:20,687][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:20,687][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_deposit&status=completed
+[2026-09-09 16:44:26,560][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:26,563][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_deposit&status=completed
+[2026-09-09 16:44:30,246][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:30,247][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:30,248][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing_refund&status=completed
+[2026-09-09 16:44:30,618][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:30,619][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:30,619][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_declined_refund&status=completed
+[2026-09-09 16:44:30,976][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:30,976][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:30,976][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=vcsg_in&status=completed
+[2026-09-09 16:44:31,336][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:31,337][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:31,337][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_to_card_account&status=completed
+[2026-09-09 16:44:33,123][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:33,124][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_to_card_account&status=completed
+[2026-09-09 16:44:34,639][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:34,641][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:34,641][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing_deduction&status=completed
+[2026-09-09 16:44:35,003][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:35,003][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:35,003][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:44:35,993][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:35,994][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:44:37,262][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:37,263][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:37,263][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_atm&status=completed
+[2026-09-09 16:44:37,620][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:37,620][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:37,621][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_tradable_amount_update&status=completed
+[2026-09-09 16:44:37,977][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:37,978][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:37,978][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=vcsg_out&status=completed
+[2026-09-09 16:44:38,334][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:38,334][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:38,334][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=system_recharge&status=completed
+[2026-09-09 16:44:38,691][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:38,691][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:38,691][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_consume&status=completed
+[2026-09-09 16:44:39,505][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:39,507][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_consume&status=completed
+[2026-09-09 16:44:40,383][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:44:40,384][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 16:44:40,384][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2025-10-31T16:00:00.000Z&created_at[][]=2025-11-30T15:59:59.000Z&transaction_sub_type=card&transaction_type=system_deduction&status=completed
+[2026-09-09 16:44:40,737][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:52,562][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 16:51:52,562][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 16:51:52,911][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:52,912][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_in&status=completed
+[2026-09-09 16:51:54,752][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:54,753][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:54,753][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_recharge&status=completed
+[2026-09-09 16:51:55,195][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:55,195][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:55,195][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_refund&status=completed
+[2026-09-09 16:51:55,808][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:55,808][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:55,808][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=vcc_out&status=completed
+[2026-09-09 16:51:56,284][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:56,284][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:56,285][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:51:56,655][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:56,655][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:56,655][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=system_deduction&status=completed
+[2026-09-09 16:51:57,023][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:57,024][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:57,024][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_holder_kyc_fee_out&status=completed
+[2026-09-09 16:51:57,400][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:57,400][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:57,400][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=logistics_fee&status=completed
+[2026-09-09 16:51:57,819][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:57,820][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:57,820][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_create_virtual&status=completed
+[2026-09-09 16:51:58,441][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:58,441][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:58,441][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_create_physical&status=completed
+[2026-09-09 16:51:58,871][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:51:58,871][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:51:58,871][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_monthly_fee&status=completed
+[2026-09-09 16:52:02,736][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:02,745][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_monthly_fee&status=completed
+[2026-09-09 16:52:05,164][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:05,182][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=2&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_monthly_fee&status=completed
+[2026-09-09 16:52:06,733][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:06,735][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=2&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_account&transaction_type=card_monthly_fee&status=completed
+[2026-09-09 16:52:08,311][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:08,315][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:08,315][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_clearing&status=completed
+[2026-09-09 16:52:08,686][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:08,686][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:08,687][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_reversal&status=completed
+[2026-09-09 16:52:09,056][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:09,057][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:09,057][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_refund&status=completed
+[2026-09-09 16:52:09,421][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:09,421][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:09,422][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_deposit&status=completed
+[2026-09-09 16:52:09,880][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:09,880][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:09,880][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_clearing_refund&status=completed
+[2026-09-09 16:52:10,247][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:10,247][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:10,248][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_declined_refund&status=completed
+[2026-09-09 16:52:11,049][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:11,049][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:11,049][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=vcsg_in&status=completed
+[2026-09-09 16:52:11,452][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:11,452][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:11,453][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_to_card_account&status=completed
+[2026-09-09 16:52:11,820][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:11,821][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:11,821][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_clearing_deduction&status=completed
+[2026-09-09 16:52:12,184][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:12,184][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:12,184][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:52:14,267][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:14,268][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:14,268][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_atm&status=completed
+[2026-09-09 16:52:14,633][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:14,633][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:14,633][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=card_tradable_amount_update&status=completed
+[2026-09-09 16:52:14,997][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:14,997][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:14,997][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card_share_group&transaction_type=vcsg_out&status=completed
+[2026-09-09 16:52:15,361][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:15,361][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:15,361][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing&status=completed
+[2026-09-09 16:52:15,724][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:15,724][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:15,725][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_reversal&status=completed
+[2026-09-09 16:52:16,172][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:16,172][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:16,173][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_refund&status=completed
+[2026-09-09 16:52:16,535][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:16,536][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:16,536][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_deposit&status=completed
+[2026-09-09 16:52:16,898][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:16,899][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:16,899][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing_refund&status=completed
+[2026-09-09 16:52:17,266][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:17,266][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:17,267][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_declined_refund&status=completed
+[2026-09-09 16:52:17,626][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:17,627][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:17,627][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=system_recharge&status=completed
+[2026-09-09 16:52:18,405][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:18,406][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:18,406][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_consume&status=completed
+[2026-09-09 16:52:18,795][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:18,795][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:18,796][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_to_card_account&status=completed
+[2026-09-09 16:52:19,160][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:19,160][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:19,160][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_clearing_deduction&status=completed
+[2026-09-09 16:52:19,528][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:19,528][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:19,528][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_transaction_authorization_fee&status=completed
+[2026-09-09 16:52:19,895][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:19,896][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:19,896][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=card_atm&status=completed
+[2026-09-09 16:52:20,268][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 16:52:20,268][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
+[2026-09-09 16:52:20,268][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=system_deduction&status=completed
+[2026-09-09 16:52:20,632][simple_request.py 171][INFO]: Response status code: 200
