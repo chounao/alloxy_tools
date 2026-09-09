@@ -405,3 +405,1083 @@
 [2026-09-09 16:52:20,268][get_time.py 90][INFO]: 指定年月的时间范围: 2026-07-31T16:00:00.000Z - 2026-08-31T15:59:59.000Z
 [2026-09-09 16:52:20,268][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/virtual-card/transtion-list?page=1&take=100&created_at[][]=2026-07-31T16:00:00.000Z&created_at[][]=2026-08-31T15:59:59.000Z&transaction_sub_type=card&transaction_type=system_deduction&status=completed
 [2026-09-09 16:52:20,632][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:09:06,576][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 17:09:06,576][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 17:12:43,963][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 17:12:43,963][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 17:13:29,379][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 17:13:29,379][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 17:14:39,050][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 17:14:39,050][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 17:14:39,348][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:39,348][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:14:39,348][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:41,000][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:41,000][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:41,000][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:14:41,001][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:41,386][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:41,386][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:41,386][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:14:41,386][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:42,576][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:42,576][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:43,170][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:43,171][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:43,171][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:14:43,171][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:43,617][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:43,618][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:43,993][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:43,993][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:43,994][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:14:43,994][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:44,361][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:44,361][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:44,361][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:14:44,361][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:44,723][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:44,723][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:44,723][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:14:44,723][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:45,083][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:45,083][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:45,084][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:14:45,084][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:45,448][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:45,448][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:45,448][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:14:45,448][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:45,802][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:45,802][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:45,802][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:14:45,802][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:46,243][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:46,244][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:46,244][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:14:46,244][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:46,606][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:46,606][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:46,606][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:14:46,606][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:46,965][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:46,977][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:46,977][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:14:46,977][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:47,336][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:47,336][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:47,336][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:14:47,336][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:47,697][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:47,697][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:47,697][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:14:47,698][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:48,054][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:48,054][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:48,055][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:14:48,055][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:48,412][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:48,412][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:48,412][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:14:48,412][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:48,766][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:48,767][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:48,767][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:14:48,767][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:49,124][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:49,124][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:49,124][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:14:49,124][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:49,478][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:49,478][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:49,478][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:14:49,478][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:49,917][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:49,917][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:49,917][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:14:49,917][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:50,274][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:50,274][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:50,275][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:14:50,275][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:50,638][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:50,638][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:50,639][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:14:50,639][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:50,995][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:50,995][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:50,995][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:14:50,996][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:51,353][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:51,361][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:51,361][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=None, transaction_status=pending
+[2026-09-09 17:14:51,361][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:52,019][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:52,020][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:52,853][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:52,854][get_time.py 90][INFO]: 指定年月的时间范围: 2026-08-31T16:00:00.000Z - 2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:52,854][wallet_transaction_record.py 91][INFO]: 发送请求: transaction_type=None, transaction_status=pending
+[2026-09-09 17:14:52,854][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:53,552][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:14:53,553][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&transaction_status=pending&create_at[]=2026-08-31T16:00:00.000Z&create_at[]=2026-09-30T15:59:59.000Z
+[2026-09-09 17:14:54,903][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:53,563][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 17:16:53,563][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 17:16:53,878][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:53,878][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:16:53,878][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:55,327][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:55,328][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:55,328][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:16:55,328][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:55,716][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:55,716][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:55,716][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:16:55,717][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:56,069][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:56,069][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:56,069][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:16:56,070][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:56,422][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:56,422][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:56,422][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:16:56,423][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:56,774][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:56,774][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:56,775][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:16:56,775][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:57,215][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:57,216][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:57,570][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:57,571][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:57,571][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:16:57,571][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:57,920][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:57,920][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:57,920][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:16:57,921][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:58,305][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:58,305][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:58,695][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:58,696][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:58,696][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:16:58,696][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:59,046][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:59,047][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:59,512][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:59,513][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:59,513][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:16:59,513][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:16:59,921][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:16:59,922][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:00,371][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:00,372][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:00,372][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:17:00,372][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:00,736][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:00,737][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:01,109][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:01,109][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:01,109][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:17:01,110][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:01,472][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:01,473][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:01,824][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:01,825][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:01,825][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:17:01,825][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:02,687][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:02,688][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:02,688][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:17:02,688][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:03,042][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:03,042][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:03,042][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:17:03,042][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:03,390][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:03,390][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:03,390][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:17:03,390][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:03,739][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:03,739][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:03,739][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:17:03,740][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:04,092][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:04,093][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:04,093][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:17:04,093][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:04,445][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:04,445][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:04,796][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:04,796][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:04,797][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:17:04,797][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:05,150][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:05,150][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:05,150][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:17:05,151][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:05,500][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:05,501][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:05,855][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:05,855][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:05,855][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:17:05,856][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:06,302][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:06,302][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:06,652][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:06,652][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:06,652][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:17:06,652][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:07,010][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:07,010][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:07,363][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:07,364][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:07,364][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:17:07,364][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:07,721][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:07,722][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:08,070][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:08,070][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:08,070][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:17:08,070][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:08,421][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:08,422][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:08,772][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:08,773][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:08,773][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:17:08,773][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:09,132][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:09,133][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:09,486][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:09,487][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:09,487][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:17:09,488][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:09,835][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:09,835][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:09,835][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:17:09,836][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:10,181][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:10,181][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:10,181][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:17:10,182][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:10,528][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:10,529][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:10,529][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:17:10,529][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:10,884][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:10,884][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:10,885][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:17:10,885][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:11,247][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:11,248][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:11,248][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:17:11,248][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:11,591][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:11,592][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:11,592][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:17:11,592][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:11,945][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:11,945][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:11,945][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:17:11,946][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:12,330][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:12,330][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:12,704][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:12,705][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:12,705][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:17:12,705][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:13,135][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:13,135][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:13,540][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:13,541][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:13,541][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:17:13,541][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:14,290][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:14,290][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:14,689][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:14,689][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:14,689][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:17:14,690][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:15,071][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:15,072][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:15,455][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:15,456][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:15,456][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:17:15,456][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:15,813][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:15,814][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:16,164][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:16,164][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:16,164][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:17:16,165][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:16,514][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:16,515][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:16,515][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:17:16,515][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:16,861][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:16,861][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:16,861][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:17:16,862][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:17,210][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:17,210][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:17,210][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:17:17,211][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:17,552][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:17,552][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:17,552][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:17:17,553][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:17,904][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:17,905][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:17,905][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:17:17,905][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:18,258][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:18,259][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:18,259][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:17:18,259][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:18,613][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:18,614][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:18,614][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:17:18,614][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:18,992][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:18,992][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:19,487][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:19,487][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:19,487][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:17:19,488][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:20,148][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:20,148][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:20,523][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:20,523][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:20,524][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:17:20,524][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:20,882][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:20,882][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:21,231][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:21,231][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:21,232][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:17:21,232][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:21,583][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:21,584][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:21,943][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:21,944][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:21,944][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:17:21,944][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:22,373][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:22,373][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:22,373][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:17:22,373][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:23,090][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:23,091][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:23,443][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:23,443][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:23,444][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:17:23,444][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:24,322][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:24,324][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:24,901][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:24,904][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:24,904][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:17:24,904][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:25,446][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:25,447][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:25,814][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:25,815][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:25,815][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:17:25,816][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:26,236][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:26,237][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:26,237][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:17:26,237][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:26,597][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:26,597][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:26,953][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:26,954][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:26,954][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:17:26,954][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:27,483][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:27,483][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:27,849][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:27,850][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:27,850][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:17:27,850][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:28,220][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:28,220][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:28,594][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:28,594][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:28,595][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:17:28,595][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:28,944][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:28,945][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:28,945][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:17:28,945][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:29,294][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:29,295][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:29,295][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:17:29,295][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:29,716][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:29,716][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:29,716][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:17:29,717][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:30,071][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:30,071][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:30,071][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:17:30,072][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:30,426][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:30,426][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:30,426][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:17:30,427][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:30,781][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:30,782][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:31,131][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:31,131][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:31,131][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:17:31,131][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:31,866][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:31,869][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:32,748][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:32,750][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:32,750][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:17:32,750][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:33,113][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:33,114][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:33,921][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:33,922][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:33,922][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:17:33,922][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:34,284][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:34,284][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:34,284][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:17:34,284][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:34,634][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:34,635][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:34,993][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:34,993][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:34,993][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:17:34,993][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:35,377][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:35,378][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:35,766][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:35,767][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:35,767][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:17:35,767][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:36,200][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:36,201][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:36,586][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:36,587][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:36,587][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:17:36,587][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:37,503][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:37,504][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:37,504][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:17:37,504][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:37,852][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:37,853][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:37,853][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:17:37,853][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:38,198][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:38,198][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:38,198][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:17:38,198][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:38,626][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:38,626][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:38,626][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:17:38,626][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:38,976][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:38,976][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:38,976][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:17:38,976][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:40,069][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:40,072][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:43,230][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:43,232][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:17:43,232][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:44,631][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:44,632][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:45,662][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:45,664][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:45,664][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:17:45,664][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:47,258][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:47,260][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:48,514][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:48,516][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:48,516][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:17:48,516][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:49,166][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:49,167][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:49,788][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:49,790][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:49,790][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:17:49,790][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:50,211][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:50,212][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:50,212][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:17:50,212][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:50,560][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:50,560][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:50,912][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:50,913][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:50,913][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:17:50,913][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:51,260][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:51,260][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:51,260][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:17:51,260][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:51,611][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:51,612][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:51,612][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:17:51,612][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:51,954][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:51,954][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:51,954][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:17:51,954][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:52,314][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:52,314][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:52,314][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:17:52,315][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:52,661][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:52,661][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:52,661][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:17:52,661][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:53,012][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:53,013][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:53,013][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:17:53,013][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:53,355][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:53,356][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:53,356][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:17:53,356][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:54,668][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:54,671][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:55,747][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:55,749][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:17:55,750][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:56,513][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:56,514][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:57,237][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:57,239][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:57,239][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:17:57,239][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:58,082][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:58,085][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:58,799][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:58,802][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:58,802][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:17:58,802][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:59,335][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:59,336][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:59,875][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:17:59,876][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:17:59,877][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:17:59,877][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:00,369][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:00,369][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:00,369][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:18:00,369][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:00,758][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:00,759][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:01,228][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:01,229][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:01,229][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:18:01,229][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:01,585][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:01,585][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:01,585][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:18:01,585][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:01,942][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:01,942][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:01,942][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:18:01,943][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:02,795][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:02,796][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:02,796][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:18:02,796][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:03,204][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:03,204][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:03,204][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:18:03,204][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:03,552][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:18:03,552][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:03,552][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:18:03,552][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:18:03,902][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:55,333][execute.py 53][DEBUG]: Environment switched to: test (config: TEST_CONFIG)
+[2026-09-09 17:24:55,334][execute.py 107][INFO]: ---环境自动初始化---执行的是test环境
+[2026-09-09 17:24:55,655][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:55,656][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:24:55,656][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:57,269][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:57,269][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:57,269][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:24:57,269][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:57,728][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:57,728][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:57,728][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:24:57,728][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:58,327][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:58,327][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:58,328][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:24:58,328][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:58,683][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:58,683][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:58,683][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:24:58,684][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:59,162][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:59,162][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:59,162][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:24:59,162][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:59,549][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:59,549][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:59,911][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:24:59,911][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:24:59,911][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:24:59,912][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:00,351][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:00,352][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:00,352][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:25:00,352][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:01,199][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:01,199][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:01,590][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:01,590][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:01,590][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:25:01,590][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:02,332][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:02,333][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:03,329][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:03,330][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:03,330][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:25:03,330][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:03,682][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:03,682][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:04,035][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:04,036][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:04,036][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:25:04,036][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:04,391][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:04,391][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:04,749][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:04,749][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:04,749][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:25:04,750][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:05,100][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:05,100][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:05,917][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:05,917][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:05,917][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:25:05,918][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:06,272][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:06,273][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:06,273][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:25:06,273][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:06,641][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:06,641][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:06,641][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:25:06,641][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:06,990][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:06,990][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:06,990][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:25:06,990][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:07,345][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:07,345][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:07,345][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:25:07,345][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:07,694][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:07,694][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:07,694][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:25:07,694][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:08,054][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:08,054][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:08,406][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:08,406][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:08,407][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:25:08,407][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:08,755][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:08,755][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:08,755][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:25:08,755][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:09,108][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:09,109][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:09,462][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:09,463][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:09,463][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:25:09,463][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:09,817][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:09,818][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:10,319][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:10,320][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:10,320][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:25:10,320][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:10,670][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:10,671][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:11,021][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:11,021][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:11,022][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:25:11,022][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:11,450][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:11,451][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:11,880][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:11,881][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:11,881][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:25:11,881][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:12,236][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:12,237][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:12,598][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:12,599][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:12,599][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:25:12,600][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:12,950][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:12,950][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:14,068][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:14,068][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:14,069][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:25:14,069][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:14,615][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:14,615][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:14,615][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:25:14,615][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:15,163][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:15,163][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:15,164][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:25:15,164][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:15,638][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:15,638][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:15,638][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:25:15,638][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:16,078][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:16,078][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:16,078][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:25:16,078][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:16,458][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:16,458][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:16,458][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:25:16,458][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:16,814][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:16,814][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:16,814][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:25:16,815][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:17,161][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:17,161][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:17,161][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:25:17,161][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:17,798][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:17,799][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:18,200][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:18,200][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:18,200][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:25:18,200][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:18,716][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:18,717][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:19,122][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:19,123][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:19,123][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:25:19,123][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:19,531][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:19,531][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:19,885][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:19,885][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:19,885][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:25:19,885][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:20,268][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:20,268][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:20,632][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:20,633][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:20,633][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=completed
+[2026-09-09 17:25:20,633][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:20,995][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:20,997][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:21,343][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:21,344][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:21,344][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=completed
+[2026-09-09 17:25:21,344][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:21,990][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:21,991][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:21,991][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=completed
+[2026-09-09 17:25:21,991][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:22,365][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:22,365][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:22,365][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=completed
+[2026-09-09 17:25:22,366][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:23,323][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:23,323][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:23,323][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=completed
+[2026-09-09 17:25:23,323][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:23,757][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:23,758][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:23,758][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=completed
+[2026-09-09 17:25:23,758][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:24,106][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:24,107][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:24,107][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=completed
+[2026-09-09 17:25:24,107][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:24,464][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:24,465][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:24,465][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=completed
+[2026-09-09 17:25:24,465][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:24,811][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:24,811][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:24,811][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=completed
+[2026-09-09 17:25:24,812][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:25,347][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:25,348][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:25,721][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:25,721][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:25,721][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=completed
+[2026-09-09 17:25:25,721][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:26,086][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:26,086][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:26,452][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:26,452][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:26,453][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=completed
+[2026-09-09 17:25:26,453][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:26,800][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:26,801][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:27,622][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:27,623][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:27,623][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=completed
+[2026-09-09 17:25:27,623][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:27,972][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:27,972][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=completed&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:28,321][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:28,321][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:28,321][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:25:28,321][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:28,668][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:28,668][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:28,668][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:25:28,668][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:29,024][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:29,025][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:29,376][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:29,377][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:29,377][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:25:29,377][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:30,313][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:30,315][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:31,199][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:31,199][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:31,200][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:25:31,200][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:31,738][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:31,739][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:32,281][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:32,282][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:32,282][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:25:32,282][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:32,628][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:32,628][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:32,628][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:25:32,628][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:32,979][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:32,980][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:33,715][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:33,716][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:33,716][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:25:33,716][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:34,080][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:34,080][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:34,689][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:34,689][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:34,689][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:25:34,689][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:35,405][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:35,406][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:36,109][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:36,110][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:36,110][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:25:36,110][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:36,457][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:36,457][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:36,457][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:25:36,458][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:36,800][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:36,800][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:36,800][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:25:36,801][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:37,143][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:37,144][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:37,144][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:25:37,144][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:37,489][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:37,489][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:37,489][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:25:37,490][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:37,835][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:37,835][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:37,835][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:25:37,836][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:38,242][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:38,242][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:38,951][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:38,952][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:38,952][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:25:38,952][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:41,914][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:41,916][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:43,430][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:43,432][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:43,432][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:25:43,432][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:43,946][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:43,947][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:44,542][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:44,543][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:44,543][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:25:44,543][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:44,891][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:44,891][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:44,891][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:25:44,892][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:45,338][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:45,339][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:45,686][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:45,687][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:45,687][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:25:45,687][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:46,276][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:46,277][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:46,768][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:46,768][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:46,769][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:25:46,769][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:47,348][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:47,348][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:48,025][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:48,026][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:48,026][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:25:48,026][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:48,386][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:48,386][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:48,386][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:25:48,386][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:48,745][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:48,745][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:48,745][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:25:48,745][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDC&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:49,183][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:49,184][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:49,184][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:25:49,184][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDC&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:49,527][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:49,528][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:49,528][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:25:49,528][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:49,870][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:49,871][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:49,871][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:25:49,871][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:51,861][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:51,862][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:53,442][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:53,443][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:25:53,444][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:54,458][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:54,460][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:55,239][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:55,241][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:55,241][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:25:55,241][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:56,520][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:56,521][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:58,104][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:58,106][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:58,106][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:25:58,106][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:59,009][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:59,010][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:59,921][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:25:59,922][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:25:59,922][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:25:59,922][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:00,287][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:00,288][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:00,288][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:26:00,289][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:01,001][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:01,001][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:01,378][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:01,378][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:01,378][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:26:01,378][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:02,621][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:02,621][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:02,621][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:26:02,621][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:03,411][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:03,412][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:03,412][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:26:03,412][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:03,761][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:03,762][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:03,762][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:26:03,762][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:04,532][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:04,532][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:04,532][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:26:04,532][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:04,910][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:04,911][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:04,911][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:26:04,911][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:05,252][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:05,253][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:05,253][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_deposit, transaction_status=pending
+[2026-09-09 17:26:05,253][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=chain_deposit&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:05,609][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:05,610][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:05,610][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:26:05,610][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:07,010][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:07,013][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:08,421][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:08,422][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payin, transaction_status=pending
+[2026-09-09 17:26:08,423][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:09,296][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:09,297][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=2&take=100&to_currency=USDT&transaction_type=crypto_payin&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:10,036][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:10,037][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:10,037][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_payout, transaction_status=pending
+[2026-09-09 17:26:10,037][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:11,260][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:11,263][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_payout&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:12,448][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:12,449][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:12,449][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=chain_withdraw, transaction_status=pending
+[2026-09-09 17:26:12,449][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:13,329][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:13,330][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=chain_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:14,622][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:14,623][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:14,623][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=failed_refund, transaction_status=pending
+[2026-09-09 17:26:14,623][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=failed_refund&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:14,979][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:14,979][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:14,980][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=checkout_withdraw, transaction_status=pending
+[2026-09-09 17:26:14,980][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:15,394][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:15,395][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=checkout_withdraw&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:15,750][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:15,751][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:15,751][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_in, transaction_status=pending
+[2026-09-09 17:26:15,751][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=crypto_contract_in&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:16,109][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:16,109][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:16,109][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=crypto_contract_out, transaction_status=pending
+[2026-09-09 17:26:16,109][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=crypto_contract_out&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:16,457][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:16,458][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:16,458][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_recharge, transaction_status=pending
+[2026-09-09 17:26:16,458][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=card_account_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:16,802][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:16,803][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:16,803][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=card_account_to_wallet, transaction_status=pending
+[2026-09-09 17:26:16,803][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=card_account_to_wallet&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:17,146][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:17,147][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:17,147][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_deduction, transaction_status=pending
+[2026-09-09 17:26:17,147][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&from_currency=USDT&transaction_type=system_deduction&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:17,537][simple_request.py 171][INFO]: Response status code: 200
+[2026-09-09 17:26:17,537][get_time.py 90][INFO]: 指定年月的时间范围: 2025-10-31T16:00:00.000Z - 2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:17,537][wallet_transaction_record.py 68][INFO]: 发送请求: transaction_type=system_recharge, transaction_status=pending
+[2026-09-09 17:26:17,537][read_and_save_tool.py 199][INFO]: URL已处理: https://test-api.alloyx-payment.net/web/crypto/transaction?page=1&take=100&to_currency=USDT&transaction_type=system_recharge&transaction_status=pending&create_at[]=2025-10-31T16:00:00.000Z&create_at[]=2025-11-30T15:59:59.000Z
+[2026-09-09 17:26:17,880][simple_request.py 171][INFO]: Response status code: 200
